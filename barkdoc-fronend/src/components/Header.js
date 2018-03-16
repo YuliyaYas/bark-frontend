@@ -9,7 +9,7 @@ class Header extends Component {
               <img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/>
             </div>
               <div className="float-right">
-                <button className="orange white-font">SCHEDULE AN APPOINTMENT</button>
+                <button className="orange white-font book-button">SCHEDULE AN APPOINTMENT</button>
               </div>
               <div className="float-right">
                 <a href="" className="grey-font underline sign-in-icon">SIGN IN</a>
