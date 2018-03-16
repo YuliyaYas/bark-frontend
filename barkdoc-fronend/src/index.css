@@ -1,14 +1,81 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  background-color: #f2f3f7;
+  font-size: 12px;
+
 }
 
-/* sign in */
-/* div#logo {
+/* header/menu */
+.content{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.logo{
+  width: 70%;
+}
+
+.header{
+  overflow: hidden;
+}
+
+.float-left{
   float: left;
 }
 
-div#navmenu {
+.float-right{
   float: right;
-} */
+}
+
+.orange{
+  background-color: #f08e30;
+}
+.white{
+  background-color: white;
+}
+
+.white-font{
+  color: white;
+}
+
+.grey-font{
+  color: #7e7e7e;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.sign-in-icon{
+  background: transparent url("./img/repeated/sign_in_logo.png") top left no-repeat;
+  height: 31px;
+  padding-top: 11px;
+  padding-left: 37px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* sign in */
+.center{
+  text-align: center;
+}
+
+.length{
+  width: 35%;
+}
+
+.sign-in-form{
+  width: 30%;
+  margin-left: 35%;
+}
+
+#facebook-login{
+  background-color: #3b5998;
+  color: white;
+  width: 100%;
+}
+
+.dog-bottom-img{
+  width: 90%;
+}
