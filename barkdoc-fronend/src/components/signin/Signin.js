@@ -16,7 +16,7 @@ class SignIn extends Component {
         <button className="orange white-font display-block sign-in-button">SIGN IN</button>
       </div>
       <div>
-        <img className="dog-bottom-img" alt="" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/dog_bottom.png")}/>
+        <img className="dog-bottom-img" alt="" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/dog_bottom_transp.png")}/>
       </div>
       </div>
     )

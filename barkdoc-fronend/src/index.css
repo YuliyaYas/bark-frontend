@@ -117,8 +117,8 @@ input[type=text],input[type=password] {
 }
 
 .dog-bottom-img{
-  width: 70%;
-  margin-left: 15%;
+  width: 60%;
+  margin-left: 20%;
   padding-top: 10%;
 }
 
@@ -136,4 +136,31 @@ input[type=text],input[type=password] {
 
 .input-sign-in{
   width: 100%;
+}
+
+/* footer */
+
+.ul-style {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.li-style {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #7e7e7e;
+}
+
+.width-90{
+  width: 90%;
+  background-color: white;
+  margin-left: 5%;
 }
