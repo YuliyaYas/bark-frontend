@@ -30,7 +30,8 @@ input[type=text],input[type=password] {
 
 .header{
   overflow: hidden;
-  margin-top: 20px;
+  position: relative;
+  top: 20px;
 }
 
 .float-left{
@@ -163,4 +164,43 @@ li a {
   width: 90%;
   background-color: white;
   margin-left: 5%;
+}
+
+/* homepage */
+.pug-background{
+  background-image: url("./img/homepage/pug.png");
+  background-repeat: no-repeat;
+  height: 725px;
+  background-size: contain;
+  background-position-y: top;
+}
+
+.font-40pt{
+  font-size: 40pt;
+}
+
+.width-35{
+  width: 37%;
+}
+
+.top-100{
+  margin-top: 100px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.font-16{
+  font-size: 16pt;
+}
+
+.no-border{
+  border-style: none;
+}
+
+.continue-button{
+  padding: 14px 59px;
+  font-size: 10pt;
+  font-weight: bold;
 }

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import Header from './../Header.js'
 
 class SignIn extends Component {
   render(){
     return(
       <div>
-      <div className="sign-in-form">
+      <Header />
+      <div className="sign-in-form content">
         <h1 className="center grey-font pt-26">Sign in Below</h1>
         <hr className="grey-font length"/>
         <button id="facebook-login">Login with Facebook</button>

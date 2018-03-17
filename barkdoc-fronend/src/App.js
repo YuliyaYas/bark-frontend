@@ -1,9 +1,9 @@
 import './index.css';
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
-import SignIn from '../src/components/signin/Signin.js'
-import Header from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/Header.js'
-import Footer from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/Footer.js'
+import SignIn from '../src/components/signin/Signin.js';
+import Footer from '../src/components/Footer.js';
+import HomePage from '../src/components/homepage/HomePage.js';
 import Butter from 'buttercms';
 
 
@@ -22,8 +22,8 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Header />
       <Switch>
+      <Route path={`/user`} component={ () => <HomePage />} />
         <Route path={`/`} component={ () => <SignIn/>} />
       </Switch>
       <Footer />
