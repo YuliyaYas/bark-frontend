@@ -9,8 +9,18 @@ class INeedAptmnt extends Component{
         <div>At Your Home.</div>
         <div>Furrr Real.</div>
       </div>
-      <div className="white-font font-16">I need an appointment for my</div>
-      <button className="orange no-border white-font continue-button">CONTINUE</button>
+      <div className="width-35">
+      <div className="white-font font-16 float-left margin-top-20">I need an appointment for my</div>
+      <form>
+      <div className="float-left ">
+      <select className="styled grey-font margin-top-16 bold">
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+      </select>
+      </div>
+      <button type="submit" className="orange no-border white-font continue-button">CONTINUE</button>
+      </form>
+      </div>
       </div>
     )
   }

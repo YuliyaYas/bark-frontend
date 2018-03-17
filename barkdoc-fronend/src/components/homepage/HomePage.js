@@ -4,7 +4,7 @@ import INeedAptmnt from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/compone
 
 const HomePage = () => {
   return(
-    <div>
+    <div className="container-zig-zag">
       <div className="pug-background">
       <Header />
       <INeedAptmnt />

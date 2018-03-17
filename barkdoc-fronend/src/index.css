@@ -200,7 +200,54 @@ li a {
 }
 
 .continue-button{
-  padding: 14px 59px;
-  font-size: 10pt;
+  padding: 17px 55px;
+  font-size: 12pt;
   font-weight: bold;
+  margin-top: 30px;
 }
+
+.styled select {
+  background: transparent;
+  background-image: none;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+.styled {
+    width: 60px;
+    height: 35px;
+    margin-left: 10px;
+    overflow: hidden;
+    background: url(/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png) 96% / 20% no-repeat #eee;
+}
+
+.margin-top-20{
+  margin-top: 20px;
+}
+
+.margin-top-16{
+  margin-top: 16px;
+}
+
+/*  zig zag*/
+.container-zig-zag {
+    position: relative;
+    padding: 8px 8px 32px 0px;
+    background-color: white;
+}
+
+.container-zig-zag:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 19px 38px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 31px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+/* zig zag end */
