@@ -167,6 +167,7 @@ li a {
 }
 
 /* homepage */
+/* slide 1 */
 .pug-background{
   background-image: url("./img/homepage/pug.png");
   background-repeat: no-repeat;
@@ -233,7 +234,7 @@ li a {
 /*  zig zag*/
 .container-zig-zag {
     position: relative;
-    padding: 8px 8px 32px 0px;
+    padding: 8px 0px 32px 0px;
     background-color: white;
 }
 
@@ -241,7 +242,7 @@ li a {
     background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
-    background-size: 19px 38px;
+    background-size: 17px 44px;
     content: " ";
     display: block;
     position: absolute;
@@ -251,3 +252,50 @@ li a {
     height: 32px;
 }
 /* zig zag end */
+/* slide 2 */
+.length-11{
+  width: 11%;
+}
+
+.column {
+    float: left;
+    width: 33%;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icon-house{
+  width: 25%;
+}
+
+.icon-dog-zzz{
+  width: 37%;
+}
+.icon-jar{
+  width: 21%;
+}
+
+.width-40{
+  width: 40%;
+}
+
+.margin-left-30{
+  margin-left: 30%;
+}
+
+.schedule-appt{
+  padding: 17px 19px;
+  margin: 20px;
+  border-style: none;
+}
+
+.margin-41{
+  margin-left: 41%;
+}

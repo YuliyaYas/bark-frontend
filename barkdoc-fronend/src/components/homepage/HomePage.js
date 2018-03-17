@@ -1,14 +1,18 @@
 import React from 'react';
 import Header from './../Header.js';
-import INeedAptmnt from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/homepage/INeedAptmnt.js'
+import INeedAptmnt from './INeedAptmnt.js'
+import WhyBarkDoc from './WhyBarkDoc.js'
 
 const HomePage = () => {
   return(
+    <div>
     <div className="container-zig-zag">
       <div className="pug-background">
-      <Header />
-      <INeedAptmnt />
+        <Header />
+        <INeedAptmnt />
       </div>
+      </div>
+      <WhyBarkDoc />
     </div>
   )
 }
