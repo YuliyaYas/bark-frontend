@@ -234,7 +234,7 @@ li a {
 /*  zig zag*/
 .container-zig-zag {
     position: relative;
-    padding: 8px 0px 32px 0px;
+    padding: 0px 0px 32px 0px;
     background-color: white;
 }
 
@@ -251,6 +251,7 @@ li a {
     width: 100%;
     height: 32px;
 }
+
 /* zig zag end */
 /* slide 2 */
 .length-11{
@@ -298,4 +299,51 @@ li a {
 
 .margin-41{
   margin-left: 41%;
+  margin-bottom: 60px;
+}
+/* slide 3 */
+
+.brown{
+  background-color: #79312e;
+}
+
+.light-pink-font{
+  color: #dbc1c0;
+}
+
+.font-11pt{
+  font-size: 11pt;
+}
+
+.container-brown-zig-zag {
+    position: relative;
+    padding: 0px 0px 32px 0px;
+    background-color: white;
+}
+
+.container-brown-zig-zag:after {
+    background: linear-gradient(-45deg, #79312e 16px, transparent 0), linear-gradient(45deg, #79312e 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.center.white-font.pt-26.bold {
+    padding-top: 60px;
+}
+
+.margin-left-44{
+  margin-left: 44.5%;
+}
+
+.button-meet-our-vets{
+    padding: 17px 19px;
+    border-style: none;
 }
