@@ -347,3 +347,17 @@ li a {
     padding: 17px 19px;
     border-style: none;
 }
+
+.length-40{
+  width: 40%;
+}
+
+.column-review {
+    float: left;
+    width: 50%;
+    margin-top: 25px;
+}
+
+.quotes{
+  display: inline-block;
+}

@@ -11,11 +11,17 @@ const butter = Butter('3881af973b6179f6adef4f7b2cd0a6a3b0d3c1e8');
 
 
 class App extends Component {
-
+  constructor(){
+    super()
+    this.state = {
+      homepage_reviews: []
+    }
+  }
   componentDidMount(){
 
-    butter.content.retrieve(["faq_headline", "faq_items"]).then((resp) => {
-      console.log(resp.data.data.faq_items)
+    butter.content.retrieve(["homepage_reviews", "review_items"])
+    .then((resp) => {
+      this.setState({homepage_reviews: resp.data.data.review_items})
     });
     }
 
@@ -23,7 +29,7 @@ class App extends Component {
     return (
       <div>
       <Switch>
-      <Route path={`/user`} component={ () => <HomePage />} />
+      <Route path={`/user`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />
         <Route path={`/`} component={ () => <SignIn/>} />
       </Switch>
       <Footer />

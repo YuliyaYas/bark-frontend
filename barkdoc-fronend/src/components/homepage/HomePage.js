@@ -3,8 +3,9 @@ import Header from './../Header.js';
 import INeedAptmnt from './INeedAptmnt.js'
 import WhyBarkDoc from './WhyBarkDoc.js'
 import OurServices from './OurServices.js'
+import Reviews from './Reviews.js'
 
-const HomePage = () => {
+const HomePage = (props) => {
   return(
     <div>
     <div className="container-zig-zag">
@@ -19,6 +20,7 @@ const HomePage = () => {
       <div className="container-zig-zag">
       <OurServices />
       </div>
+      <Reviews homepage_reviews={props.homepage_reviews}/>
     </div>
   )
 }
