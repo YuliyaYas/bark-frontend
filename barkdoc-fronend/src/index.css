@@ -56,6 +56,11 @@ textarea{
 .orange{
   background-color: #f08e30;
 }
+
+.orange-font{
+  color: #f08e30;
+}
+
 .white{
   background-color: white;
 }
@@ -131,7 +136,7 @@ textarea{
 .dog-bottom-img{
   width: 60%;
   margin-left: 20%;
-  padding-top: 10%;
+  padding-top: 60px;
 }
 
 .display-block{
@@ -435,4 +440,26 @@ img.column-review{
 
 .padding-top-60{
   padding-top: 60px;
+}
+
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
+.submit-button{
+  padding: 14px 16px;
+  border-style: none;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 14pt;
+}
+
+.font-24pt{
+  font-size: 24pt;
+}
+.font-15pt{
+  font-size: 15pt;
+}
+.font-14pt{
+  font-size: 14pt;
 }

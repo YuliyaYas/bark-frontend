@@ -4,6 +4,7 @@ import INeedAptmnt from './INeedAptmnt.js'
 import WhyBarkDoc from './WhyBarkDoc.js'
 import OurServices from './OurServices.js'
 import Reviews from './Reviews.js'
+import DogBottom from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/DogBottom.js'
 import HaveQuestionsForm from './../HaveQuestionsForm.js'
 
 const HomePage = (props) => {
@@ -23,6 +24,7 @@ const HomePage = (props) => {
       </div>
       <Reviews homepage_reviews={props.homepage_reviews}/>
       <HaveQuestionsForm />
+      <DogBottom />
     </div>
   )
 }
