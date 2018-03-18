@@ -463,3 +463,88 @@ img.column-review{
 .font-14pt{
   font-size: 14pt;
 }
+
+/* ABout page */
+.background-pet-pattern{
+  float: left;
+  width: 100%;
+  background: transparent url("./img/about/pet_pattern.png") top left repeat;
+}
+
+.padding-about{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 33pt;
+}
+
+.container-pattern-zig-zag {
+    position: relative;
+    padding: 0px 0px 32px 0px;
+    background-color: white;
+}
+
+.container-pattern-zig-zag:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.column-about {
+    float: left;
+    width: 62%;
+    margin-top: 25px;
+}
+.column-shana-img {
+    float: left;
+    width: 35%;
+    margin-top: 25px;
+}
+
+.length-25{
+  width: 25%;
+}
+
+.shana-img{
+  width: 99%
+}
+
+.B-float{
+  float: left;
+  width: 10%;
+}
+
+.padding-right-20{
+  padding-right: 20px;
+}
+
+.width-54{
+  width: 54%;
+}
+
+.container-grey-zig-zag {
+    position: relative;
+    padding: 0px 0px 32px 0px;
+    background-color: #f2f3f7;
+}
+
+.container-grey-zig-zag:after {
+    background: linear-gradient(-45deg, #f2f3f7 16px, transparent 0), linear-gradient(45deg, #f2f3f7 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}

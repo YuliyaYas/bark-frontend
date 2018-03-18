@@ -19,7 +19,7 @@ class HaveQuestionsForm extends Component {
           </div>
           <div className="display-block">
             <h3 className="grey-font">Message</h3>
-            <textarea className="question-textarea" rows="4" className="input-text-area" type="text" placeholder="Enter your message here(2000 words max)."/>
+            <textarea className="question-textarea input-text-area" rows="4" type="text" placeholder="Enter your message here(2000 words max)."/>
           </div>
           <button type="submit" className="orange white-font display-block bold submit-button">SUBMIT</button>
         </form>

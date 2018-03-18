@@ -4,7 +4,7 @@ import {Route, Switch} from 'react-router-dom';
 import SignIn from '../src/components/signin/Signin.js';
 import Footer from '../src/components/Footer.js';
 import HomePage from '../src/components/homepage/HomePage.js';
-import About from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/publicpages/About.js';
+import About from '../src/components/publicpages/About.js';
 import Butter from 'buttercms';
 
 
