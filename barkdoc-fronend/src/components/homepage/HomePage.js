@@ -4,6 +4,7 @@ import INeedAptmnt from './INeedAptmnt.js'
 import WhyBarkDoc from './WhyBarkDoc.js'
 import OurServices from './OurServices.js'
 import Reviews from './Reviews.js'
+import HaveQuestionsForm from './../HaveQuestionsForm.js'
 
 const HomePage = (props) => {
   return(
@@ -21,6 +22,7 @@ const HomePage = (props) => {
       <OurServices />
       </div>
       <Reviews homepage_reviews={props.homepage_reviews}/>
+      <HaveQuestionsForm />
     </div>
   )
 }

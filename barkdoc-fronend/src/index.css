@@ -18,6 +18,17 @@ input[type=text],input[type=password] {
   padding: 13px 10px 13px 10px;
 }
 
+textarea{
+  resize: none;
+  background: center center no-repeat;
+  border: 1px solid #ccc;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 13px 10px 13px 10px;
+
+}
+
 /* header/menu */
 .content{
   width: 90%;
@@ -353,11 +364,75 @@ li a {
 }
 
 .column-review {
-    float: left;
-    width: 50%;
-    margin-top: 25px;
+  float: left;
+  width: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  margin-top: 25px;
 }
 
 .quotes{
   display: inline-block;
+}
+
+img.column-review{
+  width: 10%;
+}
+
+.midle-width{
+  width: 27%;
+  margin-left:36.5%;
+  margin-top: 55px;
+}
+
+.button-make-at-home{
+  padding: 16px 16px;
+  border-style: none;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.container-review-zig-zag {
+    position: relative;
+    padding: 0px 0px 32px 0px;
+    background-color: white;
+}
+
+.container-review-zig-zag:after {
+    background: linear-gradient(-45deg, #f2f3f7 16px, transparent 0), linear-gradient(45deg, #f2f3f7 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+/* Have Questions Form */
+.input-49{
+  width: 49%;
+  float: left;
+}
+
+.padding-right-2{
+  padding-right: 2%;
+}
+
+.input-text-area{
+  width: 94%;
+}
+
+.content-width{
+  width: 30%;
+  margin-left: 30%;
+}
+
+.padding-top-60{
+  padding-top: 60px;
 }
