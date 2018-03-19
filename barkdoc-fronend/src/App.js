@@ -6,6 +6,7 @@ import Footer from '../src/components/Footer.js';
 import HomePage from '../src/components/homepage/HomePage.js';
 import About from '../src/components/publicpages/About.js';
 import ContactUs from '../src/components/publicpages/ContactUs.js';
+import Careers from '../src/components/publicpages/Careers.js';
 import Butter from 'buttercms';
 
 
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div>
       <Switch>
+      <Route path={`/careers`} component={ () => <Careers />} />
       <Route path={`/about`} component={ () => <About />} />
       <Route path={`/contact`} component={ () => <ContactUs />} />
       <Route path={`/user`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />

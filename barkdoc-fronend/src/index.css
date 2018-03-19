@@ -477,7 +477,6 @@ img.column-review{
   font-size: 33pt;
   background: transparent url("./img/about/about-background.png") top left no-repeat;
   width: 20%;
-
   }
 
 .container-pattern-zig-zag {
@@ -563,3 +562,17 @@ img.column-review{
 .margin-right-10px{
   margin-right: 10px;
 }
+
+/* Careers */
+
+.background-three-dog{
+  float: left;
+  width: 100%;
+  background: transparent url("./img/three-dogs.png") top left no-repeat;
+}
+
+.padding-career{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 33pt;
+  }
