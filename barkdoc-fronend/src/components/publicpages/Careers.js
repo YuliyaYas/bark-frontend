@@ -24,7 +24,10 @@ class Careers extends Component {
             <button className="float-right column-button button-apply-now-grey white-font bold">APPLY NOW</button>
           </div>
           <hr className="grey-font"/>
-          <div className="margin-20"><span className="grey-font bold  pt-14">Vet Tech </span><span className="light-grey-font bold font-9 ">New York, NY</span></div>
+          <div className="row">
+            <div className="margin-20 column-job-name"><span className="grey-font bold  pt-14">Vet Tech </span><span className="light-grey-font bold font-9 ">New York, NY</span></div>
+            <button className="float-right column-button button-apply-now-orange white-font bold">APPLY NOW</button>
+          </div>
           <hr className="grey-font"/>
 
 

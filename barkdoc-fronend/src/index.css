@@ -610,7 +610,12 @@ img.column-review{
   background-color: #7e7e7e;
   padding: 16px 16px;
   border-style: none;
-  width: 20%;
+
+}
+.button-apply-now-orange{
+  background-color: #f08e30;
+  padding: 16px 16px;
+  border-style: none;
 }
 
 .column-job-name {
