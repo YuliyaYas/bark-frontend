@@ -7,6 +7,7 @@ import HomePage from '../src/components/homepage/HomePage.js';
 import About from '../src/components/publicpages/About.js';
 import ContactUs from '../src/components/publicpages/ContactUs.js';
 import Careers from '../src/components/publicpages/Careers.js';
+import Jobs from '../src/components/publicpages/Jobs.js';
 import Butter from 'buttercms';
 
 
@@ -17,7 +18,8 @@ class App extends Component {
   constructor(){
     super()
     this.state = {
-      homepage_reviews: []
+      homepage_reviews: [],
+      job_posts: []
     }
   }
   componentDidMount(){
@@ -26,12 +28,20 @@ class App extends Component {
     .then((resp) => {
       this.setState({homepage_reviews: resp.data.data.review_items})
     });
+
+    butter.content.retrieve(["jobs", "job_posts"])
+    .then((resp) => {
+      this.setState({job_posts: resp.data.data.job_posts})
+    });
+
     }
 
   render() {
+    // console.log(this.state.job_posts)
     return (
       <div>
       <Switch>
+      <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />
       <Route path={`/about`} component={ () => <About />} />
       <Route path={`/contact`} component={ () => <ContactUs />} />

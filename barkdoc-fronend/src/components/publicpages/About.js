@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './../Header.js';
-import OurServices from '../OurServices.js'
-import HaveQuestionsForm from '../HaveQuestionsForm.js'
+import OurServices from '../OurServices.js';
+import HaveQuestionsForm from '../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 
 const About = () => {

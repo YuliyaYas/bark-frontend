@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from './../Header.js'
+import Header from './../Header.js';
 
 class SignIn extends Component {
   render(){
@@ -21,8 +21,8 @@ class SignIn extends Component {
         <img className="dog-bottom-img" alt="" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/dog_bottom.png")}/>
       </div>
       </div>
-    )
-  }
-}
+    );
+  };
+};
 
 export default SignIn;
