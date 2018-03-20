@@ -29,11 +29,11 @@ class Careers extends Component {
             <button className="float-right column-button button-apply-now-orange white-font bold">APPLY NOW</button>
           </div>
           <hr className="grey-font"/>
-
-
+          <br />
+        </div >
         </div>
         </div>
-        </div>
+        <div className="container-grey-zig-zag" />
         <HaveQuestionsForm />
         <DogBottom />
       </div>
