@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './../Header.js';
+import ReadyToApply from './ReadyToApply';
 
 const Jobs = (props) => {
 
@@ -32,6 +33,7 @@ const Jobs = (props) => {
 
          :
          ""}
+         <ReadyToApply />
     </div>
   );
 };
