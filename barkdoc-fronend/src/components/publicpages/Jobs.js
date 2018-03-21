@@ -16,7 +16,7 @@ const Jobs = (props) => {
           <h2 className="orange-font">About the Position</h2>
           <p>{props.job_posts[0].about}</p>
           <h2 className="orange-font">Whar Youll Do: </h2>
-          <ul>{props.job_posts[0].responsibilities.split('•').map((st,i)=> {
+          <ul>{props.job_posts[0].responsibilities.split('•').map((st,i)=>{
           if (st){
             return <li key={i}>{st}</li>
             }
