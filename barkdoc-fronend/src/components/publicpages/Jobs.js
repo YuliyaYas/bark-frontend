@@ -9,7 +9,7 @@ const Jobs = (props) => {
     <Header />
       {props.job_posts.length>0 ?
         <div className="content">
-          <div className="margin-top-60px">
+          <div className="margin-top-80px">
             <span className="grey-font bold  pt-20">{props.job_posts[0].title} </span>
             <span className="light-grey-font bold font-14 "> {props.job_posts[0].location}</span>
           </div>

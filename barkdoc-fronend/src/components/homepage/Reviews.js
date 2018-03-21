@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Reviews = (props) => {
-  console.log(props.homepage_reviews.length);
+  // console.log(props.homepage_reviews.length);
   return(
     <div className="white container-review-zig-zag">
       <div className="content white">

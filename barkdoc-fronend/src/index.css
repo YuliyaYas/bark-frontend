@@ -628,6 +628,10 @@ img.column-review{
     margin-top: 8px;
 }
 
+.margin-top-80px{
+  margin-top: 80px;
+}
+
 /*  Jobs */
 .margin-top-120px{
   margin-top: 120px;
@@ -646,4 +650,32 @@ img.column-review{
 
 .margin-left-35{
   margin-left: 35%;
+}
+
+.input-text-area-91 {
+    width: 91%;
+}
+
+/* Testimonials */
+
+.background-cat{
+  float: left;
+  width: 100%;
+  background: transparent url("./img/cat_background.png") top left no-repeat;
+}
+
+.pt-30{
+  font-size: 30pt;
+}
+
+.margin-30{
+  margin-left: 30%;
+}
+
+.width-22{
+  width: 22%;
+}
+
+.margin-39{
+  margin-left: 39%;
 }

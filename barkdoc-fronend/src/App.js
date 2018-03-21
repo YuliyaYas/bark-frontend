@@ -8,6 +8,7 @@ import About from '../src/components/publicpages/About.js';
 import ContactUs from '../src/components/publicpages/ContactUs.js';
 import Careers from '../src/components/publicpages/Careers.js';
 import Jobs from '../src/components/publicpages/Jobs.js';
+import Testimonials from '../src/components/publicpages/Testimonials.js';
 import Butter from 'buttercms';
 
 
@@ -41,6 +42,7 @@ class App extends Component {
     return (
       <div>
       <Switch>
+      <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />
       <Route path={`/about`} component={ () => <About />} />
