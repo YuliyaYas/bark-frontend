@@ -679,3 +679,9 @@ img.column-review{
 .margin-39{
   margin-left: 39%;
 }
+
+.background-bookings{
+  float: left;
+  width: 100%;
+  background: transparent url("./img/booking_dog.png") top left no-repeat;
+}
