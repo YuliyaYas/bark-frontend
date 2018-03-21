@@ -753,3 +753,19 @@ img.column-review{
 .margin-top-40{
   margin-top: 40px;
 }
+
+/* Vet profile */
+.background-vet-background{
+  float: left;
+  width: 100%;
+  background: transparent url("./img/vet-background.png") top left no-repeat;
+}
+
+.column-33{
+  float: left;
+  width: 33%;
+}
+.column-30{
+  float: left;
+  width: 30%;
+}
