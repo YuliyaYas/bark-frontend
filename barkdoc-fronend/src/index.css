@@ -685,3 +685,29 @@ img.column-review{
   width: 100%;
   background: transparent url("./img/booking_dog.png") top left no-repeat;
 }
+
+/* Vets Booking */
+
+.styled-select select {
+  background: transparent;
+  background-image: none;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+.styled-select {
+    width: 300px;
+    height: 35px;
+    overflow: hidden;
+    background: url(/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png) 96% / 20% no-repeat #eee;
+}
+
+.column-80 {
+  float: left;
+  width: 80%;
+}
+.column-20 {
+  float: left;
+  width: 20%;
+}

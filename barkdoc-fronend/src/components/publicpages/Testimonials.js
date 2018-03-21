@@ -5,7 +5,7 @@ import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 
 const Testimonials = (props) => {
-  console.log(props.testimonials)
+  // console.log(props.testimonials)
   return(
     <div>
       <div className="white">
