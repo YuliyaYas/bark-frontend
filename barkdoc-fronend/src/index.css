@@ -45,6 +45,7 @@ textarea{
 
 }
 
+
 /* header/menu */
 .content{
   width: 90%;
@@ -114,24 +115,24 @@ textarea{
   margin-top: -25px;
 }
 
-.container-black-zig-zag {
+.container-white-zig-zag {
     position: relative;
     padding: 0px 0px 32px 0px;
     background-color: none;
 }
 
-.container-black-zig-zag:after {
-    background: linear-gradient(-45deg, black 16px, transparent 0), linear-gradient(45deg, black 16px, transparent 0);
+.container-white-zig-zag:after {
+    background: linear-gradient(-45deg, white 16px, transparent 0), linear-gradient(45deg, white 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
     background-size: 17px 44px;
     content: " ";
     display: block;
     position: absolute;
-    /* bottom: 30px; */
     left: 0px;
     width: 100%;
-    height: 32px;
+    height: 100px;
+    margin-top: -70px;
 }
 
 .center{
