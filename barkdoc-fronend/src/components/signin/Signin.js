@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './../Header.js';
+import DogBottom from './../DogBottom.js';
 
 class SignIn extends Component {
   render(){
@@ -17,9 +18,7 @@ class SignIn extends Component {
         <input className="input-sign-in" type="password" placeholder="Enter your password here"/>
         <button className="orange white-font display-block sign-in-button">SIGN IN</button>
       </div>
-      <div>
-        <img className="dog-bottom-img" alt="" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/dog_bottom.png")}/>
-      </div>
+      <DogBottom />
       </div>
     );
   };

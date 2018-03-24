@@ -1,8 +1,24 @@
+@font-face {
+    font-family: 'Thin';
+    src: url('../src/fonts/Intro Cond Light Free.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('../src/fonts/Intro Cond Black Free.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('../src/fonts/Fontfabric - Intro-Black.otf'); /*URL to font*/
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
   background-color: #f2f3f7;
   font-size: 12px;
+  font-family: 'Regular';
 
 }
 
@@ -94,6 +110,30 @@ textarea{
 
 
 /* sign in */
+.div-dog{
+  margin-top: -25px;
+}
+
+.container-black-zig-zag {
+    position: relative;
+    padding: 0px 0px 32px 0px;
+    background-color: none;
+}
+
+.container-black-zig-zag:after {
+    background: linear-gradient(-45deg, black 16px, transparent 0), linear-gradient(45deg, black 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    /* bottom: 30px; */
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
 .center{
   text-align: center;
 }
