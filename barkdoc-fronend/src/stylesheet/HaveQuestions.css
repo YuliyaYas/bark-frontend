@@ -1,0 +1,43 @@
+.input-49{
+  width: 49%;
+  float: left;
+}
+
+.padding-right-2{
+  padding-right: 2%;
+}
+
+.input-text-area{
+  width: 94%;
+}
+
+.content-width{
+  width: 33%;
+  margin-left: 33%;
+}
+
+.padding-top-60{
+  padding-top: 60px;
+}
+
+.margin-bottom-20{
+  margin-bottom: 20px;
+}
+
+.submit-button{
+  padding: 14px 16px;
+  border-style: none;
+  width: 50%;
+  margin-left: 25%;
+  font-size: 14pt;
+}
+
+.font-24pt{
+  font-size: 24pt;
+}
+.font-15pt{
+  font-size: 15pt;
+}
+.font-14pt{
+  font-size: 14pt;
+}

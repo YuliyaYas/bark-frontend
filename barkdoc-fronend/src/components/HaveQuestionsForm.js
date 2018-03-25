@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/HaveQuestions.css';
 
 class HaveQuestionsForm extends Component {
   render(){

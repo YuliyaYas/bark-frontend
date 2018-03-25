@@ -1,0 +1,61 @@
+.content{
+  width: 90%;
+  margin-left: 5%;
+}
+
+.logo{
+  width: 70%;
+}
+
+.header{
+  overflow: hidden;
+  position: relative;
+  top: 20px;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.orange{
+  background-color: #f08e30;
+}
+
+.orange-font{
+  color: #f08e30;
+}
+
+.white{
+  background-color: white;
+}
+
+.white-font{
+  color: white;
+}
+
+.grey-font{
+  color: #7e7e7e;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.sign-in-icon{
+  background: transparent url("../img/repeated/sign_in_logo.png") top left no-repeat;
+  height: 31px;
+  padding-top: 11px;
+  padding-left: 37px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.book-button{
+  padding: 14px 16px;
+  margin: 18px;
+  border-style: none;
+}
