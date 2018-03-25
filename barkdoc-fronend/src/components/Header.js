@@ -6,7 +6,7 @@ class Header extends Component {
         <div className="content">
           <div className="header white equal-center-align">
             <div className=" float-left">
-              <img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/>
+              <a href="http://localhost:3001/user"><img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/></a>
             </div>
               <div className="float-right">
                 <button className="orange white-font book-button">SCHEDULE AN APPOINTMENT</button>
