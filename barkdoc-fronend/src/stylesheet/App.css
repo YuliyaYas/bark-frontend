@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Thin';
+    src: url('./Intro Cond Light Free.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('./Intro Cond Black Free.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('./Fontfabric - Intro-Black.otf'); /*URL to font*/
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f2f3f7;
+  font-size: 12px;
+  font-family: 'Regular';
+
+}
+
+*:focus {
+    outline: none;
+}
+
+input[type=text],input[type=password] {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 13px 10px 13px 10px;
+}
+
+textarea{
+  resize: none;
+  background: center center no-repeat;
+  border: 1px solid #ccc;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 13px 10px 13px 10px;
+
+}
