@@ -116,7 +116,7 @@ textarea{
 }
 
 .container-white-zig-zag {
-    position: relative;
+    /* position: relative; */
     padding: 0px 0px 32px 0px;
     background-color: none;
 }
@@ -132,8 +132,10 @@ textarea{
     left: 0px;
     width: 100%;
     height: 100px;
-    margin-top: -70px;
-}
+    bottom: -42px;
+    z-index: 1;
+    /* border-bottom: 37px solid red; */
+    }
 
 .center{
   text-align: center;
@@ -177,6 +179,9 @@ textarea{
   width: 60%;
   margin-left: 20%;
   padding-top: 60px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
 }
 
 .display-block{
@@ -809,4 +814,9 @@ img.column-review{
 .column-30{
   float: left;
   width: 30%;
+}
+
+.dog-position-relative{
+  position: relative;
+  height: 340px;
 }
