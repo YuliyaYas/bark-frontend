@@ -1,4 +1,6 @@
 import React from 'react';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/DogBottom.css';
+
 
 const DogBottom = () => {
   return(

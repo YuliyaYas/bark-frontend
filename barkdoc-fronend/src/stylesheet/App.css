@@ -49,3 +49,13 @@ textarea{
   position: relative;
   height: 340px;
 }
+
+.center{
+  text-align: center;
+}
+
+/*  new css for diff screens*/
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}

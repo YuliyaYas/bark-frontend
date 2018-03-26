@@ -1,9 +1,5 @@
-.div-dog{
-  margin-top: -25px;
-}
 
 .container-white-zig-zag {
-    /* position: relative; */
     padding: 0px 0px 32px 0px;
     background-color: none;
 }
@@ -23,10 +19,6 @@
     border-bottom: 30px solid white;
     }
 
-
-.center{
-  text-align: center;
-}
 
 .pt-26{
   font-size: 26pt;
@@ -62,14 +54,7 @@
   border-style: none;
 }
 
-.dog-bottom-img{
-  width: 60%;
-  margin-left: 20%;
-  padding-top: 60px;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-}
+
 
 .display-block{
   display: block;
