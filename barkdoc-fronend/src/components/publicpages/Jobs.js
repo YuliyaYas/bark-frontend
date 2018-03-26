@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './../Header.js';
 import ReadyToApply from './ReadyToApply';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/Job.css';
 
 const Jobs = (props) => {
 

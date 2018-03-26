@@ -4,7 +4,7 @@ import TestimonialCard from './TestimonialCard';
 import VetCard from './VetCard';
 import HaveQuestionsForm from './../HaveQuestionsForm.js'
 import DogBottom from './../DogBottom.js';
-
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/Vet.css';
 
 class Vets extends Component {
   constructor(props){

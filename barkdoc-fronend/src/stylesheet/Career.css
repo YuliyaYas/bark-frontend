@@ -1,0 +1,67 @@
+
+.background-three-dog{
+  float: left;
+  width: 100%;
+  background: transparent url("../img/three-dogs.png") top left no-repeat;
+}
+
+.padding-career{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 33pt;
+  }
+
+.margin-right-left{
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.pt-20{
+  font-size: 20pt;
+}
+
+.pt-14{
+  font-size: 14pt;
+}
+
+.margin-20{
+  margin: 20px;
+}
+
+.font-14{
+  font-size: 14pt;
+}
+.font-9{
+  font-size: 9pt;
+}
+
+.light-grey-font{
+  color: #999999;
+}
+
+
+.button-apply-now-grey{
+  background-color: #7e7e7e;
+  padding: 16px 16px;
+  border-style: none;
+
+}
+.button-apply-now-orange{
+  background-color: #f08e30;
+  padding: 16px 16px;
+  border-style: none;
+}
+
+.column-job-name {
+    float: left;
+    width: 40%;
+}
+.column-button {
+    float: right;
+    width: 25%;
+    margin-top: 8px;
+}
+
+.margin-top-80px{
+  margin-top: 80px;
+}

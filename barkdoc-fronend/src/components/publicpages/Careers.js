@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './../Header.js';
 import HaveQuestionsForm from './../HaveQuestionsForm';
 import DogBottom from './../DogBottom';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/Career.css';
 
 class Careers extends Component {
   render(){

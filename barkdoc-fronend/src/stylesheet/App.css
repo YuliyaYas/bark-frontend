@@ -44,3 +44,8 @@ textarea{
   padding: 13px 10px 13px 10px;
 
 }
+
+.dog-position-relative{
+  position: relative;
+  height: 340px;
+}

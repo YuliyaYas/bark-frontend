@@ -1,0 +1,28 @@
+
+.background-cat{
+  float: left;
+  width: 100%;
+  background: transparent url("../img/cat_background.png") top left no-repeat;
+}
+
+.pt-30{
+  font-size: 30pt;
+}
+
+.margin-30{
+  margin-left: 30%;
+}
+
+.width-22{
+  width: 22%;
+}
+
+.margin-39{
+  margin-left: 39%;
+}
+
+.background-bookings{
+  float: left;
+  width: 100%;
+  background: transparent url("../img/booking_dog.png") top left no-repeat;
+}

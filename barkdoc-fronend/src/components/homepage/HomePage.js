@@ -6,6 +6,7 @@ import OurServices from '../OurServices.js';
 import Reviews from './Reviews.js';
 import DogBottom from '/Users/yuliya/bark-frontend/barkdoc-fronend/src/components/DogBottom.js';
 import HaveQuestionsForm from './../HaveQuestionsForm.js';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/HomePage.css';
 
 const HomePage = (props) => {
   return(

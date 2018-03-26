@@ -3,6 +3,7 @@ import Header from './../Header.js';
 import OurServices from '../OurServices.js';
 import HaveQuestionsForm from '../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
+import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/About.css';
 
 const About = () => {
   return(

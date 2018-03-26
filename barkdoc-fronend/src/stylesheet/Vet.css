@@ -1,0 +1,67 @@
+
+.styled-select select {
+  background: transparent;
+  background-image: none;
+  width: 150px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+.styled-select {
+    width: 300px;
+    height: 35px;
+    overflow: hidden;
+    background: url(/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png) 96% / 20% no-repeat #eee;
+}
+
+.column-65 {
+  float: left;
+  width: 65%;
+}
+.column-20 {
+  float: left;
+  width: 20%;
+  margin-left: 10%;
+}
+
+.margin-top-60{
+  margin-top: 60px;
+}
+
+.column-45 {
+    float: left;
+    width: 45%;
+    margin-top: 25px;
+}
+/* vet Card */
+
+.extralight-grey{
+  background-color: #f9f9f9;
+}
+
+.vet-card-btn{
+  padding: 14px 16px;
+  margin: 18px;
+  border-style: none;
+  width: 160px;
+  border: 2px solid #cccccc;
+}
+
+.grey{
+  background-color: #cccccc;
+}
+
+.column-70 {
+    float: left;
+    width: 70%;
+}
+
+.doc-img{
+  width: 170px;
+  height: 170px;
+  margin: 25px;
+}
+
+.margin-top-40{
+  margin-top: 40px;
+}
