@@ -1,8 +1,14 @@
-.dog-bottom-img{
-  width: 60%;
-  margin-left: 20%;
-  padding-top: 60px;
-  position: absolute;
-  top: 0;
-  z-index: 2;
+.dog-bottom-img {
+    width: 670px;
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 50%;
+    margin-left: -355px;
+}
+
+.dog-position-relative{
+  position: relative;
+  height: 315px;
 }

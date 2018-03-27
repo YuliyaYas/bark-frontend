@@ -22,6 +22,12 @@ body {
 
 }
 
+@media (min-width:768px) {
+    body {
+        /* background-color: red; */
+    }
+}
+
 *:focus {
     outline: none;
 }
@@ -43,11 +49,6 @@ textarea{
   border-radius: 4px;
   padding: 13px 10px 13px 10px;
 
-}
-
-.dog-position-relative{
-  position: relative;
-  height: 340px;
 }
 
 .center{
