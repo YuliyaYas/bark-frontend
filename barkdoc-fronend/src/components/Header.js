@@ -11,6 +11,7 @@ class Header extends Component {
             </div>
               <div className="float-right">
                 <button className="orange white-font book-button">SCHEDULE AN APPOINTMENT</button>
+                <button className="orange-font book-button-mobile">BOOK APPT.</button>
               </div>
               <div className="float-right">
                 <a href="" className="grey-font underline sign-in-icon">SIGN IN</a>

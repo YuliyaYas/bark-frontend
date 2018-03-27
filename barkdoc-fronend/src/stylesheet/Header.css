@@ -15,6 +15,7 @@
 
 .float-left{
   float: left;
+  width: 50%;
 }
 
 .float-right{
@@ -60,9 +61,46 @@
   border-style: none;
 }
 
+.book-button-mobile {
+    padding: 14px 16px;
+    margin: 18px;
+    background: transparent;
+    border: 2px solid #f08e30;
+}
+
+.book-button-mobile {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .content {
     width: 96%;
     padding: 0 2% 0 2%;
+  }
+
+  .book-button {
+    display: none;
+  }
+
+  .book-button-mobile {
+    padding: 14px 16px;
+    margin: 18px;
+    background: transparent;
+    border: 2px solid #f08e30;
+    display: inline-block;
+  }
+
+  .float-left{
+    float: left;
+    width: 60%;
+  }
+
+  .float-right{
+    float: right;
+  }
+
+
+  .sign-in-icon{
+    display: none;
   }
 }
