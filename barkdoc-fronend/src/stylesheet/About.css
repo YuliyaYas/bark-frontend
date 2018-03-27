@@ -4,14 +4,6 @@
   background: transparent url("../img/about/pet_pattern.png") top left repeat;
 }
 
-.padding-about{
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 33pt;
-  background: transparent url("../img/about/about-background.png") top left no-repeat;
-  width: 20%;
-  }
-
 .container-pattern-zig-zag {
     position: relative;
     padding: 0px 0px 32px 0px;
@@ -94,4 +86,39 @@
 
 .margin-right-10px{
   margin-right: 10px;
+}
+
+
+/* larger than mobile - stubborn elements that won't resize  */
+@media(min-width: 769px) {
+  .padding-about{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 33pt;
+    background: transparent url("../img/about/about-background.png") top left no-repeat;
+    width: 20%;
+  }
+}
+
+/* mobile media query */
+@media (max-width: 768px) {
+  .padding-about{
+    padding-top: 40px;
+    font-size: 20pt;
+    width: 90%;
+  }
+
+  .founder {
+    width: 80%;
+    margin: 10% 0;
+    text-align: center;
+  }
+
+  .pt-26 {
+    font-size: 20pt;
+  }
+
+  .width-54{
+    width: 100%;
+  }
 }

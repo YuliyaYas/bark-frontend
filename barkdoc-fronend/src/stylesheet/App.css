@@ -22,11 +22,13 @@ body {
 
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     body {
-        /* background-color: red; */
+        background-color: red;
     }
-}
+} */
+
+
 
 *:focus {
     outline: none;
