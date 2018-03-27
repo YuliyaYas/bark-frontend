@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Thin';
-    src: url('./Intro Cond Light Free.otf'); /*URL to font*/
+    src: url('./../fonts/Intro Cond Light Free.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'Bold';
-    src: url('./Intro Cond Black Free.otf'); /*URL to font*/
+    src: url('./../fonts/Intro Cond Black Free.otf'); /*URL to font*/
 }
 @font-face {
     font-family: 'Regular';
-    src: url('./Fontfabric - Intro-Black.otf'); /*URL to font*/
+    src: url('./../fonts/Fontfabric - Intro-Black.otf'); /*URL to font*/
 }
 
 
