@@ -41,3 +41,10 @@
 .font-14pt{
   font-size: 14pt;
 }
+
+@media (max-width: 768px) {
+  .content-width{
+    width: 90%;
+    margin-left: 5%;
+  }
+}
