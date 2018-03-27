@@ -90,7 +90,36 @@
 
 .founder {
   margin-top: 40px;
+}
 
+.services-desktop {
+  display: block;
+}
+
+.services-mobile {
+  display: none;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.col-left {
+  margin-left: 10%;
+}
+
+.col-right {
+  margin-left: 5%;
+}
+
+.col-left p {
+  text-align: left;
+}
+
+.col-right p {
+  text-align: left;
 }
 
 
@@ -137,11 +166,11 @@
     padding-right: 0;
   }
 
-  .founder {
+  /* .founder {
     width: 80%;
     margin-top: 50px;
     text-align: center;
-  }
+  } */
 
   .pt-26 {
     font-size: 20pt;
@@ -149,5 +178,13 @@
 
   .width-54{
     width: 100%;
+  }
+
+  .services-desktop {
+    display: none;
+  }
+
+  .services-mobile {
+    display: block;
   }
 }

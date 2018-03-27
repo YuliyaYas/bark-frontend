@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./../Header.js";
 import OurServices from "../OurServices.js";
+import OurServicesMobile from "../OurServicesMobile.js";
 import HaveQuestionsForm from "../HaveQuestionsForm.js";
 import DogBottom from "./../DogBottom.js";
 import "./../../stylesheet/About.css";
@@ -75,6 +76,7 @@ const About = () => {
       </div>
       <div className="container-brown-zig-zag"> </div>
       <OurServices />
+      <OurServicesMobile />
       <div className="container-grey-zig-zag"> </div>
       <HaveQuestionsForm />
       <DogBottom />
