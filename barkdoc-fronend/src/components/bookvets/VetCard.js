@@ -4,7 +4,7 @@ const VetCard = () => {
   return(
     <div className="extralight-grey row margin-top-40">
       <div className="column-70 grey-font">
-        <img className="float-left doc-img" alt="doc" src={require('/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/doctor-1.png')} />
+        <img className="float-left doc-img" alt="doc" src={require('./../../img/doctor-1.png')} />
         <p>Dr. Matt E, VMD</p>
         <p>Veterinariae Medicinae Doctor</p>
         <p>Verified Patient Reviews</p>

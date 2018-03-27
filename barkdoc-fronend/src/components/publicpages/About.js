@@ -3,7 +3,7 @@ import Header from './../Header.js';
 import OurServices from '../OurServices.js';
 import HaveQuestionsForm from '../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
-import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/About.css';
+import './../../stylesheet/About.css';
 
 const About = () => {
   return(
@@ -19,7 +19,7 @@ const About = () => {
       <div className="row grey-font font-11pt">
         <div className="column-about padding-right-20">
           <p className="width-54">
-          <img alt="" className="B-float" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/about/b.png")} />
+          <img alt="" className="B-float" src={require("./../../img/about/b.png")} />
               arkDoc founder Shana Urban was balancing a Fashion
               Buying career for 12 years with a busy schedule, her own
               rescue mutt Toodles, as well help fostering and getting
@@ -47,7 +47,7 @@ const About = () => {
           </p>
         </div>
         <div className="column-shana-img">
-          <img alt="" className="shana-img" src={require("/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/about/shana_dog.png")} />
+          <img alt="" className="shana-img" src={require("./../../img/about/shana_dog.png")} />
         </div>
       </div>
       </div>

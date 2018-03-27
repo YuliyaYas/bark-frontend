@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './../Header.js';
 import DogBottom from './../DogBottom.js';
-import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/Signin.css';
+import './../../stylesheet/Signin.css';
 
 class SignIn extends Component {
   render(){

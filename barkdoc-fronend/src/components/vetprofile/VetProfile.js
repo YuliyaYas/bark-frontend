@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './../Header';
 import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
-import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/VetProfile.css';
+import './../../stylesheet/VetProfile.css';
 
 const VetProfile = () => {
   return(

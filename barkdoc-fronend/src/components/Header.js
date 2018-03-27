@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '/Users/yuliya/bark-frontend/barkdoc-fronend/src/stylesheet/Header.css';
+import './../stylesheet/Header.css';
 
 class Header extends Component {
   render(){
