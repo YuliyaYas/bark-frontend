@@ -12,3 +12,20 @@
   position: relative;
   height: 315px;
 }
+
+@media (max-width: 768px) {
+  .dog-position-relative{
+    position: relative;
+    height: 200px;
+  }
+
+  .dog-bottom-img {
+      width: 80%;
+      padding-top: 60px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      /* left: 50%; */
+      margin-left: -160px;
+  }
+}
