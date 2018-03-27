@@ -99,7 +99,7 @@
     float: right;
   }
 
-
+/* hiding sign-in until we build hamburger menu */
   .sign-in-icon{
     display: none;
   }

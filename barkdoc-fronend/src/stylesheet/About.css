@@ -88,6 +88,11 @@
   margin-right: 10px;
 }
 
+.founder {
+  margin-top: 40px;
+
+}
+
 
 /* larger than mobile - stubborn elements that won't resize  */
 @media(min-width: 769px) {
@@ -102,15 +107,39 @@
 
 /* mobile media query */
 @media (max-width: 768px) {
+  .flexing {
+    display: flex;
+    flex: 1;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
   .padding-about{
     padding-top: 40px;
     font-size: 20pt;
     width: 90%;
   }
 
+  .column-about {
+      width: 90%;
+      margin: 0 5%;
+      /* margin-top: 25px; */
+  }
+
+  .column-shana-img {
+      float: left;
+      width: 80%;
+      margin: 25px 10% 0;
+      margin-top: 25px;
+  }
+
+  .padding-right-20{
+    padding-right: 0;
+  }
+
   .founder {
     width: 80%;
-    margin: 10% 0;
+    margin-top: 50px;
     text-align: center;
   }
 

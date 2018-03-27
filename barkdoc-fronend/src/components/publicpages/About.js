@@ -14,9 +14,10 @@ const About = () => {
       </div>
       <div className="white">
         <div className="content white">
-          <div className="center grey-font pt-26 bold founder"><span>Founder Shana Urban</span></div>
+          <div className="center grey-font pt-26 bold">Founder Shana Urban</div>
           <hr className="grey-font length-25" />
-          <div className="row grey-font font-11pt">
+          
+        <div className="row grey-font font-11pt flexing">
             <div className="column-about padding-right-20">
               <p className="width-54">
                 <img
