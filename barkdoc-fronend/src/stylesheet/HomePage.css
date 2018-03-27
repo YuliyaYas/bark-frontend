@@ -239,6 +239,12 @@ img.column-review{
 
 @media (max-width: 768px) {
   .margin-left-44{
-    margin-left: 40%;
+    margin-left: 30%;
+  }
+
+  .button-meet-our-vets{
+      width: 40%;
+      padding: 17px 0;;
+      border-style: none;
   }
 }
