@@ -72,8 +72,6 @@ class Vets extends Component {
           </div>
         <div className="container-grey-zig-zag"></div>
         <HaveQuestionsForm />
-        <div className="container-grey-zig-zag"></div>
-        <HaveQuestionsForm />
         <DogBottom />
       </div>
     );

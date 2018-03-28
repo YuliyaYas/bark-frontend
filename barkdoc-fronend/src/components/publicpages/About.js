@@ -9,7 +9,7 @@ import "./../../stylesheet/About.css";
 const About = () => {
   return (
     <div className="main">
-      <div className="background-pet-pattern container-pattern-zig-zag">
+      <div className="background-pet-pattern container-white-zig-zag">
         <Header />
         <h1 className="white-font content bold padding-about">About Us</h1>
       </div>
@@ -17,7 +17,7 @@ const About = () => {
         <div className="content white">
           <div className="center grey-font pt-26 bold">Founder Shana Urban</div>
           <hr className="grey-font length-25" />
-          
+
         <div className="row grey-font font-11pt flexing">
             <div className="column-about padding-right-20">
               <p className="width-54">
