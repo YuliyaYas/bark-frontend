@@ -15,7 +15,7 @@ const FAQs = (props) => {
           <Header />
           <h1 className="white-font content bold padding-faq">FAQS</h1>
         </div>
-        <div className="content grey-font">
+        <div className="content grey-font emerg-list">
           {props.faqs.length !== 0
             ?
               props.faqs.map((faq, i) => {
@@ -26,11 +26,11 @@ const FAQs = (props) => {
                 ?
                 <div>
                 <p>{faq.answer.split('<li>')[0]}</p>
-                {faq.answer.split('<li>').splice(1).map((answer,k) => {
+                <ul>{faq.answer.split('<li>').splice(1).map((answer,k) => {
                   return(
-                    <p key={k}>-{answer}</p>
+                    <li key={k}>{answer}</li>
                   )})
-                }
+                }</ul>
 
                 </div>
 

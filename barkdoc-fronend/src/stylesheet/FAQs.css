@@ -42,3 +42,14 @@
   margin: 18px 0px 18px 0px;
   border-style: none;
 }
+
+
+.emerg-list ul {list-style: none}
+
+.emerg-list li::before {
+  content: "•";
+  color: #f08e30;
+  display: inline-block; width: 1em;
+  font-size: 15px;
+  margin-left: -1em;
+}
