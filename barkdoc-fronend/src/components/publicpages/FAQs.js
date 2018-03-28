@@ -7,13 +7,13 @@ import DogBottom from './../DogBottom.js';
 
 
 const FAQs = (props) => {
-  console.log(props.faqs.length !== 0 ? props.faqs[4].answer.split('<li>') : 'no')
+  console.log(props.faqs.length !== 0 ? props.faqs : 'no')
   return(
     <div>
       <div className="white">
         <div className="background-white-dog container-pattern-zig-zag">
           <Header />
-          <h1 className="white-font content bold padding-faq">FAQ'S</h1>
+          <h1 className="white-font content bold padding-faq">FAQS</h1>
         </div>
         <div className="content grey-font">
           {props.faqs.length !== 0
@@ -29,7 +29,9 @@ const FAQs = (props) => {
                 {faq.answer.split('<li>').splice(1).map((answer,k) => {
                   return(
                     <p key={k}>-{answer}</p>
-                  )})}
+                  )})
+                }
+
                 </div>
 
                 :
@@ -38,11 +40,15 @@ const FAQs = (props) => {
                     <p key={k}>{answer}</p>
                   )
                 })}
+                <h1>{faq.button === true ? <button className="orange white-font find-more-btn">FIND OUT MORE</button> : ""}</h1>
                 </div>
               )})
             :
               ''
           }
+          <h3>Have a question that isn’t on here?</h3>
+          <p>Click the Contact Us button below with your inquiry and someone will get back to you shortly.</p>
+          <button className="orange white-font contact-btn">CONTACT US</button>
       </div>
       <div className="container-grey-zig-zag"></div>
       </div>

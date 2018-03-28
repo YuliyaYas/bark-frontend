@@ -30,3 +30,15 @@
   font-size: 33pt;
   width: 20%;
 }
+
+.contact-btn{
+  padding: 14px 16px;
+  margin: 18px 0px 54px 0px;
+  border-style: none;
+}
+
+.find-more-btn{
+  padding: 14px 16px;
+  margin: 18px 0px 18px 0px;
+  border-style: none;
+}
