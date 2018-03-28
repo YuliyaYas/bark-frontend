@@ -1,17 +1,15 @@
 @font-face {
     font-family: 'Thin';
-    src: url('./../fonts/Intro Cond Light Free.otf'); /*URL to font*/
+    src: url('./../fonts/Intro Cond Light Free.otf');
 }
 @font-face {
     font-family: 'Bold';
-    src: url('./../fonts/Intro Cond Black Free.otf'); /*URL to font*/
+    src: url('./../fonts/Intro Cond Black Free.otf');
 }
 @font-face {
     font-family: 'Regular';
-    src: url('./../fonts/Fontfabric - Intro-Black.otf'); /*URL to font*/
+    src: url('./../fonts/Fontfabric - Intro-Black.otf');
 }
-
-
 
 body, html {
   margin: 0;
@@ -22,13 +20,9 @@ body, html {
 
 }
 
-/* @media (min-width:768px) {
-    body {
-        background-color: red;
-    }
-} */
-
-
+p{
+  font-family: 'no';
+}
 
 *:focus {
     outline: none;

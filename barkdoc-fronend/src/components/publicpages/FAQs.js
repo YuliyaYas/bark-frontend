@@ -7,7 +7,7 @@ import DogBottom from './../DogBottom.js';
 
 
 const FAQs = (props) => {
-  console.log(props.faqs.length !== 0 ? props.faqs : 'no')
+  console.log(props.faqs.length !== 0 ? props.faqs[4].answer.split('<li>') : 'no')
   return(
     <div>
       <div className="white">
@@ -15,14 +15,29 @@ const FAQs = (props) => {
           <Header />
           <h1 className="white-font content bold padding-faq">FAQ'S</h1>
         </div>
-        <div className="content">
+        <div className="content grey-font">
           {props.faqs.length !== 0
             ?
               props.faqs.map((faq, i) => {
                 return (
                 <div key={i}>
-                <p>{faq.question}</p>
-                <p>{faq.answer}</p>
+                <h3>{faq.question}</h3>
+                {faq.answer.includes("<li>")
+                ?
+                <div>
+                <p>{faq.answer.split('<li>')[0]}</p>
+                {faq.answer.split('<li>').splice(1).map((answer,k) => {
+                  return(
+                    <p key={k}>-{answer}</p>
+                  )})}
+                </div>
+
+                :
+                faq.answer.split('--').map((answer,k) => {
+                  return(
+                    <p key={k}>{answer}</p>
+                  )
+                })}
                 </div>
               )})
             :
