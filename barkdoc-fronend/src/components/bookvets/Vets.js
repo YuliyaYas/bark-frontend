@@ -7,9 +7,6 @@ import DogBottom from './../DogBottom.js';
 import './../../stylesheet/Vet.css';
 
 class Vets extends Component {
-  constructor(props){
-    super(props);
-  };
 
   render(){
     // console.log("test", this.props.testimonials)
