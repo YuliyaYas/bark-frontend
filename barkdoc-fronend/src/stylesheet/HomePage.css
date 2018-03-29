@@ -320,6 +320,16 @@ img.column-review{
     margin-left: 50%;
   } */
 
+  .midle-width {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .button-make-at-home {
+    width: 70%;
+    margin-left: 15%;
+  }
+
   .button-meet-our-vets{
       width: 40%;
       padding: 17px 0;;
