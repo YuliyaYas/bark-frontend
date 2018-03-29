@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Reviews = (props) => {
   // console.log(props.homepage_reviews.length);
@@ -67,7 +68,7 @@ const Reviews = (props) => {
       Ready to Raise the
       Woof With BarkDoc?
     </div>
-    <button className="orange white-font button-make-at-home bold">MAKE MY AT HOME APPOINTMENT</button>
+      <Link to="/user/vets"><button className="orange white-font button-make-at-home bold">MAKE MY AT HOME APPOINTMENT</button></Link>
 
     </div>
   );
