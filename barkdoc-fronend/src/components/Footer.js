@@ -7,6 +7,23 @@ class Footer extends Component {
       <div className="white">
         <div className="width-90">
           <div>
+          <div className="float-right">
+            <ul className="ul-style-r">
+              <li className="li-style-r">
+                <a href="#facebook"> <img src={require("../img/facebook-icon.png")} alt="" /> </a>
+              </li>
+              <li className="li-style-r">
+                <a href="#facebook"> <img src={require("../img/twitter-icon.png")} alt="" /> </a>
+              </li>
+              <li className="li-style-r">
+                <a href="#facebook"> <img src={require("../img/instagram-icon.png")} alt="" /> </a>
+              </li>
+              <li className="li-style-r">
+                <a href="#facebook"> <img src={require("../img/youtube-icon.png")} alt="" /> </a>
+              </li>
+
+            </ul>
+          </div>
             <ul className="ul-style">
               <li className="li-style">
                 <a href="http://localhost:3001/about"> About </a>
@@ -34,6 +51,7 @@ class Footer extends Component {
               </li>
             </ul>
           </div>
+
         <div>
         <ul className="ul-style">
           <li className="li-style">

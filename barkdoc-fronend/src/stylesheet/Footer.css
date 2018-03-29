@@ -7,9 +7,26 @@
     overflow: hidden;
 }
 
+.li-style-r {
+    float: right;
+}
+
+.ul-style-r {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .li-style {
     float: left;
 }
+
+.ul-style-r li a {
+    display: block;
+    text-align: center;
+    padding: 0px 5px;
+  }
 
 li a {
     display: block;
