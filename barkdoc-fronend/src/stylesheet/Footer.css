@@ -25,7 +25,7 @@
 .ul-style-r li a {
     display: block;
     text-align: center;
-    padding: 0px 5px;
+    padding: 0px 2px;
   }
 
 li a {
@@ -40,6 +40,10 @@ li a {
   width: 90%;
   background-color: white;
   margin-left: 5%;
+}
+
+.icon{
+  width: 80%;
 }
 
 @media (max-width: 768px) {
