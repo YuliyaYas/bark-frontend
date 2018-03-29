@@ -71,3 +71,15 @@
 .input-sign-in{
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .sign-in-form{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+  }
+
+  #facebook-login {
+    margin-top: 20px;
+  }
+}
