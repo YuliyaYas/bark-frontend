@@ -247,7 +247,6 @@ img.column-review{
     /* background-position-y: top; */
   }
 
-
   .font-40pt {
     font-size: 25pt;
     margin-left: 20px;
@@ -271,7 +270,30 @@ img.column-review{
 
   .styled {
     margin-left: 20px;
-    border: 1px solid #f08e30;;
+    border: 1px solid #f08e30;
+    width: 50%;
+  }
+
+  .column {
+      width: 90%;
+      margin-left: 5%;
+      text-align: center;
+      margin-top: 25px;
+  }
+
+  .margin-41 {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .width-40 {
+    margin-left: 10%;
+    width: 80%;
+    font-size: 12pt;
+  }
+
+  h3 {
+    font-size: 14pt;
   }
 
   .button-meet-our-vets{
