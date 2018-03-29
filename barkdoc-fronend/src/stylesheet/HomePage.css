@@ -238,8 +238,40 @@ img.column-review{
 
 
 @media (max-width: 768px) {
+  .pug-background{
+    background-image: url("../img/homepage/pug.png");
+    background-repeat: no-repeat;
+    height: 600px;
+    /* width: 100%; */
+    background-size: cover;
+    /* background-position-y: top; */
+  }
+
+
+  .font-40pt {
+    font-size: 25pt;
+    margin-left: 20px;
+  }
+
+  .width-35 {
+    width: 90%;
+  }
+
+  .font-16 {
+    margin-left: 20px;
+  }
+
   .margin-left-44{
     margin-left: 30%;
+  }
+
+  .continue-button {
+    margin-left: 20px;
+  }
+
+  .styled {
+    margin-left: 20px;
+    border: 1px solid #f08e30;;
   }
 
   .button-meet-our-vets{
