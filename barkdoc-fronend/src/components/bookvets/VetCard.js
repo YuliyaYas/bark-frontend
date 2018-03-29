@@ -13,7 +13,7 @@ const VetCard = () => {
         I booked a time and Dr. Matt showed up at my house!”</p>
         <p>"Dr. Matt always shows up with a treat. Now my dog doesn’t mind the vet at all!”</p>
       </div>
-      <div className="column-20">VET</div>
+      <div className="column-20"></div>
         <button className="vet-card-btn grey grey-font bold">BOOK DR.MATT</button>
         <button className="vet-card-btn white grey-font bold">VIEW FULL PROFILE</button>
     </div>
