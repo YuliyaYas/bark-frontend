@@ -22,8 +22,7 @@ class HaveQuestionsForm extends Component {
   };
 
   handleSubmit = (e) => {
-    e.preventDefault()
-    alert("submitted")
+    e.preventDefault();
   }
 
 
