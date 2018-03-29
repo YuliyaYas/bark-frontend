@@ -296,6 +296,30 @@ img.column-review{
     font-size: 14pt;
   }
 
+  .column-review {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    float: left;
+    width: 80%;
+    padding-left: 10%;
+    /* padding-right: 15%; */
+    margin-top: 25px;
+  }
+
+  .profile-image {
+    margin: -80px 55% -20px;
+
+  }
+
+  .review-name {
+    order: -1;
+  }
+
+  /* .margin-left-30 {
+    margin-left: 50%;
+  } */
+
   .button-meet-our-vets{
       width: 40%;
       padding: 17px 0;;
