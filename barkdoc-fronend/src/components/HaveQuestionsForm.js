@@ -2,25 +2,37 @@ import React, {Component} from 'react';
 import './../stylesheet/HaveQuestions.css';
 
 class HaveQuestionsForm extends Component {
+  constructor(){
+    super();
+    this.state = {
+      email: "",
+      name: "",
+      phone: "",
+      message: ""
+    };
+  };
+
+
   render(){
+      console.log(this.state);
     return(
       <div className="content-width">
         <div className="center grey-font pt-26 bold padding-top-60">Have Questions?</div>
         <hr className="grey-font length-40"/>
         <form>
           <h3 className="display-block grey-font">Email Address</h3>
-          <input className="input-sign-in" type="text" placeholder="Enter your email address here"/>
+          <input className="input-sign-in" type="text" name="email" placeholder="Enter your email address here" required/>
           <div className="input-49 padding-right-2 margin-bottom-20">
             <h3 className="display-block grey-font">Full Name</h3>
-            <input className="input-sign-in" type="text" placeholder="Enter your name here"/>
+            <input className="input-sign-in" type="text" name="name" placeholder="Enter your name here" required/>
           </div>
           <div className="input-49 margin-bottom-20">
             <h3 className="display-block grey-font">Phone</h3>
-            <input className="input-sign-in" type="text" placeholder="Enter your phone here"/>
+            <input className="input-sign-in" type="text" name="phone" placeholder="Enter your phone here" required/>
           </div>
           <div className="display-block">
             <h3 className="grey-font">Message</h3>
-            <textarea className="question-textarea input-text-area" rows="4" type="text" placeholder="Enter your message here(2000 words max)."/>
+            <textarea className="question-textarea input-text-area" name="message" rows="4" type="text" placeholder="Enter your message here(2000 words max)."/>
           </div>
           <button type="submit" className="orange white-font display-block bold submit-button">SUBMIT</button>
         </form>

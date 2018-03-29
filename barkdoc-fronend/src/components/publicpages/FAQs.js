@@ -28,7 +28,9 @@ const FAQs = (props) => {
                 <p>{faq.answer.split('<li>')[0]}</p>
                 <ul>{faq.answer.split('<li>').splice(1).map((answer,k) => {
                   return(
-                    <li key={k}>{answer}</li>
+                    <li key={k}>{answer.split(/[0-9]+/).splice(0,1)}
+                    <p>{answer.replace(answer.split(/[0-9]+/)[0] , '')}</p>
+                    </li>
                   )})
                 }</ul>
 
