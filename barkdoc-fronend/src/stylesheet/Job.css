@@ -20,3 +20,20 @@
 .input-text-area-91 {
     width: 91%;
 }
+
+@media (max-width: 768px) {
+  .content-width-40 {
+    margin-left: 5%;
+    padding-bottom: 30px;
+    width: 90%;
+  }
+
+  .margin-left-35{
+    margin-left: 25%;
+    width: 50%;
+  }
+
+  .input-text-area-91 {
+      width: 86%;
+  }
+}
