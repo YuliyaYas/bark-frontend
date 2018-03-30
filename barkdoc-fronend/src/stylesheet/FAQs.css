@@ -53,3 +53,10 @@
   font-size: 15px;
   margin-left: -1em;
 }
+
+@media (max-width: 768px) {
+  .padding-faq {
+    float: left;
+    margin-left: 2%;
+  }
+}
