@@ -26,6 +26,7 @@
 
 .length{
   width: 35%;
+  margin-top: -20px;
 }
 
 .line {
@@ -44,6 +45,7 @@
 .sign-in-form{
   width: 25%;
   margin-left: 35%;
+  margin-top: 20px;
 }
 
 #facebook-login{
@@ -52,6 +54,7 @@
   color: white;
   width: 100%;
   border-style: none;
+  margin-top: 20px;
 }
 
 .display-block{
@@ -68,6 +71,7 @@
 
 .input-sign-in{
   width: 100%;
+  border-radius: 0;
 }
 
 @media (max-width: 768px) {

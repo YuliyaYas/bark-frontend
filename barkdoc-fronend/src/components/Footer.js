@@ -4,10 +4,10 @@ import './../../src/stylesheet/Footer.css';
 class Footer extends Component {
   render(){
     return(
-      <div className="white">
-        <div className="width-90">
+      <div className="white footer">
+        <div className="width-90 footer">
           <div>
-          <div className="float-right">
+          <div className="float-right-footer">
             <ul className="ul-style-r">
               <li className="li-style-r">
               <a href="#youtube"> <img className="icon" src={require("../img/youtube-icon.png")} alt="" /> </a>

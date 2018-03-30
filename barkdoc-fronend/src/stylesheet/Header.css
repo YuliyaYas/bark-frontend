@@ -19,6 +19,7 @@
   width: 50%;
 }
 
+
 .float-right{
   float: right;
 }
@@ -97,6 +98,10 @@
   }
 
   .float-right{
+    float: right;
+  }
+
+  .ul-style {
     float: right;
   }
 
