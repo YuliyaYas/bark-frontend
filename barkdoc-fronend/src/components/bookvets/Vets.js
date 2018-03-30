@@ -24,7 +24,7 @@ class Vets extends Component {
             <h1 className="white-font bold content padding-career">Book an Appointment</h1>
           </div>
           <div className="white">
-          <div className="content">
+          <div className="content" onLoad={() => alert("hi")}>
           <div className="row">
             <div className="column-65">
               <div className="row">
