@@ -48,10 +48,12 @@ li a {
   li a {
       display: block;
       text-align: center;
+      /* margin: 14px 6px; */
       padding: 14px 6px;
-      /* padding: 14px 16px; */
       text-decoration: none;
       color: #7e7e7e;
+      text-align: left;
+
   }
 
   .footer {
@@ -64,9 +66,32 @@ li a {
 
   .float-right-footer {
     float: left;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .ul-style {
     float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .li-style {
+    flex-basis: 20%;
+    width: 150px;
+  }
+
+  .wider a {
+    width: 150px;
+  }
+
+  .smaller {
+    font-size: 10px;
+  }
+
+  .smaller a {
+    max-width: 100px;
+    font-family: 'Regular';
   }
 }

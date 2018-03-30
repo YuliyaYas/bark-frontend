@@ -46,21 +46,21 @@ class Footer extends Component {
               <li className="li-style">
                 <a href=""> Pricing </a>
               </li>
-              <li className="li-style">
-                <a href=""> Trasted Partners </a>
+              <li className="li-style wider">
+                <a href=""> Trusted Partners </a>
               </li>
             </ul>
           </div>
 
         <div>
-        <ul className="ul-style">
-          <li className="li-style">
+        <ul className="ul-style smaller">
+          <li className="li-style wider">
             <a href="">® 2018 BarkDoc™</a>
           </li>
           <li className="li-style">
             <a href="">Privacy</a>
           </li>
-          <li className="li-style">
+          <li className="li-style wider">
             <a href=""> Terms of Use</a>
           </li>
         </ul>
