@@ -6,11 +6,13 @@ const Overlay1 = () => {
     <div className="overlay-popup">
       <img className="logo-white" src={require("./../../img/repeated/white-logo.png")} alt=""/>
     <div>
-      <form>
-      <h1>Where Should We Swing By?</h1>
-      <p> Let us know your pet's location to continue </p>
+      <form className="location-form form-position">
+      <div className="where-spacing">
+        <h1>Where Should We Swing By?</h1>
+        <p> Let us know your pet's location to continue </p>
+      </div>
       <p>*My Pet's Location:</p>
-      <select className="styled-select grey-font bold">
+      <select className="styled-select-location grey-font bold">
         <option value="location">Manhattan</option>
         <option value="location">Bronx</option>
         <option value="location">Queens</option>
