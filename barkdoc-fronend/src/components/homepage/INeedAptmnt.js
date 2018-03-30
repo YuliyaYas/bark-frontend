@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class INeedAptmnt extends Component{
   render(){
@@ -18,7 +19,7 @@ class INeedAptmnt extends Component{
         <option value="cat">Cat</option>
       </select>
       </div>
-      <button type="submit" className="orange no-border white-font continue-button">CONTINUE</button>
+      <Link to="/user/vets"><button type="submit" className="orange no-border white-font continue-button">CONTINUE</button></Link>
       </form>
       </div>
       </div>

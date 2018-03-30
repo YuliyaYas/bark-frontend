@@ -1,9 +1,11 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Header from './../Header.js';
 import OurServices from './../OurServices.js';
 import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 import './../../stylesheet/Testimonials.css';
+
 
 const Testimonials = (props) => {
   // console.log(props.testimonials)
@@ -89,7 +91,7 @@ const Testimonials = (props) => {
         }
       <div className="center grey-font pt-30 bold width-40 margin-30 margin-top-80px">Ready to Raise the
       Woof With BarkDoc?</div>
-      <button className="orange white-font margin-39 width-22 display-block sign-in-button bold">SCHEDULE MY AT HOME APPOINTMENT</button>
+      <Link to="/user/vets"><button className="orange white-font margin-39 width-22 display-block sign-in-button bold">SCHEDULE MY AT HOME APPOINTMENT</button></Link>
     </div>
     <div className="container-brown-zig-zag" />
     <OurServices />

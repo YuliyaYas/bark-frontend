@@ -7,9 +7,26 @@
     overflow: hidden;
 }
 
+.li-style-r {
+    float: right;
+}
+
+.ul-style-r {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .li-style {
     float: left;
 }
+
+.ul-style-r li a {
+    display: block;
+    text-align: center;
+    padding: 0px 2px;
+  }
 
 li a {
     display: block;
@@ -23,6 +40,10 @@ li a {
   width: 90%;
   background-color: white;
   margin-left: 5%;
+}
+
+.icon{
+  width: 80%;
 }
 
 @media (max-width: 768px) {
