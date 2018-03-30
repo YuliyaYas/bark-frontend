@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './../Header';
 import TestimonialCard from './TestimonialCard';
 import VetCard from './VetCard';
+import Overlay1 from './Overlay1';
 import HaveQuestionsForm from './../HaveQuestionsForm.js'
 import DogBottom from './../DogBottom.js';
 import './../../stylesheet/Vet.css';
@@ -72,6 +73,7 @@ class Vets extends Component {
           </div>
         <div className="container-grey-zig-zag"></div>
         <HaveQuestionsForm />
+        <Overlay1 />
         <DogBottom />
       </div>
     );
