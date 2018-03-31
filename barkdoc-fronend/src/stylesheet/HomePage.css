@@ -2,8 +2,20 @@
   font-size: 40pt;
 }
 
+/* .font-40pt{
+  font-size: 42pt;
+} */
+
 .width-35{
   width: 37%;
+}
+
+.width-45{
+  width: 40%;
+}
+
+.width-50{
+  width: 50%;
 }
 
 .top-100{
@@ -40,7 +52,7 @@
 
 /* slide 1 */
 .pug-background{
-  background-image: url("../img/homepage/pug.png");
+  background-image: url("../img/homepage/pug-longer.png");
   background-repeat: no-repeat;
   height: 725px;
   background-size: contain;
@@ -51,7 +63,7 @@
 .styled {
     width: 60px;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 5px;
     overflow: hidden;
     /* background: url('/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png') 96% / 20% no-repeat #eee; */
 }
@@ -237,6 +249,7 @@ img.column-review{
 }
 
 
+
 @media (max-width: 768px) {
   .pug-background{
     background-image: url("../img/homepage/pug.png");
@@ -245,6 +258,14 @@ img.column-review{
     /* width: 100%; */
     background-size: cover;
     /* background-position-y: top; */
+  }
+
+  .float-left {
+    width: 55%;
+  }
+
+  .width-45 {
+    width: 90%;
   }
 
   .font-40pt {
@@ -258,6 +279,7 @@ img.column-review{
 
   .font-16 {
     margin-left: 20px;
+    font-size: 12pt;
   }
 
   .margin-left-44{
@@ -265,6 +287,7 @@ img.column-review{
   }
 
   .continue-button {
+    width: 25%;
     margin-left: 20px;
   }
 
