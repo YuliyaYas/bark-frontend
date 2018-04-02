@@ -13,9 +13,9 @@ class SignIn extends Component {
         <hr className="grey-font length"/>
         <button id="facebook-login">Login with Facebook</button>
         <h2 className="display-block line"><span className="grey-font or-span">or</span></h2>
-        <h3 className="display-block grey-font">Email Address</h3>
+        <h3 className="display-block grey-font"><span className="orange-font">*</span>Email Address</h3>
         <input className="input-sign-in" type="text" placeholder="Enter your email address here"/>
-        <h3 className="display-block grey-font">Password</h3>
+        <h3 className="display-block grey-font"><span className="orange-font">*</span>Password</h3>
         <input className="input-sign-in" type="password" placeholder="Enter your password here"/>
         <button className="orange white-font display-block sign-in-button">SIGN IN</button>
       </div>
