@@ -25,8 +25,9 @@
 }
 
 .length{
-  width: 35%;
-  margin-top: -20px;
+  width: 50%;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .line {
@@ -45,7 +46,7 @@
 .sign-in-form{
   width: 25%;
   margin-left: 35%;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 
 #facebook-login{
@@ -65,8 +66,8 @@
 .sign-in-button{
   padding: 14px 16px;
   border-style: none;
-  width: 50%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .input-sign-in{
