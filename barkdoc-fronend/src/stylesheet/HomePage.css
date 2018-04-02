@@ -11,7 +11,7 @@
 }
 
 .width-45{
-  width: 40%;
+  width: 45%;
 }
 
 .width-50{
@@ -34,39 +34,102 @@
   border-style: none;
 }
 
-.continue-button{
-  padding: 17px 55px;
+.continue-button {
+  width: 250px !important;
+  height: 70px;
+  padding: 20px 25px;
   font-size: 12pt;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
-.styled select {
+/* .styled select {
   background: transparent;
   background-image: none;
-  width: 150px;
-  font-size: 16px;
+  width: 200px;
+  font-size: 20px;
   border: 1px solid #ccc;
   height: 34px;
+} */
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+.select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 18px 15px;
+        outline: 0;
+        border: none;
+        border-radius: 0px;
+        background: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+  }
+
+.select select::-ms-expand {
+      display: none;
+  }
+
+.select select:hover,
+.select select:focus {
+      color: gray;
+      background: lightgray;
+  }
+
+.select select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+  }
+
+.select_arrow {
+  margin-top: 18px;
+  /* margin-left: 5px; */
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    width: 0px;
+    height: 0px;
+    border: solid orange;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: orange;
+}
+
+.select select:disabled ~ .select_arrow {
+    border-top-color: #CCCCCC;
 }
 
 /* slide 1 */
 .pug-background{
-  background-image: url("../img/homepage/pug-longer.png");
-  background-repeat: no-repeat;
+  background: url("../img/homepage/pug-longer.png")no-repeat center center fixed;
+  /* background-repeat: no-repeat; */
   height: 725px;
-  background-size: contain;
+  /* background-size: contain; */
   background-position-y: top;
 }
 
 
-.styled {
+/* .styled {
     width: 60px;
     height: 35px;
     margin-left: 5px;
     overflow: hidden;
-    /* background: url('/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png') 96% / 20% no-repeat #eee; */
-}
+} */
 
 .margin-top-20{
   margin-top: 20px;
@@ -248,7 +311,10 @@ img.column-review{
     height: 32px;
 }
 
-
+.padding-10 {
+  width: 320px;
+  padding-top: 10px;
+}
 
 @media (max-width: 768px) {
   .pug-background{
@@ -265,6 +331,10 @@ img.column-review{
   }
 
   .width-45 {
+    width: 90%;
+  }
+
+  .width-50 {
     width: 90%;
   }
 
@@ -287,14 +357,22 @@ img.column-review{
   }
 
   .continue-button {
-    width: 25%;
+    width: 60% !important;
     margin-left: 20px;
   }
 
+  .select {
+    /* margin-left: 20px; */
+    /* margin-top: -20px; */
+    /* border: 1px solid #f08e30; */
+    width: 60px;
+  }
+
   .styled {
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    /* margin-top: 0; */
     border: 1px solid #f08e30;
-    width: 50%;
+    width: 60px;
   }
 
   .column {
@@ -356,5 +434,10 @@ img.column-review{
       width: 40%;
       padding: 17px 0;;
       border-style: none;
+  }
+
+  .padding-10 {
+    padding-top: 5px;
+    width: 230px;
   }
 }
