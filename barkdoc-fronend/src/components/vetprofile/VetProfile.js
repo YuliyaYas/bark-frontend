@@ -9,16 +9,23 @@ const VetProfile = () => {
     <div>
       <div className="background-vet-background container-pattern-zig-zag">
         <Header />
-        <h1 className="white-font bold content">Dr. Ryan U, VMD</h1>
-        <h3 className="white-font content">Veterinariae Medicinae Doctor</h3>
-        <h3 className="white-font content">***** Verified Patient Reviews(6)</h3>
       </div>
 
       <div className="row white">
         <div className="content">
           <div className="column-70 grey-font">
-            <img alt="" className="circle-img" src={require("../../img/vet_profile.png")}/>
-            <h2 className="bold">Services Dr. Ryan Offers:</h2>
+            <div className="profile-info">
+              <div className="profile-info-l">
+                <img alt="" className="circle-img" src={require("../../img/vet_profile.png")}/>
+              </div>
+              <div className="profile-info-r">
+                <h1 className="white-font bold content">Dr. Ryan U, VMD</h1>
+                <h3 className="white-font content">Veterinariae Medicinae Doctor</h3>
+                <h3 className="white-font content">***** Verified Patient Reviews(6)</h3>
+              </div>
+            </div>
+            <div className="services">
+              <h2 className="bold">Services Dr. Ryan Offers:</h2>
               <div className="column-33">
                 <p>Routine exams</p>
                 <p>Check-ups</p>
@@ -40,6 +47,7 @@ const VetProfile = () => {
                 <p>Ultrasounds</p>
                 <p>Cold Laser Therapy</p>
               </div>
+            </div>
               <hr />
               <h2 className="bold">Education and Service</h2>
               <p>
@@ -135,7 +143,9 @@ const VetProfile = () => {
         </div>
 
         <div className="column-30">
-            BOOK NOW
+            <h1 className="orange-font">Want to book an appointment with Dr. Ryan?</h1>
+            <h4>Click to see available times</h4>
+            <button className="orange white-font bold book-now-btn-2">BOOK NOW</button>
         </div>
       </div>
       <div className="container-grey-zig-zag"></div>
