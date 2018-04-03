@@ -51,7 +51,7 @@ const VetProfile = () => {
               </p>
               <hr />
               <h2 className="bold">Verified Patient Reviews (6)</h2>
-
+              <img className="stars" src={require("../../img/stars.png")}/>
           </div>
         </div>
         <div className="column-30">
