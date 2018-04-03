@@ -41,6 +41,7 @@ const OurServices = () => {
           </div>
         </div>
           <Link to="/user/vets"><button className="orange white-font button-meet-our-vets bold margin-left-44">MEET OUR VETS</button></Link>
+          <div className="container-brown-zig-zag-reverse"></div>
       </div>
   );
 };

@@ -94,6 +94,8 @@
 
 .services-desktop {
   display: block;
+  z-index: -2;
+  height: 440px;
 }
 
 .services-mobile {
@@ -194,5 +196,6 @@
 
   .services-mobile {
     display: block;
+    height: 515px;
   }
 }

@@ -241,6 +241,31 @@
     height: 32px;
 }
 
+.container-brown-zig-zag-reverse {
+    position: relative;
+    padding: 0px 0px -32px 0px;
+    background-color: white;
+}
+
+.container-brown-zig-zag-reverse {
+    background: linear-gradient(45deg, #ffffff 16px, transparent 0), linear-gradient(-45deg, #ffffff 16px, transparent 0);
+    background-position:bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: relative;
+    bottom: 38px;
+    left: 0px;
+    width: 100%;
+    height: 28px;
+    z-index: 0;
+}
+
+.secondary {
+  z-index: -1000;
+}
+
 .center.white-font.pt-26.bold {
     padding-top: 60px;
 }
@@ -251,7 +276,14 @@
 
 .button-meet-our-vets{
     padding: 17px 19px;
+    height: 70px;
+    width: 12%;
+    margin-left: 43.5%;
     border-style: none;
+    z-index: 1000;
+    display: inline-block;
+    margin-top: 55px;
+    position: relative;
 }
 
 .length-40{
@@ -290,9 +322,11 @@ img.column-review{
 }
 
 .container-review-zig-zag {
-    position: relative;
-    padding: 0px 0px 32px 0px;
-    background-color: white;
+  margin-top: 10px;
+  position: relative;
+  padding: 50px 0px 32px 0px;
+  background-color: white;
+  z-index: 0;
 }
 
 .container-review-zig-zag:after {
@@ -437,6 +471,16 @@ img.column-review{
       width: 40%;
       padding: 17px 0;;
       border-style: none;
+
+
+      /* height: 70px; */
+      /* width: 12%; */
+      /* margin-left: 43.5%; */
+      /* border-style: none; */
+      z-index: 1000;
+      display: inline-block;
+      margin-top: 20px;
+      position: relative;
   }
 
   .padding-10 {

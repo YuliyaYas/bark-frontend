@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     // console.log(this.state.faqs)
     return (
-      <div>
+      <div className="primary">
       <Switch>
       <Route path={`/user/vets/vet`} component={ () => <VetProfile/>} />
       <Route path={`/user/vets`} component={ () => <Vets testimonials={this.state.homepage_reviews}/>} />

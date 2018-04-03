@@ -11,7 +11,7 @@ import './../../stylesheet/HomePage.css';
 
 const HomePage = (props) => {
   return(
-    <div>
+    <div className="secondary">
       <div className="container-zig-zag">
         <div className="pug-background">
           <Header />
@@ -21,7 +21,7 @@ const HomePage = (props) => {
       <div className="container-brown-zig-zag">
         <WhyBarkDoc />
       </div>
-      <div className="container-zig-zag">
+      <div>
         <OurServices />
         <OurServicesMobile />
       </div>
