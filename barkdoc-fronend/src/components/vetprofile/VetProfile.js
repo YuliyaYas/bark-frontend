@@ -130,9 +130,10 @@ const VetProfile = () => {
                   <br/>
                 </div>
               </div>
+              <button className="orange white-font bold book-now-btn">BOOK NOW</button>
           </div>
         </div>
-        
+
         <div className="column-30">
             BOOK NOW
         </div>
