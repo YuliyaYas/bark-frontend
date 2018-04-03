@@ -1,18 +1,85 @@
 
-.styled-select select {
+/* .styled-select select {
   background: transparent;
   background-image: none;
-  width: 150px;
+  width: 250px;
   font-size: 16px;
   border: 1px solid #ccc;
+  border-radius: 0px !important;
   height: 34px;
 }
 .styled-select {
     width: 300px;
     height: 35px;
     overflow: hidden;
-    /* background: url(/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png) 96% / 20% no-repeat #eee; */
+
+
+
+    background: url(/Users/yuliya/bark-frontend/barkdoc-fronend/src/img/repeated/arrow_down_select.png) 96% / 20% no-repeat #eee;
+} */
+
+.select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 275px;
 }
+
+.select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 12px 15px;
+        outline: 0;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        background: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+  }
+
+.select select::-ms-expand {
+      display: none;
+  }
+
+.select select:hover,
+.select select:focus {
+      color: gray;
+      background: lightgray;
+  }
+
+.select select:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+  }
+
+.select_arrow {
+  margin-top: -3px;
+  /* margin-left: 5px; */
+    position: absolute;
+    top: 16px;
+    right: 10px;
+    width: 0px;
+    height: 0px;
+    border: solid orange;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: orange;
+}
+
+.select select:disabled ~ .select_arrow {
+    border-top-color: #CCCCCC;
+}
+
 
 .column-65 {
   float: left;
@@ -37,6 +104,28 @@
 
 .extralight-grey{
   background-color: #f9f9f9;
+}
+
+.extralight-grey:hover,
+.extralight-grey:active,
+.extralight-grey:focus {
+  box-shadow: -3px 5px 15px 8px rgba(0,0,0,0.1);
+}
+
+.extralight-grey:hover > .grey,
+.extralight-grey:active > .grey,
+.extralight-grey:focus > .grey {
+  background-color: #f08e30;
+  border-color: #f08e30;
+  color: white;
+}
+
+.extralight-grey:hover > .white,
+.extralight-grey:active > .white,
+.extralight-grey:focus > .white {
+  background-color: white;
+  border-color: #f08e30;
+  color: #f08e30;
 }
 
 .vet-card-btn{

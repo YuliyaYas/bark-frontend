@@ -28,28 +28,35 @@ class Vets extends Component {
           <div className="row">
             <div className="column-65">
               <div className="row">
+                <div className="column-45">
+                  <h3 className=" grey-font">My Pet Needs:</h3>
+                  <div className="select">
+                    <select className="styled-select grey-font bold">
+                      <option value="check-up">Check-up</option>
+                      <option value="check-up">Check-up</option>
+                      <option value="check-up">Check-up</option>
+                      <option value="check-up">Check-up</option>
+                      <option value="check-up">Check-up</option>
+                    </select>
+                    <div className="select_arrow">
+                    </div>
+                  </div>
+                </div>
 
-              <div className="column-45">
-                <h3 className=" grey-font">My Pet Needs:</h3>
-                <select className="styled-select grey-font bold">
-                  <option value="check-up">Check-up</option>
-                  <option value="check-up">Check-up</option>
-                  <option value="check-up">Check-up</option>
-                  <option value="check-up">Check-up</option>
-                  <option value="check-up">Check-up</option>
-                </select>
-              </div>
-
-              <div className="column-45">
-                <h3 className=" grey-font">My Pets Location:</h3>
-                <select className="styled-select grey-font bold">
-                  <option value="check-up">location 1</option>
-                  <option value="check-up">location 2</option>
-                  <option value="check-up">location 3</option>
-                  <option value="check-up">location 4</option>
-                  <option value="check-up">location 5</option>
-                </select>
-              </div>
+                <div className="column-45">
+                  <h3 className=" grey-font">My Pets Location:</h3>
+                    <div className="select">
+                      <select className="styled-select grey-font bold">
+                        <option value="check-up">location 1</option>
+                        <option value="check-up">location 2</option>
+                        <option value="check-up">location 3</option>
+                        <option value="check-up">location 4</option>
+                        <option value="check-up">location 5</option>
+                      </select>
+                      <div className="select_arrow">
+                      </div>
+                    </div>
+                </div>
               </div>
                 <VetCard />
                 <VetCard />
