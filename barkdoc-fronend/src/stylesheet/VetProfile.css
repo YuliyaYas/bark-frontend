@@ -24,7 +24,7 @@
 }
 
 .stars{
-  width: 10%;
+  width: 70px;
   padding-right: 10px;
 }
 
@@ -36,9 +36,16 @@
   font-size: 12px;
 }
 
-.col-40{
-  width: 40%;
+.col-55{
+  float: left;
+  width: 55%;
 }
-.col-60{
-  width: 60%;
+.col-45{
+  float: left;
+  width: 45%;
+}
+
+.quote-size{
+  width: 10%;
+  float: left;
 }
