@@ -15,26 +15,26 @@ class Careers extends Component {
         <div className="white">
         <div className="content">
         <div className="margin-right-left">
+          <div className="container border-bottom">
           <div className="center grey-font pt-26 bold">Join BarkDoc</div>
           <hr className="grey-font length-11"/>
           <h2 className="orange-font pt-20">About the Team</h2>
-          <p className="grey-font pt-14">Here at BarkDoc we truely care about your pets and assure they will get the most caring, smart and perfect Vet for their needs. If you’re looking to become apart of the BarkDoc team see what we have available below.</p>
-          <hr className="grey-font" />
+          <p className="grey-font pt-14">Here at BarkDoc we truly care about your pets and assure they will get the most caring, smart and perfect Vet for their needs. If you’re looking to become a part of the BarkDoc team see what we have available below.</p>
+        </div>
 
-
-          <div className="row">
+          <div className="row border-bottom">
             <div className="column-job-name">
               <text className="grey-font bold pt-14">Veterinarian </text><br></br><br></br>
               <span className="light-grey-font bold font-9">New York, NY</span></div>
             <button className="float-right column-button button-apply-now-grey white-font bold margin-top-35">APPLY NOW</button>
           </div>
-          <hr className="grey-font"/>
-          <div className="row">
+
+          <div className="row border-bottom margin-bottom-20">
             <div className="column-job-name">
               <text className="grey-font bold pt-14">Vet Tech </text><br></br><br></br><text className="light-grey-font bold font-9">New York, NY</text></div>
             <button className="float-right column-button button-apply-now-orange white-font bold">APPLY NOW</button>
           </div>
-          <hr className="grey-font"/>
+
           <br />
         </div >
         </div>
