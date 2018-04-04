@@ -43,7 +43,16 @@ class App extends Component {
       this.setState({faqs: resp.data.data.faq_headlines})
     });
 
-    }
+  };
+
+    handleContinueLocation = (e) => {
+      e.preventDefault();
+      console.log("target",e.target);
+    };
+    handleSelectChange = (e) => {
+      e.preventDefault();
+      console.log("target in change",e.target.value);
+    };
 
   render() {
     // console.log(this.state.faqs)
@@ -51,7 +60,7 @@ class App extends Component {
       <div className="primary">
       <Switch>
       <Route path={`/user/vets/vet`} component={ () => <VetProfile/>} />
-      <Route path={`/user/vets`} component={ () => <Vets testimonials={this.state.homepage_reviews}/>} />
+      <Route path={`/user/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} testimonials={this.state.homepage_reviews}/>}/>
       <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />

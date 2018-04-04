@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TestimonialCard = (props) => {
-  console.log(props.testimonial);
+  // console.log(props.testimonial);
   return(
     <div className="margin-top-60">
     <div className="width-40 margin-left-30">

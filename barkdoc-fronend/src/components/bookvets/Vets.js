@@ -8,9 +8,12 @@ import DogBottom from './../DogBottom.js';
 import './../../stylesheet/Vet.css';
 
 class Vets extends Component {
+  constructor(props){
+    super(props);
+  }
 
   render(){
-    // console.log("test", this.props.testimonials)
+    // console.log("test", this.props.handleContinueLocation)
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />
@@ -23,7 +26,7 @@ class Vets extends Component {
             <Header />
             <h1 className="white-font bold content padding-career">Book an Appointment</h1>
           </div>
-          <Overlay1 />
+          <Overlay1 handleContinueLocation={this.props.handleContinueLocation} handleSelectChange={this.props.handleSelectChange}/>
           <div className="white">
           <div className="content" >
           <div className="row">
