@@ -4,8 +4,8 @@ import './../../stylesheet/Overlay1.css';
 const Overlay1 = () => {
   return(
     <div className="base">
-    <div className="shroud">
-    <div className="overlay-popup overlay-scroll">
+    <div className="shroud overlay-scroll">
+    <div className="overlay-popup ">
       <img className="logo-white" src={require("./../../img/repeated/white-logo.png")} alt=""/>
     <div>
       <form className="location-form form-position">
