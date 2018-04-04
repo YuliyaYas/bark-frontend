@@ -19,9 +19,9 @@ const VetProfile = () => {
                 <img alt="" className="circle-img" src={require("../../img/vet_profile.png")}/>
               </div>
               <div className="profile-info-r">
-                <h1 className="white-font bold content">Dr. Ryan U, VMD</h1>
-                <h3 className="white-font content">Veterinariae Medicinae Doctor</h3>
-                <h3 className="white-font content">***** Verified Patient Reviews(6)</h3>
+                <h1 className="white-font-profile bold content">Dr. Ryan U, VMD</h1>
+                <h3 className="white-font-profile content">Veterinariae Medicinae Doctor</h3>
+                <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={require("../../img/stars.png")}/> Verified Patient Reviews(6)</h3>
               </div>
             </div>
             <div className="services">
@@ -142,7 +142,7 @@ const VetProfile = () => {
           </div>
         </div>
 
-        <div className="column-30">
+        <div className="book-now">
             <h1 className="orange-font">Want to book an appointment with Dr. Ryan?</h1>
             <h4>Click to see available times</h4>
             <button className="orange white-font bold book-now-btn-2">BOOK NOW</button>
