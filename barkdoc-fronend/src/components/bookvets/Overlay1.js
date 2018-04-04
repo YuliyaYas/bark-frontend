@@ -15,10 +15,11 @@ const Overlay1 = () => {
       </div>
       <p className="white-font">*My Pet's Location:</p>
       <select className="styled-select-location grey-font bold">
-        <option value="location">Manhattan</option>
-        <option value="location">Bronx</option>
+        <option value="location">Lower Manhattan</option>
+        <option value="location">Upper Manhattan</option>
+        <option value="location">Midtown</option>
+        <option value="location">Brooklyn</option>
         <option value="location">Queens</option>
-        <option value="location">Staten Island</option>
       </select>
       <button type="submit" className="orange white-font display-block bold continue-button">CONTINUE</button>
       </form>
