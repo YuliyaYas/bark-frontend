@@ -24,8 +24,9 @@ class App extends Component {
       homepage_reviews: [],
       job_posts: [],
       faqs: [],
-      selectedLocation: '',
-      vetsByLocation: []
+      selectedLocationId: '',
+      selectedLocationName: '',
+      selectLocationClick: false
     }
   }
   componentDidMount(){
@@ -47,16 +48,25 @@ class App extends Component {
 
   };
 
-    handleContinueLocation = (e) => {
-      e.preventDefault();
-      fetch(`https://www.mytime.com/api/v2/companies/112627/locations/${this.state.selectedLocation}.json`)
-      .then(resp=>resp.json())
-      .then(myJson => console.log("after fetch", myJson));
-    };
+
     handleSelectChange = (e) => {
       e.preventDefault();
-      this.setState({selectedLocation: e.target.value});
+      this.setState({selectedLocationId: e.target.value});
     };
+
+    handleContinueLocation = (e) => {
+      e.preventDefault();
+      fetch(`https://www.mytime.com/api/v2/companies/112627/locations/${this.state.selectedLocationId}.json`)
+      .then(resp=>resp.json())
+      .then(myJson => this.setState({selectedLocationName: myJson.street_address}));
+    };
+
+    handleLocationButton = () => {
+      this.state.selectLocationClick = false
+      console.log(this.state.selectLocationClick);
+      this.setState({selectLocationClick: true}, () => console.log(this.state.selectLocationClick))
+    }
+
 
   render() {
     // console.log(this.state.faqs)
@@ -64,7 +74,7 @@ class App extends Component {
       <div className="primary">
       <Switch>
       <Route path={`/user/vets/vet`} component={ () => <VetProfile/>} />
-      <Route path={`/user/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} testimonials={this.state.homepage_reviews}/>}/>
+      <Route path={`/user/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews}/>}/>
       <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />

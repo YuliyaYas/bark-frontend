@@ -22,7 +22,7 @@ const Overlay1 = (props) => {
         <option value="115308">Brooklyn</option>
         <option value="115306">Queens</option>
       </select>
-      <button type="submit" className="orange white-font display-block bold continue-button">CONTINUE</button>
+      <button type="submit" className="orange white-font display-block bold continue-button" onClick={props.handleLocationButton}>CONTINUE</button>
       </form>
     </div>
     </div>
