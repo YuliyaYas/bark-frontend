@@ -5,6 +5,10 @@
   height: 250px;
 }
 
+.white-font-profile {
+  color: white;
+}
+
 .profile-info {
   /* background-color: lightgray; */
   display: inline-block;
@@ -43,7 +47,7 @@
   float: left;
   width: 34%;
 }
-.column-30{
+.book-now {
   float: left;
   width: 220px;
   /* border: 1px solid lightgray; */
@@ -105,4 +109,58 @@
   height: 60px;
   margin-top: 20px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .column-70 {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .book-now {
+    display: none;
+  }
+
+  .book-now-btn{
+    width: 90%;
+    margin-left: 10%;
+    color: white;
+  }
+
+  .profile-info {
+    width: 100%;
+    /* background-color: lightgray; */
+    display: inline-block;
+    margin-top: -130px;
+    height: 300px;
+    /* position: absolute; */
+  }
+
+  .profile-info-l {
+    float: none;
+    position: absolute;
+  }
+
+  .profile-info-r {
+    width: 480px;
+    margin-left: 0;
+    color: gray;
+    margin-top: 200px;
+    position: absolute;
+    /* float: right; */
+  }
+
+  .white-font-profile {
+    color: gray;
+  }
+
+  .profile-info-l img {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+  }
+
+  .services {
+    margin-top: 200px;
+  }
 }
