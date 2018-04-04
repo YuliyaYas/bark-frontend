@@ -23,7 +23,9 @@ class App extends Component {
     this.state = {
       homepage_reviews: [],
       job_posts: [],
-      faqs: []
+      faqs: [],
+      selectedLocation: '',
+      vetsByLocation: []
     }
   }
   componentDidMount(){
@@ -47,11 +49,13 @@ class App extends Component {
 
     handleContinueLocation = (e) => {
       e.preventDefault();
-      console.log("target",e.target);
+      fetch(`https://www.mytime.com/api/v2/companies/112627/locations/${this.state.selectedLocation}.json`)
+      .then(resp=>resp.json())
+      .then(myJson => console.log("after fetch", myJson));
     };
     handleSelectChange = (e) => {
       e.preventDefault();
-      console.log("target in change",e.target.value);
+      this.setState({selectedLocation: e.target.value});
     };
 
   render() {
