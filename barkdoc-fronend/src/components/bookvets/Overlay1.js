@@ -3,15 +3,17 @@ import './../../stylesheet/Overlay1.css';
 
 const Overlay1 = () => {
   return(
-    <div className="overlay-popup">
+    <div className="base">
+    <div className="shroud">
+    <div className="overlay-popup overlay-scroll">
       <img className="logo-white" src={require("./../../img/repeated/white-logo.png")} alt=""/>
     <div>
       <form className="location-form form-position">
-      <div className="where-spacing">
+      <div className="where-spacing white-font">
         <h1>Where Should We Swing By?</h1>
         <p> Let us know your pet's location to continue </p>
       </div>
-      <p>*My Pet's Location:</p>
+      <p className="white-font">*My Pet's Location:</p>
       <select className="styled-select-location grey-font bold">
         <option value="location">Manhattan</option>
         <option value="location">Bronx</option>
@@ -20,6 +22,8 @@ const Overlay1 = () => {
       </select>
       <button type="submit" className="orange white-font display-block bold continue-button">CONTINUE</button>
       </form>
+    </div>
+    </div>
     </div>
     </div>
   );

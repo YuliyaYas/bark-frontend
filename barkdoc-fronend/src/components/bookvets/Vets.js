@@ -23,6 +23,7 @@ class Vets extends Component {
             <Header />
             <h1 className="white-font bold content padding-career">Book an Appointment</h1>
           </div>
+          <Overlay1 />
           <div className="white">
           <div className="content" >
           <div className="row">
@@ -80,7 +81,6 @@ class Vets extends Component {
           </div>
         <div className="container-grey-zig-zag"></div>
         <HaveQuestionsForm />
-        <Overlay1 />
         <DogBottom />
       </div>
     );
