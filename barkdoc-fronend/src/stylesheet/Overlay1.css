@@ -7,7 +7,7 @@
   padding-top: 40px;
 }
 
-.continue-button{
+.continue-button-overlay {
   padding: 14px 40px;
   border-style: none;
   font-size: 14pt;
@@ -23,11 +23,6 @@
   margin-left: auto;
   margin-right: auto;
   width: 56%;
-}
-
-.styled-select-location{
-  min-width: 100%;
-  height: 35px;
 }
 
 .where-spacing{
@@ -79,4 +74,80 @@
   overflow-x: hidden;
   overflow-y: auto;
   pointer-events: auto;
+ }
+
+ /* dropdown */
+
+ /* .styled-select {
+   min-width: 100%;
+   height: 35px;
+ } */
+
+ .styled-select-location {
+     position: relative;
+     display: inline-block;
+     margin-bottom: 15px;
+     width: 100%;
+ }
+
+ .styled-select-location select {
+         font-family: 'Arial';
+         display: inline-block;
+         width: 100%;
+         cursor: pointer;
+         padding: 18px 15px;
+         outline: 0;
+         border: none;
+         border-radius: 0px;
+         background: #ffffff;
+         appearance: none;
+         -webkit-appearance: none;
+         -moz-appearance: none;
+   }
+
+ .styled-select-location select::-ms-expand {
+       display: none;
+   }
+
+ .styled-select-location select:hover,
+ .styled-select-location select:focus {
+       color: gray;
+       background: lightgray;
+   }
+
+ .styled-select-location select:disabled {
+       opacity: 0.5;
+       pointer-events: none;
+   }
+
+ .styled-arrow-overlay {
+   margin-top: 0px;
+   /* margin-left: 5px; */
+     position: absolute;
+     top: 16px;
+     right: 10px;
+     width: 0px;
+     height: 0px;
+     border: solid orange;
+     border-width: 0 3px 3px 0;
+     display: inline-block;
+     padding: 3px;
+     transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
+ }
+
+ .styled-select-location select:hover ~ .select_arrow,
+ .styled-select-location select:focus ~ .select_arrow {
+     border-color: orange;
+ }
+
+ .styled-select-location select:disabled ~ .select_arrow {
+     border-top-color: #CCCCCC;
+ }
+
+
+ @media (max-width: 768px) {
+   .overlay-popup {
+     width: 80%;
+   }
  }

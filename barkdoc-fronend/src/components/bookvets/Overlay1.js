@@ -15,14 +15,17 @@ const Overlay1 = (props) => {
         <p> Let us know your pet's location to continue </p>
       </div>
       <p className="white-font">*My Pet's Location:</p>
-      <select className="styled-select-location grey-font bold" onChange={props.handleSelectChange} value={props.location}>
+      <div className="styled-select-location">
+      <select className="styled-select grey-font bold" onChange={props.handleSelectChange} value={props.location}>
         <option value="no-location">Select a location</option>
         <option value="115306">New York City</option>
         <option value="115307">Manhattan</option>
         <option value="115308">Brooklyn</option>
         <option value="115306">Queens</option>
       </select>
-      <button type="submit" className="orange white-font display-block bold continue-button" onClick={props.handleLocationButton}>CONTINUE</button>
+      <div className="styled-arrow-overlay"></div>
+      </div>
+      <button type="submit" className="orange white-font display-block bold continue-button-overlay" onClick={props.handleLocationButton}>CONTINUE</button>
       </form>
     </div>
     </div>
