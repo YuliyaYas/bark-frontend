@@ -31,6 +31,10 @@
   font-size: 16pt;
 }
 
+.font-12 {
+  font-size: 12pt;
+}
+
 .no-border{
   border-style: none;
 }
