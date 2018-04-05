@@ -51,6 +51,7 @@ class App extends Component {
 
     handleSelectChange = (e) => {
       e.preventDefault();
+      console.log("select", e);
       this.setState({selectedLocationId: e.target.value});
     };
 
@@ -61,15 +62,15 @@ class App extends Component {
       .then(myJson => this.setState({selectedLocationName: myJson.street_address}));
     };
 
-    handleLocationButton = () => {
+    handleLocationButton = (e) => {
+      e.preventDefault();
       this.state.selectLocationClick = false
-      console.log(this.state.selectLocationClick);
-      this.setState({selectLocationClick: true}, () => console.log(this.state.selectLocationClick))
+      this.setState({selectLocationClick: true})
     }
 
 
   render() {
-    // console.log(this.state.faqs)
+    console.log("in app", this.state)
     return (
       <div className="primary">
       <Switch>

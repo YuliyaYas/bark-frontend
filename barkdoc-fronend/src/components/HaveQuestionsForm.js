@@ -12,6 +12,23 @@ class HaveQuestionsForm extends Component {
     };
   };
 
+  componentWillMount(){
+  {/*  fetch('https://barkdog.wufoo.com/api/v3/forms/zf0l0be06tlcx0.json', {
+      method: "POST",
+        auth: {
+            'username': '3DMR-4RHC-SZR2-Z5PW',
+            'password': 'abcda123',
+            'sendImmediately': false
+        },
+        form: {
+            'Field2' : 'Wufoo',
+            'Field5' : 'Test',
+            'Field7' : 'API-Test',
+            'Field9' : '42'
+        }
+    }).then(res => console.log(res));*/}
+  }
+
 
   handleChange = e => {
     e.preventDefault();
@@ -36,7 +53,6 @@ class HaveQuestionsForm extends Component {
                     allowTransparency="true"
                     frameborder="0"
                     scrolling="no"
-
                     src="https://barkdog.wufoo.com/embed/zf0l0be06tlcx0/">
               <a href="https://barkdog.wufoo.com/forms/zf0l0be06tlcx0/">
                 Fill out my Wufoo form!

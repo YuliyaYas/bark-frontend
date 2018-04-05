@@ -13,7 +13,7 @@ class Vets extends Component {
   }
 
   render(){
-    console.log("test", this.props.selectLocationClick)
+    // console.log("test", this.props.selectLocationClick)
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />

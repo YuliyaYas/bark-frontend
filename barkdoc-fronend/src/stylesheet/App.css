@@ -11,7 +11,9 @@
     font-family: 'Regular';
     src: url('./../fonts/Fontfabric - Intro-Black.otf');
 }  */
-
+.email-test{
+  color: red
+}
 
 @font-face {
     font-family: 'RegularAlt';
