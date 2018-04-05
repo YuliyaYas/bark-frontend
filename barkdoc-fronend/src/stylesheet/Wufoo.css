@@ -1,17 +1,3 @@
-#form1 {
-  border: 3px solid red;
-}
-
-#header {
-  color: red; 
-}
-
-body {
-  background-color: yellow; 
-}
-
-/*nothing above seems to work*/
-
 .wufoo .info h2 {
     color: red;
 }
