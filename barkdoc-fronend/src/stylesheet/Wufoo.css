@@ -9,3 +9,9 @@
 body {
   background-color: yellow; 
 }
+
+/*nothing above seems to work*/
+
+.wufoo .info h2 {
+    color: red;
+}
