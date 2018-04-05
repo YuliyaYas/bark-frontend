@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Thin';
     src: url('./../fonts/Intro Cond Light Free.otf');
 }
@@ -6,9 +6,28 @@
     font-family: 'Bold';
     src: url('./../fonts/Intro Cond Black Free.otf');
 }
-@font-face {
+*/
+/* @font-face {
     font-family: 'Regular';
     src: url('./../fonts/Fontfabric - Intro-Black.otf');
+}  */
+
+
+@font-face {
+    font-family: 'RegularAlt';
+    src: url('./../fonts/Fontfabric - IntroRegularAlt.otf');
+}
+@font-face {
+    font-family: 'Caps';
+    src: url('./../fonts/Fontfabric - IntroRegularCaps.otf');
+}
+@font-face {
+    font-family: 'Italic';
+    src: url('./../fonts/Fontfabric - IntroRegularItalic.otf');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('./../fonts/Fontfabric - IntroRegular.otf');
 }
 
 body, html {
@@ -21,7 +40,7 @@ body, html {
 }
 
 p{
-  font-family: 'no';
+  font-family: 'Regular';
 }
 
 *:focus {
