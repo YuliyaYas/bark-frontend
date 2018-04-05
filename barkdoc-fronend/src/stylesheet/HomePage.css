@@ -476,15 +476,9 @@ img.column-review{
       width: 40%;
       padding: 17px 0;;
       border-style: none;
-
-
-      /* height: 70px; */
-      /* width: 12%; */
-      /* margin-left: 43.5%; */
-      /* border-style: none; */
       z-index: 1000;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 45px;
       position: relative;
   }
 
