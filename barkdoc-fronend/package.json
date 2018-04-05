@@ -8,6 +8,7 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
+    "react-wufoo-embed": "^1.0.0",
     "reset-css": "^3.0.0"
   },
   "scripts": {
