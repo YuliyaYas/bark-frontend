@@ -91,7 +91,9 @@ const Testimonials = (props) => {
         }
       <div className="center grey-font pt-30 bold width-40 margin-30 margin-top-80px">Ready to Raise the
       Woof With BarkDoc?</div>
-      <Link to="/user/vets"><button className="orange white-font margin-39 width-22 display-block sign-in-button bold">SCHEDULE MY AT HOME APPOINTMENT</button></Link>
+      <Link to="/user/vets">
+        <button className="orange white-font margin-39 width-22 display-block sign-in-button bold">SCHEDULE MY AT HOME APPOINTMENT</button>
+      </Link>
     </div>
     <div className="container-brown-zig-zag" />
     <OurServices />
