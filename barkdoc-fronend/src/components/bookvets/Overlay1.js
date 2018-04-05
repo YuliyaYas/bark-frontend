@@ -15,7 +15,7 @@ const Overlay1 = (props) => {
         <p> Let us know your pet's location to continue </p>
       </div>
       <p className="white-font">*My Pet's Location:</p>
-      <select className="styled-select-location grey-font bold" onChange={props.handleSelectChange}>
+      <select className="styled-select-location grey-font bold" onChange={props.handleSelectChange} value={props.location}>
         <option value="no-location">Select a location</option>
         <option value="115306">New York City</option>
         <option value="115307">Manhattan</option>

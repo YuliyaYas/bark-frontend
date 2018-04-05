@@ -26,7 +26,7 @@ class Vets extends Component {
             <Header />
             <h1 className="white-font bold content padding-career">Book an Appointment</h1>
           </div>
-          {this.props.selectLocationClick===true ? "" : <Overlay1 handleContinueLocation={this.props.handleContinueLocation} handleSelectChange={this.props.handleSelectChange} handleLocationButton={this.props.handleLocationButton}/>}
+          {this.props.selectLocationClick===true ? "" : <Overlay1 handleContinueLocation={this.props.handleContinueLocation} handleSelectChange={this.props.handleSelectChange} handleLocationButton={this.props.handleLocationButton} location={this.props.location}/>}
           <div className="white">
           <div className="content" >
           <div className="row">
