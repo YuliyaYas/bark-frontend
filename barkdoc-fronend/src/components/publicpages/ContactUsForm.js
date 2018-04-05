@@ -4,6 +4,7 @@ class ContactUsForm extends Component{
   render(){
     return(
       <div className="width-25 margin-left-37">
+      
         <div className="center grey-font pt-26 bold padding-top-60">Contact Us</div>
         <hr className="grey-font length-11"/>
         <form>
