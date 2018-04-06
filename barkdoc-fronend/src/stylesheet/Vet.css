@@ -158,3 +158,42 @@
 .margin-top-40{
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    display: none;
+  }
+
+  .column-65 {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .column-45 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .select {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .vet-content {
+    padding-top: 50px;
+  }
+
+  .margin-top-40 {
+    margin-top: 15px;
+  }
+
+  .vet-card-btn{
+    /* padding: 14px 16px; */
+    /* margin: 18px; */
+    /* border-style: none; */
+    width: 90%;
+    /* border: 2px solid #cccccc; */
+  }
+}

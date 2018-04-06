@@ -33,22 +33,25 @@ class Vets extends Component {
             <div className="column-65">
               <div className="row">
                 <div className="column-45">
-                  <h3 className=" grey-font">My Pet Needs:</h3>
-                  <div className="select">
-                    <select className="styled-select grey-font bold">
-                      <option value="check-up">Check-up</option>
-                      <option value="check-up">Check-up</option>
-                      <option value="check-up">Check-up</option>
-                      <option value="check-up">Check-up</option>
-                      <option value="check-up">Check-up</option>
-                    </select>
-                    <div className="select_arrow">
+                  <div className="needs">
+                    <h3 className=" grey-font">My Pet Needs:</h3>
+                    <div className="select">
+                      <select className="styled-select grey-font bold">
+                        <option value="check-up">Check-up</option>
+                        <option value="check-up">Check-up</option>
+                        <option value="check-up">Check-up</option>
+                        <option value="check-up">Check-up</option>
+                        <option value="check-up">Check-up</option>
+                      </select>
+                      <div className="select_arrow">
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="column-45">
-                  <h3 className=" grey-font">My Pets Location:</h3>
+                  <div className="location">
+                    <h3 className="grey-font">My Pets Location:</h3>
                     <div className="select">
                       <select className="styled-select grey-font bold">
                         <option value="check-up">location 1</option>
@@ -60,6 +63,7 @@ class Vets extends Component {
                       <div className="select_arrow">
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
                 <VetCard />
@@ -69,7 +73,7 @@ class Vets extends Component {
                 <VetCard />
 
             </div>
-            <div className="column-20">
+            <div className="column-20 testimonial-card">
               <h2 className="grey-font center">Testimonials</h2>
               <hr className="grey-font length-11"/>
                 {this.props.testimonials.length > 0

@@ -3,7 +3,7 @@ import React from 'react';
 const TestimonialCard = (props) => {
   // console.log(props.testimonial);
   return(
-    <div className="margin-top-60">
+    <div className="margin-top-60 testimonial-card">
     <div className="width-40 margin-left-30">
       <img src={props.testimonial.profile_image} alt=""/>
     </div>
