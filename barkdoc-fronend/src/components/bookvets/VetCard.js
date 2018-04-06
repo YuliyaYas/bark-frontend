@@ -5,9 +5,9 @@ const VetCard = () => {
     <div className="extralight-grey row margin-top-40">
       <div className="column-70 grey-font">
         <img className="float-left doc-img" alt="doc" src={require('./../../img/doctor-1.png')} />
-        <p>Dr. Matt E, VMD</p>
+        <h3>Dr. Matt E, VMD</h3>
         <p>Veterinariae Medicinae Doctor</p>
-        <p>Verified Patient Reviews</p>
+        <h4 className="orange-font">Verified Patient Reviews</h4>
         <p>"Dr. Matt knew exactly what was wrong with my cat immediately. I’m so happy he was able to swing by.”</p>
         <p>"Getting my dogs ears cleaned has never been easier.
         I booked a time and Dr. Matt showed up at my house!”</p>

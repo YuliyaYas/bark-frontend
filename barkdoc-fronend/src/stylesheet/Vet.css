@@ -1,7 +1,7 @@
 .vet-content {
   position: relative;
   margin-top: 260px;
-  padding-top: 20px;
+  padding: 20px 0;
 }
 /* .styled-select select {
   background: transparent;
@@ -159,14 +159,18 @@
   margin-top: 40px;
 }
 
+.margin-5 {
+  margin-left: 5%;
+}
+
 @media (max-width: 768px) {
   .testimonial-card {
     display: none;
   }
 
   .column-65 {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
+    /* margin-left: 5%; */
   }
 
   .column-45 {
@@ -191,9 +195,17 @@
 
   .vet-card-btn{
     /* padding: 14px 16px; */
-    /* margin: 18px; */
+    margin: 5px 18px;
     /* border-style: none; */
     width: 90%;
     /* border: 2px solid #cccccc; */
+  }
+
+  .doc-img {
+    margin: 10px 10px 0 0 ;
+  }
+
+  .column-70 {
+    margin: 0;
   }
 }
