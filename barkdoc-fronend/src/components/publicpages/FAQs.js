@@ -13,9 +13,9 @@ const FAQs = (props) => {
       <div className="white">
         <div className="background-white-dog container-pattern-zig-zag">
           <Header />
-          <h1 className="white-font content bold padding-faq">FAQS</h1>
+          <h1 className="white-font faq bold padding-faq">FAQS</h1>
         </div>
-        <div className="content grey-font emerg-list">
+        <div className="content main-content grey-font emerg-list">
           {props.faqs.length !== 0
             ?
               props.faqs.map((faq, i) => {

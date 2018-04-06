@@ -19,9 +19,21 @@
     }
 
 .background-white-dog{
+  position: absolute;
   float: left;
   width: 100%;
-  background: transparent url("../img/white-dog.png") top left repeat;
+  height: 350px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent url("../img/white-dog.png")no-repeat top left fixed;
+  /* background-size: cover; */
+}
+
+.main-content {
+  position: relative;
+  margin-top: 350px;
+  padding-top: 50px;
 }
 
 .padding-faq{
@@ -29,6 +41,10 @@
   padding-bottom: 40px;
   font-size: 33pt;
   width: 20%;
+}
+
+.faq {
+  margin-left: 15%;
 }
 
 .contact-btn{
@@ -54,9 +70,23 @@
   margin-left: -1em;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 @media (max-width: 768px) {
   .padding-faq {
     float: left;
     margin-left: 2%;
+  }
+
+  .background-white-dog {
+    height: 280px;
+  }
+
+  .main-content {
+    position: relative;
+    margin-top: 280px;
+    padding-top: 50px;
   }
 }
