@@ -1,3 +1,8 @@
+.content-job {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .margin-top-120px{
   margin-top: 120px;
 }
@@ -35,5 +40,10 @@
 
   .input-text-area-91 {
       width: 86%;
+  }
+
+  .content-job {
+    width: 90%;
+    margin: 0 5%;
   }
 }
