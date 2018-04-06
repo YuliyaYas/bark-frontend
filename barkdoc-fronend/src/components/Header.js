@@ -8,13 +8,13 @@ class Header extends Component {
         <div className="content">
           <div className="header white equal-center-align">
             <div className=" float-left">
-              <a href="http://localhost:3001/user"><img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/></a>
+              <a href="/user"><img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/></a>
             </div>
               <div className="float-right">
                 <Link to="/user/vets"> <button className="orange white-font book-button">SCHEDULE AN APPOINTMENT </button></Link>
               </div>
               <div className="float-right">
-                <a href="" className="grey-font underline sign-in-icon">SIGN IN</a>
+                <a href="/signin" className="grey-font underline sign-in-icon">SIGN IN</a>
               </div>
           </div>
       </div>

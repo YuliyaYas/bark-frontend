@@ -74,7 +74,7 @@ class App extends Component {
       <div className="primary">
       <Switch>
       <Route path={`/user/vets/vet`} component={ () => <VetProfile/>} />
-      <Route path={`/user/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId}/>}/>
+      <Route path={`/user/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId} selectedLocationName={this.state.selectedLocationName}/>}/>
       <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />
