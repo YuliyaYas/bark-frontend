@@ -16,7 +16,7 @@ const Testimonials = (props) => {
         <Header />
         <h1 className="white-font content bold padding-career">Testimonials</h1>
       </div>
-      <div className="white careers-content">
+      <div className="white testimonials-content">
         <div className="center grey-font pt-26 bold">BOW WOW! Read Our Reviews </div>
         <hr className="grey-font length-40"/>
       </div>
@@ -27,19 +27,27 @@ const Testimonials = (props) => {
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[0].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[0].review}</p>
-                <h3>{props.testimonials[0].name}</h3>
-                <h4>{props.testimonials[0].location}</h4>
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[0].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[0].name}</h3>
+                  <h4>{props.testimonials[0].location}</h4>
+                </div>
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[1].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[1].review}</p>
-                <h3>{props.testimonials[1].name}</h3>
-                <p>{props.testimonials[1].location}</p>
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[1].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[1].name}</h3>
+                  <p>{props.testimonials[1].location}</p>
+                </div>
               </div>
             </div>
             <div className="row font-11pt content grey-font">
@@ -47,20 +55,27 @@ const Testimonials = (props) => {
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[2].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[2].review}</p>
-                <h3>{props.testimonials[2].name}</h3>
-                <p>{props.testimonials[2].location}</p>
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[2].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[2].name}</h3>
+                  <p>{props.testimonials[2].location}</p>
+                </div>
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[3].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[3].review}</p>
-                <h3>{props.testimonials[3].name}</h3>
-                <p>{props.testimonials[3].location}</p>
-
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[3].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[3].name}</h3>
+                  <p>{props.testimonials[3].location}</p>
+                </div>
               </div>
             </div>
             <div className="row font-11pt content grey-font">
@@ -68,19 +83,27 @@ const Testimonials = (props) => {
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[4].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[4].review}</p>
-                <h3>{props.testimonials[4].name}</h3>
-                <p>{props.testimonials[4].location}</p>
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[4].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[4].name}</h3>
+                  <p>{props.testimonials[4].location}</p>
+                </div>
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
                   <img src={props.testimonials[5].profile_image} alt=""/>
                 </div>
-                <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
-                <p>{props.testimonials[5].review}</p>
-                <h3>{props.testimonials[5].name}</h3>
-                <p>{props.testimonials[5].location}</p>
+                <div className="quote-row">
+                  <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
+                  <p>{props.testimonials[5].review}</p>
+                </div>
+                <div className="name-row">
+                  <h3>{props.testimonials[5].name}</h3>
+                  <p>{props.testimonials[5].location}</p>
+                </div>
 
               </div>
             </div>

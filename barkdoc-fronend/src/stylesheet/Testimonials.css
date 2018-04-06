@@ -10,7 +10,7 @@
   background: transparent url("../img/cat_background.png") top left no-repeat;
 }
 
-.careers-content {
+.testimonials-content {
   position: relative;
   margin-top: 330px;
   padding-top: 50px;
@@ -63,8 +63,24 @@
 }
 
 .column-review {
-  /* text-align: center; */
+  text-align: center;
 }
+
+.quote-row {
+  display: flex;
+}
+
+.quotes {
+  width: 25px;
+  height: 20px;
+}
+
+.name-row {
+  text-align: center;
+  width: 90%;
+  margin-left: 10%;
+}
+
 
 @media (max-width: 768px) {
   .width-40 {
@@ -81,5 +97,17 @@
 
   .margin-39 {
     margin-left: 10%
+  }
+
+  .background-cat {
+    height: 200px;
+  }
+
+  .column-review {
+    margin-left: -5%;
+  }
+
+  .testimonials-content {
+    margin-top: 230px;
   }
 }
