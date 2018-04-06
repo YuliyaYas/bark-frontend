@@ -88,5 +88,7 @@ h3 {
     position: relative;
     margin-top: 280px;
     padding-top: 50px;
+    width: 90%;
+    margin-left: 5%;
   }
 }

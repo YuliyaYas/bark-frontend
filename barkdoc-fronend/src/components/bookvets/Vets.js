@@ -28,7 +28,7 @@ class Vets extends Component {
           </div>
           {this.props.selectLocationClick===true ? "" : <Overlay1 handleContinueLocation={this.props.handleContinueLocation} handleSelectChange={this.props.handleSelectChange} handleLocationButton={this.props.handleLocationButton} location={this.props.location}/>}
           <div className="white">
-          <div className="content" >
+          <div className="content vet-content" >
           <div className="row">
             <div className="column-65">
               <div className="row">

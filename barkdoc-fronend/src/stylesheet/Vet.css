@@ -1,4 +1,8 @@
-
+.vet-content {
+  position: relative;
+  margin-top: 260px;
+  padding-top: 20px;
+}
 /* .styled-select select {
   background: transparent;
   background-image: none;
