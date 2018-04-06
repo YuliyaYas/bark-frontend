@@ -8,11 +8,11 @@ class Careers extends Component {
   render(){
     return(
       <div>
-        <div className="background-three-dog container-pattern-zig-zag">
+        <div className="background-three-dog container-career-zig-zag">
           <Header />
           <h1 className="white-font content bold padding-career">Careers</h1>
         </div>
-        <div className="white">
+        <div className="white careers-content">
         <div className="content">
         <div className="margin-right-left">
           <div className="container border-bottom">

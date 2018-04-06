@@ -1,11 +1,41 @@
 
 .background-three-dog{
+  position: absolute;
   float: left;
   width: 100%;
-  /* height: 400px; */
-  background: transparent url("../img/three-dogs.png") top left no-repeat;
+  height: 350px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent url("../img/three-dogs.png") no-repeat top right fixed;
+  background-size: contain;
 }
 
+.container-career-zig-zag {
+    padding: 0px 0px 32px 0px;
+    background-color: none;
+}
+
+.container-career-zig-zag:after {
+    background: linear-gradient(-45deg, white 16px, transparent 0), linear-gradient(45deg, white 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 17px 44px;
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 43px;
+    bottom: 0px;
+    border-bottom: 30px solid white;
+  }
+
+  .careers-content {
+    position: relative;
+    margin-top: 350px;
+    padding-top: 20px;
+  }
 
 
 .padding-career{
@@ -89,5 +119,11 @@
   .margin-right-left{
     margin-left: 5%;
     margin-right: 5%;
+  }
+
+  .background-three-dog {
+    background-size: 210vh;
+    /* background-size: 500px 250px; */
+    background-position: 55% top;
   }
 }
