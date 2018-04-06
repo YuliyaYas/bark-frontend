@@ -12,11 +12,11 @@ const Testimonials = (props) => {
   return(
     <div>
       <div className="white">
-      <div className="background-cat container-pattern-zig-zag">
+      <div className="background-cat container-testimonials-zig-zag">
         <Header />
         <h1 className="white-font content bold padding-career">Testimonials</h1>
       </div>
-      <div className="content white">
+      <div className="white careers-content">
         <div className="center grey-font pt-26 bold">BOW WOW! Read Our Reviews </div>
         <hr className="grey-font length-40"/>
       </div>
