@@ -121,9 +121,15 @@
 
 /* slide 1 */
 .pug-background{
-  background: url("../img/homepage/pug-longer.png")no-repeat center center fixed;
+  position: absolute;
+  float: left;
+  width: 100%;
   height: 725px;
-  background-position-y: top;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: url("../img/homepage/pug-longer.png")no-repeat center center fixed;
+  /* background-position-y: top; */
 }
 
 
@@ -144,6 +150,7 @@
 
 /*  zig zag*/
 .container-zig-zag {
+    height: 695px;
     position: relative;
     padding: 0px 0px 32px 0px;
     background-color: white;
@@ -157,7 +164,7 @@
     content: " ";
     display: block;
     position: absolute;
-    bottom: 31px;
+    bottom: 0px;
     left: 0px;
     width: 100%;
     height: 32px;
@@ -224,6 +231,11 @@
 
 .font-11pt{
   font-size: 11pt;
+}
+
+.homepage-content {
+  position: relative;
+  padding-top: 50px;
 }
 
 .container-brown-zig-zag {
@@ -445,7 +457,7 @@ img.column-review{
     align-items: baseline;
     float: left;
     width: 80%;
-    padding-left: 10%;
+    padding-left: 12%;
     /* padding-right: 15%; */
     margin-top: 25px;
   }
@@ -495,5 +507,9 @@ img.column-review{
     background: url("../img/homepage/pug-tall.png")no-repeat center center fixed;
     height: 720px;
     background-position-y: top;
+  }
+
+  .styled {
+    margin-right: 10%;
   }
 }

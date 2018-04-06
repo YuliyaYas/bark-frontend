@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 const WhyBarkDoc = () => {
   return(
-    <div className="white">
+    <div className="white homepage-content">
       <div className="content white">
         <div className="center grey-font pt-26 bold">Why BarkDoc?</div>
         <hr className="grey-font length-11"/>
