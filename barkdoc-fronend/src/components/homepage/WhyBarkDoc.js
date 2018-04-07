@@ -31,7 +31,7 @@ const WhyBarkDoc = () => {
             Veterinarian Care at affordable rates, plus all the convenience of your own home.</p>
           </div>
         </div>
-        <Link to="/user/vets"> <button className="orange white-font schedule-appt bold margin-41">SCHEDULE AN APPOINTMENT</button></Link>
+        <Link to="/vets"> <button className="orange white-font schedule-appt bold margin-41">SCHEDULE AN APPOINTMENT</button></Link>
       </div>
     </div>
   );

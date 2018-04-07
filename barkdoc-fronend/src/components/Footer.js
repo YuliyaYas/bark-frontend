@@ -26,22 +26,22 @@ class Footer extends Component {
           </div>
             <ul className="ul-style">
               <li className="li-style">
-                <a href="http://localhost:3001/about"> About </a>
+                <a href="/about"> About </a>
               </li>
               <li className="li-style">
                 <a href=""> Press </a>
               </li>
               <li className="li-style">
-                <a href="http://localhost:3001/careers"> Careers </a>
+                <a href="/careers"> Careers </a>
               </li>
               <li className="li-style">
-                <a href="http://localhost:3001/contact"> Contact </a>
+                <a href="/contact"> Contact </a>
               </li>
               <li className="li-style">
-                <a href="http://localhost:3001/faqs"> FAQ </a>
+                <a href="/faqs"> FAQ </a>
               </li>
               <li className="li-style">
-                <a href="http://localhost:3001/testimonials"> Testimonials </a>
+                <a href="/testimonials"> Testimonials </a>
               </li>
               <li className="li-style">
                 <a href=""> Pricing </a>

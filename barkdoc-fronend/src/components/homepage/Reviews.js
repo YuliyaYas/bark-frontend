@@ -76,7 +76,7 @@ const Reviews = (props) => {
       Ready to Raise the
       Woof With BarkDoc?
     </div>
-      <Link to="/user/vets"><button className="orange white-font button-make-at-home bold">MAKE MY AT HOME APPOINTMENT</button></Link>
+      <Link to="/vets"><button className="orange white-font button-make-at-home bold">MAKE MY AT HOME APPOINTMENT</button></Link>
 
     </div>
   );

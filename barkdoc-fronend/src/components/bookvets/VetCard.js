@@ -15,7 +15,7 @@ const VetCard = () => {
       </div>
       <div className="column-20"></div>
         <button className="vet-card-btn grey grey-font bold">BOOK DR.MATT</button>
-        <a href="/user/vets/vet"><button className="vet-card-btn white grey-font bold">VIEW FULL PROFILE</button></a>
+        <a href="/vets/vet"><button className="vet-card-btn white grey-font bold">VIEW FULL PROFILE</button></a>
     </div>
   );
 };
