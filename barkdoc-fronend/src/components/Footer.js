@@ -43,9 +43,6 @@ class Footer extends Component {
               <li className="li-style">
                 <a href="/testimonials"> Testimonials </a>
               </li>
-              <li className="li-style">
-                <a href=""> Pricing </a>
-              </li>
               <li className="li-style wider">
                 <a href=""> Trusted Partners </a>
               </li>
