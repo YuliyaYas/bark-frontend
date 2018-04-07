@@ -26,7 +26,7 @@ class ReadyToApply extends Component {
             <input className="input-sign-in" type="text" placeholder="Enter your phone here"/>
           </div>
           <div className="input-49 padding-right-2 margin-bottom-20">
-            <h3 className="display-block grey-font">Recume/CV</h3>
+            <h3 className="display-block grey-font">Resume/CV</h3>
             <textarea className="question-textarea input-text-area-91" rows="4" type="text" placeholder="Enter your message here(2000 words max)."/>
           </div>
           <div className="input-49 margin-bottom-20">
