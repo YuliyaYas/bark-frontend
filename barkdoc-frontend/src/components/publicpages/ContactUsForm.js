@@ -1,23 +1,59 @@
 import React, {Component} from 'react';
-
+import SuccessFormMessage from './SuccessFormMessage';
 
 class ContactUsForm extends Component{
+  constructor(){
+    super();
+    this.state={
+      email: '',
+      name: '',
+      user: '',
+      clicked: false
+    };
+  };
+
+
+  handleChange = e => {
+    e.preventDefault();
+    const name = e.target.name;
+    const value = e.target.value;
+    this.setState(prevState => {
+      return { [name]: value };
+    });
+  };
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name;
+    const value = e.target.value;
+    this.state.clicked = false
+    this.setState({clicked: true})
+  }
+
+  handleClick = (e) => {
+    e.preventDefault();
+    this.setState({user: e.target.value}, () => console.log(this.state))
+  }
+
   render(){
     return(
       <div className="width-25 margin-left-37">
         <div className="center grey-font pt-26 bold padding-top-60">Contact Us</div>
         <hr className="grey-font length-11"/>
-        <form>
-          <h3 className="display-block grey-font">Email Address</h3>
-          <input className="input-sign-in" type="text" placeholder="Enter your email address here"/>
-          <h3 className="display-block grey-font">Your Name</h3>
-          <input className="input-sign-in" type="text" placeholder="Enter your password here"/>
+        <form onSubmit={this.handleSubmit}>
+          <h3 className="display-block grey-font" >Email Address</h3>
+          <input className="input-sign-in" name="email" type="text" placeholder="Enter your email address here" required onChange={this.handleChange}/>
+          <h3 className="display-block grey-font" >Your Name</h3>
+          <input className="input-sign-in" name="name" type="text" placeholder="Enter your name here" onChange={this.handleChange}/>
           <h3 className="display-block grey-font">Are You a Veterinarian, or Patient?</h3>
-          <label className="bold grey-font margin-right-10px"><input type="radio" name="customer-type" />Veterinarian</label>
-          <label className="bold grey-font"><input type="radio" name="customer-type" />Patient</label>
+          <label className="bold grey-font margin-right-10px">
+          <input type='radio' name="user" onClick={this.handleClick} value="vet"/>Veterinarian</label>
+          <label className="bold grey-font">
+          <input type='radio' name="user" onClick={this.handleClick} value="patient"/>Patient</label>
           <h3 className="grey-font">Message</h3>
-          <textarea className="question-textarea input-text-area" rows="4" type="text" placeholder="Enter your message here(2000 words max)."/>
-          <button className="orange white-font display-block sign-in-button bold">SEND NOW</button>
+          <textarea className="question-textarea input-text-area" rows="4" type="text" name="message" placeholder="Enter your message here(2000 words max)." required onChange={this.handleChange}/>
+                  {this.state.clicked === true ? <SuccessFormMessage /> : ''}
+          <button type="submit" className="orange white-font display-block sign-in-button bold">SEND NOW</button>
         </form>
       </div>
     );
