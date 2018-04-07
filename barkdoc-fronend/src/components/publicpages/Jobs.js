@@ -35,6 +35,8 @@ const Jobs = (props) => {
          :
          ""}
          <ReadyToApply />
+         <br/>
+         <br/>
     </div>
   );
 };

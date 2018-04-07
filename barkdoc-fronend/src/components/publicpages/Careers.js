@@ -26,13 +26,13 @@ class Careers extends Component {
             <div className="column-job-name">
               <text className="grey-font bold pt-14">Veterinarian </text><br></br><br></br>
               <span className="light-grey-font bold font-9">New York, NY</span></div>
-            <button className="float-right column-button button-apply-now-grey white-font bold margin-top-35">APPLY NOW</button>
+            <a href="/careers/job"><button className="float-right column-button button-apply-now-grey white-font bold margin-top-35">APPLY NOW</button></a>
           </div>
 
           <div className="row border-bottom margin-bottom-20">
             <div className="column-job-name">
               <text className="grey-font bold pt-14">Vet Tech </text><br></br><br></br><text className="light-grey-font bold font-9">New York, NY</text></div>
-            <button className="float-right column-button button-apply-now-orange white-font bold">APPLY NOW</button>
+              <a href="/careers/job"><button className="float-right column-button button-apply-now-orange white-font bold">APPLY NOW</button></a>
           </div>
 
           <br />
