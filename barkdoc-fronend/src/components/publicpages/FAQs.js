@@ -50,7 +50,7 @@ const FAQs = (props) => {
           }
           <h3>Have a question that isn’t on here?</h3>
           <p>Click the Contact Us button below with your inquiry and someone will get back to you shortly.</p>
-          <button className="orange white-font contact-btn">CONTACT US</button>
+          <a href="mailto:someone@example.com?Subject=BarkDoc%20Contact%20" target="_top"><button className="orange white-font contact-btn">CONTACT US</button></a>
       </div>
       <div className="container-grey-zig-zag"></div>
       </div>
