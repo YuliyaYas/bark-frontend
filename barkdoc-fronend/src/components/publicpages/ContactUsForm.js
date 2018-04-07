@@ -10,8 +10,8 @@ class ContactUsForm extends Component{
         <form>
           <h3 className="display-block grey-font">Email Address</h3>
           <input className="input-sign-in" type="text" placeholder="Enter your email address here"/>
-          <h3 className="display-block grey-font">Password</h3>
-          <input className="input-sign-in" type="password" placeholder="Enter your password here"/>
+          <h3 className="display-block grey-font">Your Name</h3>
+          <input className="input-sign-in" type="text" placeholder="Enter your password here"/>
           <h3 className="display-block grey-font">Are You a Veterinarian, or Patient?</h3>
           <label className="bold grey-font margin-right-10px"><input type="radio" name="customer-type" />Veterinarian</label>
           <label className="bold grey-font"><input type="radio" name="customer-type" />Patient</label>
