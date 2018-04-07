@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Route, Switch} from 'react-router-dom';
-import SignIn from '../src/components/signin/Signin.js';
 import Footer from '../src/components/Footer.js';
 import HomePage from '../src/components/homepage/HomePage.js';
 import About from '../src/components/publicpages/About.js';
@@ -82,7 +81,6 @@ class App extends Component {
       <Route path={`/faqs`} component={ () => <FAQs faqs={this.state.faqs}/>} />
       <Route path={`/contact`} component={ () => <ContactUs />} />
       <Route path={`/user`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />
-      <Route path={`/`} component={ () => <SignIn/>} />
       </Switch>
       <Footer />
       </div>
