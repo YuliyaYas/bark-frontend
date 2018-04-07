@@ -7,7 +7,7 @@ import DogBottom from './../DogBottom.js';
 
 
 const FAQs = (props) => {
-  console.log(props.faqs.length !== 0 ? props.faqs : 'no')
+  console.log("faq", props.faqs.length !== 0 ? props.faqs : 'no')
   return(
     <div>
       <div className="white">
@@ -42,7 +42,7 @@ const FAQs = (props) => {
                     <p key={k}>{answer}</p>
                   )
                 })}
-                <h1>{faq.button === true ? <button className="orange white-font find-more-btn">FIND OUT MORE</button> : ""}</h1>
+                <h1>{faq.button === true ? <a href={faq.link}><button className="orange white-font find-more-btn">FIND OUT MORE</button></a> : ""}</h1>
                 </div>
               )})
             :
