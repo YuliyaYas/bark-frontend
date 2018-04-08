@@ -47,9 +47,9 @@ class ContactUsForm extends Component{
           <input className="input-sign-in" name="name" type="text" placeholder="Enter your name here" onChange={this.handleChange}/>
           <h3 className="display-block grey-font">Are You a Veterinarian, or Patient?</h3>
           <label className="bold grey-font margin-right-10px">
-          <input type='radio' name="user" onClick={this.handleClick} value="vet"/>Veterinarian</label>
+          <input type='radio' name="user" onClick={this.handleClick} value="vet" />Veterinarian</label>
           <label className="bold grey-font">
-          <input type='radio' name="user" onClick={this.handleClick} value="patient"/>Patient</label>
+          <input type='radio' name="user" onClick={this.handleClick} value="patient" />Patient</label>
           <h3 className="grey-font">Message</h3>
           <textarea className="question-textarea input-text-area" rows="4" type="text" name="message" placeholder="Enter your message here(2000 words max)." required onChange={this.handleChange}/>
                   {this.state.clicked === true ? <SuccessFormMessage /> : ''}

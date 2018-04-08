@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './../stylesheet/HaveQuestions.css';
+import SuccessFormMessage from '../components/publicpages/SuccessFormMessage.js';
 
 class HaveQuestionsForm extends Component {
   constructor(){
@@ -8,7 +9,8 @@ class HaveQuestionsForm extends Component {
       email: "",
       name: "",
       phone: "",
-      message: ""
+      message: "",
+      clicked: false
     };
   };
 
@@ -23,7 +25,12 @@ class HaveQuestionsForm extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    const name = e.target.name;
+    const value = e.target.value;
+    this.state.clicked = false
+    this.setState({clicked: true})
   }
+
 
 
   render(){
@@ -47,6 +54,8 @@ class HaveQuestionsForm extends Component {
             <h3 className="grey-font">Message</h3>
             <textarea className="question-textarea input-text-area" name="message" rows="4" type="text" placeholder="Enter your message here(2000 words max)." onChange={this.handleChange}/>
           </div>
+           {this.state.clicked === true ? <SuccessFormMessage /> : ''}
+
           <button type="submit" className="orange white-font display-block bold submit-button">SUBMIT</button>
         </form>
         <div className="center">
