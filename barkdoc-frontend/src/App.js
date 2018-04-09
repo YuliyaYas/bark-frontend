@@ -25,7 +25,8 @@ class App extends Component {
       faqs: [],
       selectedLocationId: '',
       selectedLocationName: '',
-      selectLocationClick: false
+      selectLocationClick: false,
+      vets_reviews: []
     }
   }
   componentDidMount(){
@@ -44,6 +45,9 @@ class App extends Component {
     .then((resp) => {
       this.setState({faqs: resp.data.data.faq_headlines})
     });
+
+    butter.content.retrieve(["reviews", "vets_reviews"])
+    .then((resp) => this.setState({vets_reviews: resp.data.data.vets_reviews}));
 
   };
 
