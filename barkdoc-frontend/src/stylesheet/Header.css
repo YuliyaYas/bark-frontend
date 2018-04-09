@@ -69,20 +69,42 @@
 }
 
 .book-button-mobile {
-    padding: 14px 16px;
-    margin: 18px;
+    padding: 0;
+    margin: 0;
+    width: 80px;
     background: transparent;
     border: 2px solid #f08e30;
 }
 
-.book-button-mobile {
+.book-button-mobile,
+.hamburger {
   display: none;
 }
 
 @media (max-width: 768px) {
+  .logo {
+    width: 150px;
+  }
+
   .content {
-    width: 96%;
+    width: 95%;
     padding: 0 2% 0 2%;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mobile-hamburger {
+    width: 80px;
+  }
+
+  .hamburger {
+    display: flex;
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
 
   .book-button {
@@ -90,16 +112,16 @@
   }
 
   .book-button-mobile {
-    padding: 14px 16px;
-    margin: 18px;
+    padding: 7px 8px;
+    margin: 25px 10px 18px 0;
     background: transparent;
     border: 2px solid #f08e30;
-    display: inline-block;
+    display: flex;
   }
 
   .float-left{
-    float: left;
-    width: 60%;
+    /* float: left; */
+    /* width: 40%; */
   }
 
   .float-right{
