@@ -26,7 +26,8 @@ class App extends Component {
       selectedLocationId: '',
       selectedLocationName: '',
       selectLocationClick: false,
-      vets_reviews: []
+      vets_reviews: [],
+      response: ''
     }
   }
   componentDidMount(){
@@ -49,8 +50,18 @@ class App extends Component {
     butter.content.retrieve(["reviews", "vets_reviews"])
     .then((resp) => this.setState({vets_reviews: resp.data.data.vets_reviews}));
 
+    this.callApi()
+      .then(res => this.setState({ response: res.express }))
+      .catch(err => console.log(err));
   };
+  callApi = async () => {
+    const response = await fetch('/api/hello');
+    const body = await response.json();
 
+    if (response.status !== 200) throw Error(body.message);
+
+    return body;
+  };
 
     handleSelectChange = (e) => {
       e.preventDefault();
@@ -66,13 +77,11 @@ class App extends Component {
 
     handleLocationButton = () => {
       this.state.selectLocationClick = false
-      console.log(this.state.selectLocationClick);
       this.setState({selectLocationClick: true}, () => console.log(this.state.selectLocationClick))
     }
 
 
   render() {
-    // console.log(this.state.faqs)
     return (
       <div className="primary">
       <Switch>

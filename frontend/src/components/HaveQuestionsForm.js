@@ -28,7 +28,10 @@ class HaveQuestionsForm extends Component {
     const name = e.target.name;
     const value = e.target.value;
     this.state.clicked = false
-    this.setState({clicked: true})
+    this.setState({clicked: true}, () => {
+      fetch("/api/forms/questions.json").then(resp => console.log(resp));
+    })
+
   }
 
 
