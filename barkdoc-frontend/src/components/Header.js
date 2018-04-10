@@ -9,7 +9,7 @@ class Header extends Component {
         <div className="header white equal-center-align">
           <div className="header-content">
             <div className="mobile-hamburger">
-              <i class="material-icons orange-font hamburger">menu</i>
+              <i className="material-icons orange-font hamburger">menu</i>
             </div>
             <div className="float-left">
               <a href="/"><img className="logo" src={require(`../img/repeated/logo.png`)} alt="logo"/></a>
