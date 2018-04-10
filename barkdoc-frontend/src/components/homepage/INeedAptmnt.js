@@ -6,9 +6,9 @@ class INeedAptmnt extends Component{
     return(
       <div className="content">
       <div className="font-40pt width-50 top-100 white-font bold">
-        <div>Vet Appointments.</div>
-        <div>At Your Home.</div>
-        <div>Furrr Real.</div>
+        <div className="need-appt">Vet Appointments.</div>
+        <div className="need-appt">At Your Home.</div>
+        <div className="need-appt">Furrr Real.</div>
       </div>
       <div className="width-45">
       <div className="white-font font-16 float-left-desktop margin-top-20 padding-10">I need an appointment for my</div>
