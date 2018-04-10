@@ -136,4 +136,55 @@
   .sign-in-icon{
     display: none;
   }
+
+  .menu {
+    background-color: white;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16pt;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #f08e30;
+  }
+
+  .menu i {
+    margin-left: 0;
+  }
+
+  .menu-div-first {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #f08e30;
+    width: 90%;
+    height: 80px;
+    align-items: center;
+  }
+
+  .menu-div {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #f08e30;
+    width: 90%;
+    height: 80px;
+    align-items: center;
+  }
+
+  .menu-div-last {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80px;
+    align-items: center;
+  }
 }

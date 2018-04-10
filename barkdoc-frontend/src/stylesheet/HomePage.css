@@ -520,42 +520,5 @@ img.column-review{
     margin-right: 0px!important;
   }
 
-  .menu {
-    background-color: white;
-    color: black;
-    z-index: 1;
-    position: absolute;
-    top: 130px;
-    margin-left: 0;
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 95%;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .menu a {
-    text-decoration: none;
-    color: #f08e30;
-  }
-
-  .menu-div {
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #f08e30;
-    width: 90%;
-    height: 80px;
-    align-items: center;
-  }
-
-  .menu-div-last {
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    height: 80px;
-    align-items: center;
-  }
-
 
 }

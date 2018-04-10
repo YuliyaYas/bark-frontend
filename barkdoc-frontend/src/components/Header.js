@@ -29,18 +29,25 @@ class Header extends Component {
 
         </div>
         {this.state.open &&
-          <div className="menu font-16">
-            <div className="menu-div">
-              <Link to="/about" onClick={this.handleClick}>About</Link>
-            </div>
-            <div className="menu-div">
-              <Link to="/testimonials" onClick={this.handleClick}>Testimonials</Link>
-            </div>
-            <div className="menu-div">
-              <Link to="/faqs" onClick={this.handleClick}>FAQs</Link>
-            </div>
-            <div className="menu-div-last">
-              <Link to="/careers" onClick={this.handleClick}>Careers</Link>
+          <div className="base">
+            <div className="shroud">
+              <div className="menu">
+                <div className="menu-div-first">
+                  <i class="material-icons orange-font font-40pt" onClick={this.handleClick}>keyboard_arrow_left</i>
+                </div>
+                <div className="menu-div">
+                  <Link to="/about" onClick={this.handleClick}>About</Link>
+                </div>
+                <div className="menu-div">
+                  <Link to="/testimonials" onClick={this.handleClick}>Testimonials</Link>
+                </div>
+                <div className="menu-div">
+                  <Link to="/faqs" onClick={this.handleClick}>FAQs</Link>
+                </div>
+                <div className="menu-div-last">
+                  <Link to="/careers" onClick={this.handleClick}>Careers</Link>
+                </div>
+              </div>
             </div>
           </div>
         }
