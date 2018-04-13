@@ -365,6 +365,10 @@ img.column-review{
   padding-top: 10px;
 }
 
+.profile-image {
+  border-radius: 50%;
+}
+
 @media (max-width: 768px) {
   .pug-background{
     background-image: url("../img/homepage/pug.png");
@@ -462,10 +466,6 @@ img.column-review{
     padding-left: 10%;
     padding-right: 0;
     margin-top: 25px;
-  }
-
-  .profile-image {
-    border-radius: 50%;
   }
 
   .review-name {
