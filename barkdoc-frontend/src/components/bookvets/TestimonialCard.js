@@ -4,8 +4,8 @@ const TestimonialCard = (props) => {
   // console.log(props.testimonial);
   return(
     <div className="margin-top-60 testimonial-card">
-    <div className="width-40 margin-left-30">
-      <img src={props.testimonial.profile_image} alt=""/>
+    <div className="flex-center">
+      <img className="profile-image" src={props.testimonial.profile_image} alt=""/>
     </div>
     <div className="quote-row">
       <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />

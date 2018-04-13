@@ -369,6 +369,11 @@ img.column-review{
   border-radius: 50%;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .pug-background{
     background-image: url("../img/homepage/pug.png");
