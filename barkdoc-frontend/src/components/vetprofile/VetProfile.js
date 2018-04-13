@@ -38,7 +38,7 @@ const VetProfile = () => {
                 <p>Cough</p>
                 <p>Minor injuries</p>
                 <p>Allergy testing</p>
-                <p>Heqrtworm testing</p>
+                <p>Heartworm testing</p>
               </div>
               <div className="column-34">
                 <p>Parasite testing</p>

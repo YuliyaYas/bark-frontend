@@ -128,7 +128,7 @@
   }
 
   .profile-info {
-    width: 100%;
+    width: 90%;
     /* background-color: lightgray; */
     display: inline-block;
     margin-top: -130px;
@@ -142,7 +142,7 @@
   }
 
   .profile-info-r {
-    width: 480px;
+    width: 100%;
     margin-left: 0;
     color: gray;
     margin-top: 200px;
