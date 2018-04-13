@@ -33,7 +33,7 @@ class Header extends Component {
             <div className="shroud">
               <div className="menu">
                 <div className="menu-div-first">
-                  <i class="material-icons orange-font font-40pt" onClick={this.handleClick}>keyboard_arrow_left</i>
+                  <i className="material-icons orange-font font-40pt" onClick={this.handleClick}>keyboard_arrow_left</i>
                 </div>
                 <div className="menu-div">
                   <Link to="/about" onClick={this.handleClick}>About</Link>
