@@ -25,7 +25,7 @@ const Testimonials = (props) => {
             <div className="row font-11pt content grey-font">
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[0].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[0].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
@@ -38,7 +38,7 @@ const Testimonials = (props) => {
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[1].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[1].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
@@ -53,7 +53,7 @@ const Testimonials = (props) => {
             <div className="row font-11pt content grey-font">
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[2].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[2].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
@@ -66,7 +66,7 @@ const Testimonials = (props) => {
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[3].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[3].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
@@ -81,7 +81,7 @@ const Testimonials = (props) => {
             <div className="row font-11pt content grey-font">
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[4].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[4].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
@@ -94,7 +94,7 @@ const Testimonials = (props) => {
               </div>
               <div className="column-review">
                 <div className="width-40 margin-left-30">
-                  <img src={props.testimonials[5].profile_image} alt=""/>
+                  <img className="profile-image" src={props.testimonials[5].profile_image} alt=""/>
                 </div>
                 <div className="quote-row">
                   <img className="quotes" src={require("./../../img/repeated/quotations.png")} alt="" />
