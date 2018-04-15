@@ -21,7 +21,7 @@ const VetProfile = () => {
               <div className="profile-info-r">
                 <h1 className="white-font-profile bold content">Dr. Ryan U, VMD</h1>
                 <h3 className="white-font-profile content">Veterinariae Medicinae Doctor</h3>
-                <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={require("../../img/stars.png")}/> Verified Patient Reviews(6)</h3>
+                <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> Verified Patient Reviews(6)</h3>
               </div>
             </div>
             <div className="services">
@@ -59,7 +59,7 @@ const VetProfile = () => {
               </p>
               <hr />
               <h2 className="bold">Verified Patient Reviews (6)</h2>
-              <h4><img alt="" className="stars float-left" src={require("../../img/stars.png")}/> 4.5 </h4>
+              <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
               <br/>
               <div >
                 <div className="col-55">
@@ -68,7 +68,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
@@ -81,7 +81,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
@@ -94,7 +94,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
@@ -107,7 +107,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
@@ -120,7 +120,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
@@ -133,7 +133,7 @@ const VetProfile = () => {
                 <div className="col-45">
                   <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
                   <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/stars.png")}/>
+                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
                   <br/>
                   <br/>
                 </div>
