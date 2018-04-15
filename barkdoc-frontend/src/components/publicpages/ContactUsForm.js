@@ -8,7 +8,8 @@ class ContactUsForm extends Component{
       email: '',
       name: '',
       user: '',
-      clicked: false
+      clicked: false,
+      selectedOption: 'vet',
     };
   };
 
@@ -30,9 +31,8 @@ class ContactUsForm extends Component{
     this.setState({clicked: true})
   }
 
-  handleClick = (e) => {
-    e.preventDefault();
-    this.setState({user: e.target.value}, () => console.log(this.state))
+  handleRadioChange = (e) => {
+    this.setState({selectedOption: e.target.value})
   }
 
   render(){
@@ -47,9 +47,9 @@ class ContactUsForm extends Component{
           <input className="input-sign-in" name="name" type="text" placeholder="Enter your name here" onChange={this.handleChange}/>
           <h3 className="display-block grey-font">Are You a Veterinarian, or Patient?</h3>
           <label className="bold grey-font margin-right-10px">
-          <input type='radio' name="user" onClick={this.handleClick} value="vet" />Veterinarian</label>
+          <input type='radio' name="user" onChange={this.handleRadioChange} value="vet"  checked={this.state.selectedOption === 'vet'}/>Veterinarian</label>
           <label className="bold grey-font">
-          <input type='radio' name="user" onClick={this.handleClick} value="patient" />Patient</label>
+          <input type='radio' name="user" onChange={this.handleRadioChange} value="patient" checked={this.state.selectedOption === 'patient'}/>Patient</label>
           <h3 className="grey-font">Message</h3>
           <textarea className="question-textarea input-text-area" rows="4" type="text" name="message" placeholder="Enter your message here(2000 words max)." required onChange={this.handleChange}/>
                   {this.state.clicked === true ? <SuccessFormMessage /> : ''}
