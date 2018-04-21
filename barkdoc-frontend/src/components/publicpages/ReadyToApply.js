@@ -65,11 +65,11 @@ class ReadyToApply extends Component {
             </div>
             <div className="input-49 padding-right-2 margin-bottom-20">
               <h3 className="display-block grey-font">Resume/CV</h3>
-              <textarea className="question-textarea input-text-area-91" name="resume" rows="4" type="text" placeholder="Enter your message here(2000 words max)." onChange={this.handleChange}/>
+              <textarea className="question-textarea input-text-area-91" name="resume" rows="4" type="text" placeholder="Paste your resume here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 margin-bottom-20">
               <h3 className="display-block grey-font">Coverletter</h3>
-              <textarea className="question-textarea input-text-area-91" name="coverletter" rows="4" type="text" placeholder="Enter your message here(2000 words max)." onChange={this.handleChange}/>
+              <textarea className="question-textarea input-text-area-91" name="coverletter" rows="4" type="text" placeholder="Paste your cover letter here " onChange={this.handleChange}/>
             </div>
             <div className="input-49 padding-right-2 margin-bottom-20">
               <h3 className="display-block grey-font">LinkedIn Profile</h3>

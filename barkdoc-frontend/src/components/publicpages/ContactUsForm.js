@@ -7,9 +7,8 @@ class ContactUsForm extends Component{
     this.state={
       email: '',
       name: '',
-      user: '',
       clicked: false,
-      selectedOption: 'vet',
+      selectedOption: 'vet'
     };
   };
 
@@ -36,6 +35,7 @@ class ContactUsForm extends Component{
   }
 
   render(){
+    console.log(this.state);
     return(
       <div className="width-25 margin-left-37">
         {this.state.clicked === true
