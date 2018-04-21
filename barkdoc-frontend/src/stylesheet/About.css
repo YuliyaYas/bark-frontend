@@ -81,6 +81,7 @@
 .B-float{
   float: left;
   width: 10%;
+  padding-right: 7px;
 }
 
 .padding-right-20{

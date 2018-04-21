@@ -29,9 +29,6 @@ class Footer extends Component {
                 <a href="/about"> About </a>
               </li>
               <li className="li-style">
-                <a href=""> Press </a>
-              </li>
-              <li className="li-style">
                 <a href="/careers"> Careers </a>
               </li>
               <li className="li-style">
@@ -42,9 +39,6 @@ class Footer extends Component {
               </li>
               <li className="li-style">
                 <a href="/testimonials"> Testimonials </a>
-              </li>
-              <li className="li-style wider">
-                <a href=""> Trusted Partners </a>
               </li>
             </ul>
           </div>
