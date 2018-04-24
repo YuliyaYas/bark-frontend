@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SuccessFormMessage from '/Users/yuliya/bark-frontend/barkdoc-frontend/src/components/publicpages/SuccessFormMessage.js';
+import SuccessFormMessage from './SuccessFormMessage.js';
 
 
 class ReadyToApply extends Component {
