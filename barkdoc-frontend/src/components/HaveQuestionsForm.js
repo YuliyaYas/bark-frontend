@@ -47,18 +47,18 @@ class HaveQuestionsForm extends Component {
             <div className="center grey-font pt-26 bold padding-top-60">Have Questions?</div>
             <hr className="grey-font length-40"/>
             <form onSubmit={this.handleSubmit}>
-              <h3 className="display-block grey-font">Email Address</h3>
+              <h3 className="display-block grey-font"><span className="orange-font">*</span>Email Address</h3>
               <input className="input-sign-in" type="text" name="email" placeholder="Enter your email address here" required onChange={this.handleChange}/>
               <div className="input-49 padding-right-2 margin-bottom-20">
-                <h3 className="display-block grey-font">Full Name</h3>
+                <h3 className="display-block grey-font"><span className="orange-font">*</span>Full Name</h3>
                 <input className="input-sign-in" type="text" name="name" placeholder="Enter your name here" required onChange={this.handleChange}/>
               </div>
               <div className="input-49 margin-bottom-20">
-                <h3 className="display-block grey-font">Phone</h3>
+                <h3 className="display-block grey-font"><span className="orange-font">*</span>Phone</h3>
                 <input className="input-sign-in" type="text" name="phone" placeholder="Enter your phone here" required onChange={this.handleChange}/>
               </div>
               <div className="display-block">
-                <h3 className="grey-font">Message</h3>
+                <h3 className="grey-font"><span className="orange-font">*</span>Message</h3>
                 <textarea className="question-textarea input-text-area" name="message" rows="4" type="text" placeholder="Enter your message here(2000 words max)." onChange={this.handleChange}/>
               </div>
 
