@@ -550,9 +550,9 @@ img.column-review{
     order: -1;
   }
 
-  /* .margin-left-30 {
-    margin-left: 50%;
-  } */
+  .margin-left-30 {
+    margin-left: 5%;
+  }
 
   .midle-width {
     width: 80%;
@@ -598,5 +598,9 @@ img.column-review{
     margin-right: 0px!important;
   }
 
+
+}
+
+@media (max-width: 320px) {
 
 }

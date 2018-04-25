@@ -66,6 +66,7 @@
   padding: 14px 16px;
   margin: 30px;
   border-style: none;
+  cursor: pointer;
 }
 
 .book-button-mobile {
@@ -74,6 +75,7 @@
     width: 90px;
     background: transparent;
     border: 2px solid #f08e30;
+    cursor: pointer;
 }
 
 .book-button-mobile,
@@ -82,8 +84,15 @@
 }
 
 @media (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 80px;
+  }
+
   .logo {
-    width: 150px;
+    display: flex;
+    width: 130px;
+    padding: 0;
   }
 
   .content {
@@ -92,19 +101,22 @@
   }
 
   .header-content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .mobile-hamburger {
+    display: flex;
     width: 80px;
   }
 
   .hamburger {
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 20px;
-    margin-top: 20px;
+    /* margin-top: 25px; */
   }
 
   .book-button {
@@ -112,24 +124,30 @@
   }
 
   .book-button-mobile {
-    padding: 11px;
-    margin: 25px 10px 18px 0;
+    padding: 8px 2px;
+    width: 80px;
+    justify-content: center;
+    margin-right: 10px;
+    /* margin: 25px 10px 18px 0; */
     background: transparent;
     border: 2px solid #f08e30;
     display: flex;
   }
 
+
   .float-left{
+    display: flex;
+    justify-content: center;
     /* float: left; */
     /* width: 40%; */
   }
 
   .float-right{
-    float: right;
+    /* float: right; */
   }
 
   .ul-style {
-    float: right;
+    /* float: right; */
   }
 
 /* hiding sign-in until we build hamburger menu */

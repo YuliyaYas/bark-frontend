@@ -29,3 +29,15 @@
       margin-left: -160px;
   }
 }
+
+@media (max-width: 320px) {
+  .dog-bottom-img {
+      width: 80%;
+      padding-top: 70px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      /* left: 50%; */
+      margin-left: -130px;
+  }
+}
