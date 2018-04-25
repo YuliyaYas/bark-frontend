@@ -56,7 +56,7 @@
   margin-right: auto;
   width: 33%;
   background-image: url("../img/dog-swing.png");
-  min-height: 793px;
+  /* min-height: 793px; */
   z-index: 2147483645;
   /* margin: 0 auto; */
   text-align: center;
@@ -159,6 +159,6 @@
    }
 
    .form-position {
-     padding-top: 180px;
+     padding-top: 140px;
    }
  }
