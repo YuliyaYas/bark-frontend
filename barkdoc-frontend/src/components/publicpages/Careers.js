@@ -12,7 +12,7 @@ class Careers extends Component {
           <Header />
           <h1 className="white-font content bold padding-career">Careers</h1>
         </div>
-        <div className="white careers-content">
+        <div className="white careers-content ready">
         <div className="content">
         <div className="margin-right-left">
           <div className="container border-bottom">
@@ -39,7 +39,7 @@ class Careers extends Component {
         </div >
         </div>
         </div>
-        <div className="container-grey-zig-zag" />
+
         <HaveQuestionsForm />
         <DogBottom />
       </div>

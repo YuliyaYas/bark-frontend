@@ -126,4 +126,16 @@
     /* background-size: 500px 250px; */
     background-position: 55% top;
   }
+
+  .button-apply-now-grey{
+    margin-top: 50px;
+    width: 40%;
+    padding: 16px 0;
+  }
+
+  .button-apply-now-orange{
+    margin-top: 50px;
+    width: 40%;
+    padding: 16px 0;
+  }
 }
