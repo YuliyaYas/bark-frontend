@@ -252,4 +252,8 @@
     height: 505px;
     position: relative;
   }
+
+  .length-25{
+    width: 60%;
+  }
 }

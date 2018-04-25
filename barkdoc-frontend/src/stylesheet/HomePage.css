@@ -605,6 +605,10 @@ img.column-review{
     margin-top: 10px;
   }
 
+  .length-40{
+    width: 60%;
+  }
+
   .mobile {
     display: block;
   }
