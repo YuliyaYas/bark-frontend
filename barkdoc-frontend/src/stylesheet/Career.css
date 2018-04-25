@@ -11,10 +11,10 @@
   background-size: contain;
 }
 
-.container-career-zig-zag {
+/* .container-career-zig-zag {
     padding: 0px 0px 32px 0px;
     background-color: none;
-}
+} */
 
 .container-career-zig-zag:after {
     background: linear-gradient(-45deg, white 16px, transparent 0), linear-gradient(45deg, white 16px, transparent 0);

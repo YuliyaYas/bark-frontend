@@ -27,7 +27,7 @@ class Vets extends Component {
             <h1 className="white-font bold content padding-career">Book an Appointment</h1>
           </div>
           {this.props.selectLocationClick===true ? "" : <Overlay1 handleContinueLocation={this.props.handleContinueLocation} handleSelectChange={this.props.handleSelectChange} handleLocationButton={this.props.handleLocationButton} location={this.props.location} />}
-          <div className="white">
+          <div className="white ready">
           <div className="content vet-content" >
           <div className="row">
             <div className="column-65">
@@ -86,7 +86,7 @@ class Vets extends Component {
           </div>
           </div>
           </div>
-        <div className="container-grey-zig-zag"></div>
+
         <HaveQuestionsForm />
         <DogBottom />
       </div>

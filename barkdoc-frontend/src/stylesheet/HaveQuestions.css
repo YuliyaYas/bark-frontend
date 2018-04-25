@@ -16,6 +16,10 @@
   margin-left: 33%;
 }
 
+.questions {
+  position: relative;
+}
+
 .padding-top-60{
   padding-top: 60px;
 }

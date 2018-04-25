@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 const OurServices = () => {
   return(
       <div className="brown services-desktop">
+        <div className="zig-zag-white-reverse"></div>
         <div className="content">
         <div className="center white-font pt-26 bold">Our Services</div>
         <hr className="white-font length-11"/>
@@ -41,7 +42,7 @@ const OurServices = () => {
           </div>
         </div>
           <Link to="/vets"><button className="orange white-font button-meet-our-vets bold margin-left-44">MEET OUR VETS</button></Link>
-          <div className="container-brown-zig-zag-reverse"></div>
+          <div className="zig-zag-brown-reverse"></div>
       </div>
   );
 };

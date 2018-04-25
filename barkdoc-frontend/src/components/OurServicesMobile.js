@@ -3,6 +3,7 @@ import React from 'react';
 const OurServicesMobile = () => {
   return(
       <div className="brown services-mobile">
+        <div className="zig-zag-white-reverse"></div>
         <div className="content">
         <div className="center white-font pt-26 bold">Our Services</div>
         <hr className="white-font length-11"/>
@@ -36,7 +37,8 @@ const OurServicesMobile = () => {
           </div>
         </div>
         <button className="orange white-font button-meet-our-vets bold margin-left-44">MEET OUR VETS</button>
-        <div className="container-brown-zig-zag-reverse"></div>
+        <div className="zig-zag-brown-reverse"></div>
+        // <div className="container-brown-zig-zag-reverse"></div>
 
       </div>
   );

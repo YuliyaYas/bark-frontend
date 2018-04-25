@@ -85,6 +85,10 @@
   margin-left: 10%;
 }
 
+.ready {
+  padding-bottom: 40px;
+}
+
 
 @media (max-width: 768px) {
   .width-40 {
@@ -113,5 +117,13 @@
 
   .testimonials-content {
     margin-top: 230px;
+  }
+
+  .container-brown-zig-zag {
+    /* display: none; */
+  }
+
+  .container-grey-zig-zag {
+    display: none;
   }
 }

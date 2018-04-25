@@ -23,6 +23,7 @@ class INeedAptmnt extends Component{
       </div>
       <Link to="/vets"><button type="submit" className="orange no-border white-font continue-button">CONTINUE</button></Link>
       </form>
+      <div className="zig-zag-white"></div>
       </div>
       </div>
     )

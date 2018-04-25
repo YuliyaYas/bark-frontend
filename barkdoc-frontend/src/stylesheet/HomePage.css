@@ -130,6 +130,10 @@
   right: 0;
   background: url("../img/homepage/pug-longer.png")no-repeat center center fixed;
   /* background-position-y: top; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -152,11 +156,76 @@
 .container-zig-zag {
     height: 695px;
     position: relative;
-    padding: 0px 0px 32px 0px;
+    padding: 0px 0px 28px 0px;
     background-color: white;
 }
 
-.container-zig-zag:after {
+.zig-zag-white {
+  background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 17px 44px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 12px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid red;
+}
+
+.zig-zag-gray {
+  background: linear-gradient(-45deg, #f2f3f7 16px, transparent 0), linear-gradient(45deg, #f2f3f7 16px, transparent 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 17px 44px;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  width: 100%;
+  height: 12px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid red;
+}
+
+.zig-zag-white-reverse {
+  background: linear-gradient(45deg, transparent 16px, #ffffff 0), linear-gradient(-45deg, transparent 16px, #ffffff 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 17px 44px;
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 12px;
+  padding-bottom: 32px;
+  border-top: 1px solid red;
+}
+
+.zig-zag-brown-reverse {
+  background: linear-gradient(45deg, transparent 16px, #79312e 0), linear-gradient(-45deg, transparent 16px, #79312e 0);
+  background-position: left-bottom;
+  background-repeat: repeat-x;
+  background-size: 17px 44px;
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -16px;
+  left: 0px;
+  width: 100%;
+  height: 12px;
+  padding-bottom: 32px;
+  border-top: 1px solid red;
+  z-index: 1;
+}
+
+/* .container-zig-zag:after {
     background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -168,7 +237,7 @@
     left: 0px;
     width: 100%;
     height: 32px;
-}
+} */
 
 /* zig zag end */
 /* slide 2 */
@@ -210,13 +279,14 @@
 }
 
 .schedule-appt{
-  padding: 17px 19px;
+  padding: 17px 0;
   margin: 20px;
   border-style: none;
+  width: 25%;
 }
 
 .margin-41{
-  margin-left: 41%;
+  margin-left: 38%;
   margin-bottom: 60px;
 }
 /* slide 3 */
@@ -238,13 +308,14 @@
   padding-top: 50px;
 }
 
-.container-brown-zig-zag {
+/* .container-brown-zig-zag {
     position: relative;
     padding: 0px 0px 32px 0px;
     background-color: white;
-}
+    border: 3px solid green;
+} */
 
-.container-brown-zig-zag:after {
+/* .container-brown-zig-zag:after {
     background: linear-gradient(-45deg, #79312e 16px, transparent 0), linear-gradient(45deg, #79312e 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -256,15 +327,15 @@
     left: 0px;
     width: 100%;
     height: 32px;
-}
+} */
 
-.container-brown-zig-zag-reverse {
+/* .container-brown-zig-zag-reverse {
     position: relative;
     padding: 0px 0px -32px 0px;
     background-color: white;
-}
+} */
 
-.container-brown-zig-zag-reverse {
+/* .container-brown-zig-zag-reverse {
     background: linear-gradient(45deg, #ffffff 16px, transparent 0), linear-gradient(-45deg, #ffffff 16px, transparent 0);
     background-position:bottom;
     background-repeat: repeat-x;
@@ -277,7 +348,7 @@
     width: 100%;
     height: 22px;
     z-index: 0;
-}
+} */
 
 .secondary {
   z-index: -1000;
@@ -299,7 +370,7 @@
     border-style: none;
     z-index: 1000;
     display: inline-block;
-    margin-top: 75px;
+    margin-top: 80px;
     position: relative;
 }
 
@@ -339,14 +410,14 @@ img.column-review{
 }
 
 .container-review-zig-zag {
-  margin-top: 10px;
+
   position: relative;
-  padding: 50px 0px 32px 0px;
+  padding: 70px 0px 32px 0px;
   background-color: white;
   z-index: 0;
 }
 
-.container-review-zig-zag:after {
+/* .container-review-zig-zag:after {
     background: linear-gradient(-45deg, #f2f3f7 16px, transparent 0), linear-gradient(45deg, #f2f3f7 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -358,7 +429,7 @@ img.column-review{
     left: 0px;
     width: 100%;
     height: 32px;
-}
+} */
 
 .padding-10 {
   width: 320px;
@@ -373,6 +444,8 @@ img.column-review{
   display: flex;
   justify-content: center;
 }
+
+
 
 @media (max-width: 768px) {
   .pug-background{
@@ -497,7 +570,7 @@ img.column-review{
       border-style: none;
       z-index: 1000;
       display: inline-block;
-      margin-top: 45px;
+      margin-top: 40px;
       position: relative;
   }
 

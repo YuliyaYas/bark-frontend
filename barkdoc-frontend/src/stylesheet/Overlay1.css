@@ -55,6 +55,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 33%;
+  overflow: hidden;
   background-image: url("../img/dog-swing.png");
   /* min-height: 793px; */
   z-index: 2147483645;
@@ -150,6 +151,8 @@
  @media (max-width: 768px) {
    .overlay-popup {
      width: 80%;
+     height: 400px;
+
    }
 
    .location-form{

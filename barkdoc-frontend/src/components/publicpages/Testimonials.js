@@ -11,7 +11,7 @@ const Testimonials = (props) => {
   // console.log(props.testimonials)
   return(
     <div>
-      <div className="white">
+      <div className="white ready">
       <div className="background-cat container-testimonials-zig-zag">
         <Header />
         <h1 className="white-font content bold padding-career">Testimonials</h1>
