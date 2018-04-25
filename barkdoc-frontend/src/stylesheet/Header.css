@@ -162,13 +162,18 @@
     margin-left: 0;
   }
 
+  .menu-home {
+    align-self: center;
+    margin-top: -25px;
+  }
+
   .menu-div-first {
     display: flex;
-    justify-content: left;
+    flex-direction: column;
+    justify-content: center;
     border-bottom: 1px solid #f08e30;
     width: 90%;
     height: 80px;
-    align-items: center;
   }
 
   .menu-div {
