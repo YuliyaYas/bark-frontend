@@ -445,7 +445,9 @@ img.column-review{
   justify-content: center;
 }
 
-
+.mobile {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .pug-background{
@@ -598,7 +600,14 @@ img.column-review{
     margin-right: 0px!important;
   }
 
+  .length-11{
+    width: 40%;
+    margin-top: 10px;
+  }
 
+  .mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 320px) {

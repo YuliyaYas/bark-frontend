@@ -6,7 +6,7 @@ const Reviews = (props) => {
   return(
     <div className="white container-review-zig-zag">
       <div className="content white">
-        <div className="center grey-font pt-26 bold">BOW WOW! Read Our Reviews </div>
+        <div className="center grey-font pt-26 bold">BOW WOW!<br className="mobile"></br> Read Our Reviews </div>
         <hr className="grey-font length-40"/>
       </div>
       {props.homepage_reviews.length !== 0 ?
