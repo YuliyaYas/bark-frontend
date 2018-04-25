@@ -25,7 +25,8 @@ const Overlay1 = (props) => {
         </select>
         <div className="styled-arrow-overlay"></div>
         </div>
-        <button type="submit" className="orange white-font display-block bold continue-button-overlay" onClick={props.handleLocationButton}>CONTINUE</button>
+        {props.location === "no-location" ? "" : <button type="submit" className="orange white-font display-block bold continue-button-overlay" onClick={props.handleLocationButton}>CONTINUE</button>}
+
       </form>
     </div>
     </div>

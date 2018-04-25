@@ -23,7 +23,7 @@ class App extends Component {
       homepage_reviews: [],
       job_posts: [],
       faqs: [],
-      selectedLocationId: '',
+      selectedLocationId: 'no-location',
       selectedLocationName: '',
       selectLocationClick: false,
       vets_reviews: []
