@@ -88,8 +88,18 @@
 }
 
 .quote-size{
-  width: 10%;
+  width: 8%;
   float: left;
+}
+
+.review {
+  margin-top: 20px;
+  display: flex;
+}
+
+.review-text {
+  float: right;
+  width: 90%;
 }
 
 .book-now-btn{
@@ -123,17 +133,15 @@
 
   .book-now-btn{
     width: 90%;
-    margin-left: 10%;
+    margin-left: 5%;
     color: white;
   }
 
   .profile-info {
     width: 90%;
-    /* background-color: lightgray; */
     display: inline-block;
     margin-top: -130px;
     height: 300px;
-    /* position: absolute; */
   }
 
   .profile-info-l {
@@ -147,7 +155,6 @@
     color: gray;
     margin-top: 200px;
     position: absolute;
-    /* float: right; */
   }
 
   .white-font-profile {
@@ -157,10 +164,35 @@
   .profile-info-l img {
     width: 50%;
     height: 50%;
-    margin-left: 25%;
+    margin-left: 22.5%;
   }
 
   .services {
     margin-top: 200px;
+  }
+
+  .reviews {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .col-55{
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 9%;
+  }
+
+  .col-45{
+    margin-top: 20px;
+    width: 90%;
+    order: -1;
   }
 }

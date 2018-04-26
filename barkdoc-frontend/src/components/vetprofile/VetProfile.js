@@ -61,81 +61,95 @@ const VetProfile = () => {
               <h2 className="bold">Verified Patient Reviews (6)</h2>
               <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
               <br/>
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+              <div className="reviews">
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
 
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
 
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
 
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
 
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
-                </div>
-              </div>
 
-              <div >
-                <div className="col-55">
-                  <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
-                </div>
-                <div className="col-45">
-                  <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                  <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                  <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                  <br/>
-                  <br/>
+                <div className="review">
+                  <div className="col-55">
+                    <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
+                  </div>
+                  <div className="col-45">
+                    <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
+                    <div className="review-text">
+                      <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
+                      <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
+                    </div>
+                    <br/>
+                    <br/>
+                  </div>
                 </div>
               </div>
               <button className="orange white-font bold book-now-btn">BOOK NOW</button>
