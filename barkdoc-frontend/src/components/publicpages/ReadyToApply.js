@@ -48,15 +48,15 @@ class ReadyToApply extends Component {
           <button className="linked-in-button margin-left-35 white-font bold">Apply with LinkedIn</button>
           <form onSubmit={this.handleSubmit}>
             <div className="input-49 padding-right-2 margin-bottom-20">
-              <h3 className="display-block grey-font">First Name</h3>
+              <h3 className="display-block grey-font">First Name <span className="orange-font">*</span></h3>
               <input className="input-sign-in" type="text" name="first_name" placeholder="Enter your first name here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 margin-bottom-20">
-              <h3 className="display-block grey-font" >Last Name</h3>
+              <h3 className="display-block grey-font" >Last Name <span className="orange-font">*</span></h3>
               <input className="input-sign-in" type="text" name="last_name" placeholder="Enter your last name here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 padding-right-2 margin-bottom-20">
-              <h3 className="display-block grey-font">Email</h3>
+              <h3 className="display-block grey-font">Email <span className="orange-font">*</span></h3>
               <input className="input-sign-in" type="text" name="email" placeholder="Enter your email here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 margin-bottom-20">
@@ -64,7 +64,7 @@ class ReadyToApply extends Component {
               <input className="input-sign-in" type="text" name="phone" placeholder="Enter your phone here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 padding-right-2 margin-bottom-20">
-              <h3 className="display-block grey-font">Resume/CV</h3>
+              <h3 className="display-block grey-font">Resume/CV <span className="orange-font">*</span></h3>
               <textarea className="question-textarea input-text-area-91" name="resume" rows="4" type="text" placeholder="Paste your resume here" onChange={this.handleChange}/>
             </div>
             <div className="input-49 margin-bottom-20">
