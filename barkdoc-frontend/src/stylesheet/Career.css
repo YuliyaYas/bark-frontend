@@ -16,7 +16,7 @@
     background-color: none;
 } */
 
-.container-career-zig-zag:after {
+/* .container-career-zig-zag:after {
     background: linear-gradient(-45deg, white 16px, transparent 0), linear-gradient(45deg, white 16px, transparent 0);
     background-position: left-bottom;
     background-repeat: repeat-x;
@@ -29,7 +29,7 @@
     height: 43px;
     bottom: 0px;
     border-bottom: 30px solid white;
-  }
+  } */
 
   .careers-content {
     position: relative;
@@ -125,6 +125,11 @@
     background-size: 210vh;
     /* background-size: 500px 250px; */
     background-position: 55% top;
+    height: 280px;
+  }
+
+  .careers-content {
+    margin-top: 280px;
   }
 
   .button-apply-now-grey{

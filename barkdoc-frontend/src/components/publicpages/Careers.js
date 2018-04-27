@@ -11,6 +11,8 @@ class Careers extends Component {
         <div className="background-three-dog container-career-zig-zag">
           <Header />
           <h1 className="white-font content bold padding-career">Careers</h1>
+            <div className="zig-zag-white"></div>
+          
         </div>
         <div className="white careers-content ready">
         <div className="content">
