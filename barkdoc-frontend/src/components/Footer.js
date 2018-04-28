@@ -9,17 +9,13 @@ class Footer extends Component {
           <div>
           <div className="float-right-footer">
             <ul className="ul-style-r">
+
               <li className="li-style-r">
-              <a href="#youtube"> <img className="icon" src={require("../img/youtube-icon.png")} alt="" /> </a>
+              <a href="https://www.instagram.com/barkdoc/"> <img className="icon" src={require("../img/instagram-icon.png")} alt="" /> </a>
               </li>
+
               <li className="li-style-r">
-              <a href="#instagram"> <img className="icon" src={require("../img/instagram-icon.png")} alt="" /> </a>
-              </li>
-              <li className="li-style-r">
-              <a href="#twitter"> <img className="icon" src={require("../img/twitter-icon.png")} alt="" /> </a>
-              </li>
-              <li className="li-style-r">
-                <a href="#facebook"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
+                <a href="https://www.facebook.com/BARKDOC/​"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
               </li>
 
             </ul>

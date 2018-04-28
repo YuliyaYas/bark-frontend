@@ -2,11 +2,11 @@ import React from 'react';
 import './../../stylesheet/Overlay1.css';
 
 const Overlay1 = (props) => {
-  // console.log("in overay", props);
+  console.log("in overay", props.location);
   return(
     <div className="base" >
     <div className="shroud overlay-scroll">
-    <div className="overlay-popup" style={{"min-height": (window.screen.height-20)+"px"}}>
+    <div className="overlay-popup" style={{"minHeight": (window.screen.height-20)+"px"}}>
       <img className="logo-white" src={require("./../../img/repeated/white-logo.png")} alt=""/>
     <div>
       <form className="location-form form-position" onSubmit={props.handleContinueLocation}>

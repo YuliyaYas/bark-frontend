@@ -34,7 +34,7 @@ class HaveQuestionsForm extends Component {
 
 
   render(){
-      console.log(this.state);
+      // console.log(this.state);
     return(
       <div className="questions">
         <div className="zig-zag-gray"></div>

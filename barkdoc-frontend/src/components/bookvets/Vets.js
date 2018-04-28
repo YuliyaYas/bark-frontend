@@ -13,7 +13,7 @@ class Vets extends Component {
   }
 
   render(){
-    console.log("test", this.props)
+    // console.log("test", this.props)
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />
@@ -54,7 +54,7 @@ class Vets extends Component {
                     <h3 className="grey-font">My Pets Location:</h3>
                     <div className="select">
                       <select className="styled-select grey-font bold">
-                        <option value="check-up">location 1</option>
+                        <option value="check-up">{this.props.location}</option>
                         <option value="check-up">location 2</option>
                         <option value="check-up">location 3</option>
                         <option value="check-up">location 4</option>
