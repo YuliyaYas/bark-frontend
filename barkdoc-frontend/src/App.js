@@ -24,6 +24,7 @@ class App extends Component {
       job_posts: [],
       faqs: [],
       selectedLocationId: 'no-location',
+      allLocations: [],
       selectedLocationName: '',
       selectLocationClick: false,
       vets_reviews: []
@@ -59,20 +60,25 @@ class App extends Component {
 
     handleContinueLocation = (e) => {
       e.preventDefault();
-      fetch(`https://www.mytime.com/api/v2/companies/112627/locations/${this.state.selectedLocationId}.json`)
+      fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
       .then(resp=>resp.json())
-      .then(myJson => this.setState({selectedLocationName: myJson.street_address}));
+      .then(myJson => this.setState({allLocations: myJson.locations}, () => console.log("lca", this.state.allLocations)));
     };
 
     handleLocationButton = () => {
       this.state.selectLocationClick = false
-      console.log(this.state.selectLocationClick);
-      this.setState({selectLocationClick: true}, () => console.log(this.state.selectLocationClick))
+      this.setState({selectLocationClick: true})
+
+      fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
+      .then(resp=>resp.json())
+      .then(myJson => this.setState({allLocations: myJson.locations}, () => {
+        let location = this.state.allLocations.filter(loc => loc.id == this.state.selectedLocationId)
+        this.setState({selectedLocationName: location[0].nickname})
+      }));
     }
 
 
   render() {
-    // console.log(this.state.faqs)
     return (
       <div className="primary">
       <Switch>
