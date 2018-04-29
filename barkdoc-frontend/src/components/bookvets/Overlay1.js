@@ -18,11 +18,11 @@ const Overlay1 = (props) => {
         <div className="styled-select-location">
         <select className="styled-select grey-font bold" onChange={props.handleSelectChange} value={props.location}>
           <option value="no-location">Select a location</option>
-          <option value="115306">Lower manhattan</option>
-          <option value="115307">Midtown Manhattan</option>
+          <option value="115307">Lower Manhattan</option>
+          <option value="115306">Midtown Manhattan</option>
           <option value="113660">Upper Manhattan</option>
           <option value="115308">Brooklyn</option>
-          <option value="115306">Queens</option>
+          <option value="115309">Queens</option>
         </select>
         <div className="styled-arrow-overlay"></div>
         </div>

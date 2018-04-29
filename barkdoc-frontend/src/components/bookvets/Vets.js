@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from './../Header';
 import TestimonialCard from './TestimonialCard';
 import FakeVetCard from './FakeVetCard';
+import VetCard from './VetCard';
 import Overlay1 from './Overlay1';
 import HaveQuestionsForm from './../HaveQuestionsForm.js'
 import DogBottom from './../DogBottom.js';
@@ -13,12 +14,17 @@ class Vets extends Component {
   }
 
   render(){
-    console.log("test", this.props.vets)
+    console.log("allLoc", this.props.allLocations, "selID", this.props.selectedLocationId, "selName", this.props.selectedLocationName)
+
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />
     }})
 
+    const vets = this.props.vets.map((vet,i) => <VetCard vet={vet} key={i}/>)
+
+    const locations = this.props.allLocations.filter(loc => loc.id!=this.props.selectedLocationId).map((loc,i) => <option value={loc.id} key={i}>{loc.nickname}</option>)
+    console.log("locations", locations);
 
     return(
       <div>
@@ -54,11 +60,8 @@ class Vets extends Component {
                     <h3 className="grey-font">My Pets Location:</h3>
                     <div className="select">
                       <select className="styled-select grey-font bold">
-                        <option value="check-up">{this.props.selectedLocationName}</option>
-                        <option value="check-up">location 2</option>
-                        <option value="check-up">location 3</option>
-                        <option value="check-up">location 4</option>
-                        <option value="check-up">location 5</option>
+                        <option value={this.props.selectedLocationId}>{this.props.selectedLocationName}</option>
+                        {locations}
                       </select>
                       <div className="select_arrow">
                       </div>
@@ -68,7 +71,7 @@ class Vets extends Component {
               </div>
                 {this.props.vets.length > 0
                   ?
-                  <FakeVetCard />
+                  vets
                   :
                 <div>
                   <FakeVetCard />
