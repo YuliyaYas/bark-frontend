@@ -51,6 +51,10 @@ class App extends Component {
     butter.content.retrieve(["reviews", "vets_reviews"])
     .then((resp) => this.setState({vets_reviews: resp.data.data.vets_reviews}));
 
+    fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
+    .then(resp=>resp.json())
+    .then(myJson => this.setState({allLocations: myJson.locations}))
+
   };
 
 
@@ -59,27 +63,24 @@ class App extends Component {
       this.setState({selectedLocationId: e.target.value});
     };
 
-    handleContinueLocation = (e) => {
-      e.preventDefault();
-      fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
-      .then(resp=>resp.json())
-      .then(myJson => this.setState({allLocations: myJson.locations}, () => console.log("lca", this.state.allLocations)));
-    };
+    // handleContinueLocation = (e) => {
+    //   e.preventDefault();
+    //   fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
+    //   .then(resp=>resp.json())
+    //   .then(myJson => this.setState({allLocations: myJson.locations}, () => console.log("lca", this.state.allLocations)));
+    // };
 
     handleLocationButton = () => {
       this.state.selectLocationClick = false
       this.setState({selectLocationClick: true})
 
-      fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
-      .then(resp=>resp.json())
-      .then(myJson => this.setState({allLocations: myJson.locations}, () => {
         let location = this.state.allLocations.filter(loc => loc.id == this.state.selectedLocationId)
         this.setState({selectedLocationName: location[0].nickname})
-      }));
+      
 
       fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/employees?location_ids=${this.state.selectedLocationId}`)
       .then(resp=>resp.json())
-      .then(myJson => this.setState({vets: myJson.employees}, () => console.log(this.state.vets)))
+      .then(myJson => this.setState({vets: myJson.employees}))
     }
 
 
