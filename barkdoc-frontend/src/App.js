@@ -27,7 +27,8 @@ class App extends Component {
       allLocations: [],
       selectedLocationName: '',
       selectLocationClick: false,
-      vets_reviews: []
+      vets_reviews: [],
+      vets: []
     }
   }
   componentDidMount(){
@@ -75,6 +76,10 @@ class App extends Component {
         let location = this.state.allLocations.filter(loc => loc.id == this.state.selectedLocationId)
         this.setState({selectedLocationName: location[0].nickname})
       }));
+
+      fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/employees?location_ids=${this.state.selectedLocationId}`)
+      .then(resp=>resp.json())
+      .then(myJson => this.setState({vets: myJson.employees}, () => console.log(this.state.vets)))
     }
 
 
@@ -83,7 +88,7 @@ class App extends Component {
       <div className="primary">
       <Switch>
       <Route path={`/vets/vet`} component={ () => <VetProfile/>} />
-      <Route path={`/vets`} component={ () => <Vets handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId} selectedLocationName={this.state.selectedLocationName}/>}/>
+      <Route path={`/vets`} component={ () => <Vets vets={this.state.vets} handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId} selectedLocationName={this.state.selectedLocationName}/>}/>
       <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:slug`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />

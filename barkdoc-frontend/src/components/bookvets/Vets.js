@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Header from './../Header';
 import TestimonialCard from './TestimonialCard';
-import VetCard from './VetCard';
+import FakeVetCard from './FakeVetCard';
 import Overlay1 from './Overlay1';
 import HaveQuestionsForm from './../HaveQuestionsForm.js'
 import DogBottom from './../DogBottom.js';
@@ -13,7 +13,7 @@ class Vets extends Component {
   }
 
   render(){
-    // console.log("test", this.props.handleContinueLocation)
+    console.log("test", this.props.vets)
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />
@@ -37,11 +37,11 @@ class Vets extends Component {
                     <h3 className=" grey-font">My Pet Needs:</h3>
                     <div className="select">
                       <select className="styled-select grey-font bold">
-                        <option value="check-up">Check-up</option>
-                        <option value="check-up">Check-up</option>
-                        <option value="check-up">Check-up</option>
-                        <option value="check-up">Check-up</option>
-                        <option value="check-up">Check-up</option>
+                        <option value="check-up">Visit with Comprehensive Exam</option>
+                        <option value="check-up">Visit with Lab Work</option>
+                        <option value="check-up">Visit with Senior Lab Work</option>
+                        <option value="check-up">Fecal Parasite Screening</option>
+                        <option value="check-up">Heartworm Test</option>
                       </select>
                       <div className="select_arrow">
                       </div>
@@ -54,7 +54,7 @@ class Vets extends Component {
                     <h3 className="grey-font">My Pets Location:</h3>
                     <div className="select">
                       <select className="styled-select grey-font bold">
-                        <option value="check-up">{this.props.location}</option>
+                        <option value="check-up">{this.props.selectedLocationName}</option>
                         <option value="check-up">location 2</option>
                         <option value="check-up">location 3</option>
                         <option value="check-up">location 4</option>
@@ -66,11 +66,18 @@ class Vets extends Component {
                   </div>
                 </div>
               </div>
-                <VetCard />
-                <VetCard />
-                <VetCard />
-                <VetCard />
-                <VetCard />
+                {this.props.vets.length > 0
+                  ?
+                  <FakeVetCard />
+                  :
+                <div>
+                  <FakeVetCard />
+                  <FakeVetCard />
+                  <FakeVetCard />
+                  <FakeVetCard />
+                  <FakeVetCard />
+                </div>
+              }
 
             </div>
             <div className="column-20 testimonial-card">
