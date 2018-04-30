@@ -162,7 +162,6 @@ const VetProfile = () => {
             <button className="orange white-font bold book-now-btn-2">BOOK NOW</button>
         </div>
       </div>
-      <div className="container-grey-zig-zag"></div>
       <HaveQuestionsForm />
       <DogBottom />
     </div>
