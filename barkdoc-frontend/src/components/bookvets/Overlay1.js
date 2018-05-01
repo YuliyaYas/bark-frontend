@@ -19,7 +19,7 @@ const Overlay1 = (props) => {
         <div className="styled-select-location">
         <select className="styled-select grey-font bold" onChange={props.handleSelectChange} value={props.location}>
           <option value="no-location">Select a location</option>
-          {props.allLocations.map((loc, i)=> <option value={loc.id}>{loc.nickname}</option>)}
+          {props.allLocations.map((loc, i)=> <option value={loc.id} key={i}>{loc.nickname}</option>)}
         </select>
         <div className="styled-arrow-overlay"></div>
         </div>

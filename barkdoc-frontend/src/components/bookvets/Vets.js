@@ -23,7 +23,7 @@ class Vets extends Component {
 
     const vets = this.props.vets.map((vet,i) => <VetCard vet={vet} key={i}/>)
 
-    const locations = this.props.allLocations.filter(loc => loc.id!=this.props.selectedLocationId).map((loc,i) => <option value={loc.id} key={i}>{loc.nickname}</option>)
+    const locations = this.props.allLocations.filter(loc => loc.id!=this.props.selectedLocationId).map((loc,i) => <option value={loc.id} name={loc.nickname} key={i}>{loc.nickname}</option>)
     console.log("locations", locations);
 
     return(
@@ -59,7 +59,7 @@ class Vets extends Component {
                   <div className="location">
                     <h3 className="grey-font">My Pets Location:</h3>
                     <div className="select">
-                      <select className="styled-select grey-font bold">
+                      <select className="styled-select grey-font bold" onChange={this.props.handleLocationChange} value={this.props.selectedLocationId}>
                         <option value={this.props.selectedLocationId}>{this.props.selectedLocationName}</option>
                         {locations}
                       </select>
