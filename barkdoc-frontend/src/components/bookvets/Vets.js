@@ -14,14 +14,14 @@ class Vets extends Component {
   }
 
   render(){
-    console.log("allLoc", this.props.allLocations, "selID", this.props.selectedLocationId, "selName", this.props.selectedLocationName)
+    console.log("in  vets", this.props.handleVetClick)
 
     const testimonials = this.props.testimonials.map((testimonial,i)=>{
       if(i<4){
        return <TestimonialCard key={i} testimonial = {testimonial} />
     }})
 
-    const vets = this.props.vets.map((vet,i) => <VetCard vet={vet} key={i}/>)
+    const vets = this.props.vets.map((vet,i) => <VetCard handleVetClick={this.props.handleVetClick} vet={vet} key={i}/>)
 
     const locations = this.props.allLocations.filter(loc => loc.id!=this.props.selectedLocationId).map((loc,i) => <option value={loc.id} name={loc.nickname} key={i}>{loc.nickname}</option>)
     console.log("locations", locations);

@@ -4,7 +4,8 @@ import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 import './../../stylesheet/VetProfile.css';
 
-const VetProfile = () => {
+const VetProfile = (props) => {
+  console.log("in real vet", props);
   return(
     <div>
       <div className="background-vet-background container-pattern-zig-zag">
