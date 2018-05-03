@@ -1,11 +1,27 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from './../Header';
 import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 import './../../stylesheet/VetProfile.css';
 
-const VetProfile = (props) => {
-  console.log("in real vet", props);
+class VetProfile extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      vet:[]
+    }
+  }
+
+componentDidMount(){
+  let vetName = document.location.pathname.split("vets/")[1].split("-").join(" ")
+  console.log("vet", vetName);
+  fetch('https://www.mytime.com/api/mkp/v1/companies/112627/employees')
+  .then(resp => resp.json()).then(json => {
+    this.setState({ vet: json.employees.filter( e => e.name === vetName)},() => console.log("after", this.state.vet[0]))})
+}
+
+  render(){
+    console.log(this.state.vet);
   return(
     <div>
       <div className="background-vet-background container-pattern-zig-zag">
@@ -17,16 +33,16 @@ const VetProfile = (props) => {
           <div className="column-70 grey-font">
             <div className="profile-info">
               <div className="profile-info-l">
-                <img alt="" className="circle-img" src={require("../../img/vet_profile.png")}/>
+                {this.state.vet.length > 0 ? <img alt="" className="circle-img" src={this.state.vet[0].avatar}/> : "" }
               </div>
               <div className="profile-info-r">
-                <h1 className="white-font-profile bold content">Dr. Ryan U, VMD</h1>
-                <h3 className="white-font-profile content">Veterinariae Medicinae Doctor</h3>
+                {this.state.vet.length > 0 ? <h1 className="white-font-profile bold content">{this.state.vet[0].name}</h1> : ""}
+                <h3 className="white-font-profile content">Veterinarian</h3>
                 <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> Verified Patient Reviews(6)</h3>
               </div>
             </div>
             <div className="services">
-              <h2 className="bold">Services Dr. Ryan Offers:</h2>
+              {this.state.vet.length > 0 ? <h2 className="bold">Services {this.state.vet[0].name} Offers:</h2> : ""}
               <div className="column-33">
                 <p>Routine exams</p>
                 <p>Check-ups</p>
@@ -52,12 +68,12 @@ const VetProfile = (props) => {
               <hr />
               <h2 className="bold">Education and Service</h2>
               <p>
-              Medical School - Cornell University, Veterinariae Medicinae Doctor
+                {this.state.vet.length > 0 ? this.state.vet[0].training_question : "" }
               </p>
               <p>
-              Dr. Ryan loves to learn and grow as Veterinary Medicine evolves. Through the years he has taken extensive continuing education in Laser Surgery, Ultrasound,
-              Echocardiograms, Endoscopy and Cold Laser Therapy.
-              </p>
+                {this.state.vet.length > 0 ? this.state.vet[0].difference_question : "" }
+               </p>
+              : ""}
               <hr />
               <h2 className="bold">Verified Patient Reviews (6)</h2>
               <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
@@ -158,15 +174,17 @@ const VetProfile = (props) => {
         </div>
 
         <div className="book-now">
-            <h1 className="orange-font">Want to book an appointment with Dr. Ryan?</h1>
+            {this.state.vet.length > 0 ? <h1 className="orange-font">Want to book an appointment with {this.state.vet[0].name}?</h1> : "" }
             <h4>Click to see available times</h4>
             <button className="orange white-font bold book-now-btn-2">BOOK NOW</button>
         </div>
       </div>
+
       <HaveQuestionsForm />
       <DogBottom />
     </div>
   );
+};
 };
 
 export default VetProfile;
