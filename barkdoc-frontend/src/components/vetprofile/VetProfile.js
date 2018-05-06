@@ -14,14 +14,12 @@ class VetProfile extends Component {
 
 componentDidMount(){
   let vetName = document.location.pathname.split("vets/")[1].split("-").join(" ")
-  console.log("vet", vetName);
   fetch('https://www.mytime.com/api/mkp/v1/companies/112627/employees')
   .then(resp => resp.json()).then(json => {
-    this.setState({ vet: json.employees.filter( e => e.name === vetName)},() => console.log("after", this.state.vet[0]))})
+    this.setState({ vet: json.employees.filter( e => e.name === vetName)})})
 }
 
   render(){
-    console.log(this.state.vet);
   return(
     <div>
       <div className="background-vet-background container-pattern-zig-zag">

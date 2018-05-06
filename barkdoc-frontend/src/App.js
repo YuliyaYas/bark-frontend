@@ -5,6 +5,8 @@ import HomePage from '../src/components/homepage/HomePage.js';
 import About from '../src/components/publicpages/About.js';
 import FAQs from '../src/components/publicpages/FAQs.js';
 import ContactUs from '../src/components/publicpages/ContactUs.js';
+import Privacy from '../src/components/publicpages/Privacy.js';
+import Terms from '../src/components/publicpages/Terms.js';
 import Careers from '../src/components/publicpages/Careers.js';
 import Jobs from '../src/components/publicpages/Jobs.js';
 import Testimonials from '../src/components/publicpages/Testimonials.js';
@@ -31,9 +33,12 @@ class App extends Component {
       selectLocationClick: false,
       vets_reviews: [],
       vets: [],
-      selectedVet: []
+      selectedVet: [],
+      privacy: "",
+      termsOfUse: ""
     }
   }
+
   componentDidMount(){
 
     butter.content.retrieve(["homepage_reviews", "review_items"])
@@ -47,9 +52,13 @@ class App extends Component {
     });
 
     butter.content.retrieve(["faqs_headline", "faq_headlines"])
-    .then((resp) => {
-      this.setState({faqs: resp.data.data.faq_headlines})
-    });
+    .then((resp) => { this.setState({faqs: resp.data.data.faq_headlines})});
+
+    butter.content.retrieve(["privacy_headline", "privacy"])
+    .then((resp) => this.setState({privacy: resp.data.data.privacy[0].rules}));
+
+    butter.content.retrieve(["terms_headline", "terms"])
+    .then((resp) => this.setState({termsOfUse: resp.data.data.terms[0].term}));
 
     butter.content.retrieve(["reviews", "vets_reviews"])
     .then((resp) => this.setState({vets_reviews: resp.data.data.vets_reviews}));
@@ -66,12 +75,6 @@ class App extends Component {
       this.setState({selectedLocationId: e.target.value});
     };
 
-    // handleContinueLocation = (e) => {
-    //   e.preventDefault();
-    //   fetch(`https://www.mytime.com/api/mkp/v1/companies/112627/locations`)
-    //   .then(resp=>resp.json())
-    //   .then(myJson => this.setState({allLocations: myJson.locations}, () => console.log("lca", this.state.allLocations)));
-    // };
 
     handleLocationButton = () => {
       this.state.selectLocationClick = false
@@ -103,7 +106,7 @@ class App extends Component {
     }
 
   render() {
-    console.log("in app", this.state);
+    // console.log("in app", this.state);
     return (
       <div className="primary">
       <Switch>
@@ -115,6 +118,8 @@ class App extends Component {
       <Route path={`/about`} component={ () => <About />} />
       <Route path={`/faqs`} component={ () => <FAQs faqs={this.state.faqs}/>} />
       <Route path={`/contact`} component={ () => <ContactUs />} />
+      <Route path={`/privacy`} component={ () => <Privacy privacy={this.state.privacy}/>} />
+      <Route path={`/terms-of-use`} component={ () => <Terms termsOfUse={this.state.termsOfUse}/>} />
       <Route path={`/`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />
       </Switch>
       <Footer />

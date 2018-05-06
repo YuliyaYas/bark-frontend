@@ -45,10 +45,10 @@ class Footer extends Component {
             <a href="">® 2018 BarkDoc™</a>
           </li>
           <li className="li-style">
-            <a href="">Privacy</a>
+            <a href="/privacy">Privacy</a>
           </li>
           <li className="li-style wider">
-            <a href=""> Terms of Use</a>
+            <a href="/terms-of-use"> Terms of Use</a>
           </li>
         </ul>
         </div>
