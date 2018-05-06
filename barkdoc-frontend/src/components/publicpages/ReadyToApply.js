@@ -71,11 +71,11 @@ class ReadyToApply extends Component {
               <h3 className="display-block grey-font">Coverletter</h3>
               <textarea className="question-textarea input-text-area-91" name="coverletter" rows="4" type="text" placeholder="Paste your cover letter here " onChange={this.handleChange}/>
             </div>
-            <div className="input-49 padding-right-2 margin-bottom-20">
+            <div className="input-49 padding-right-2 margin-bottom-40">
               <h3 className="display-block grey-font">LinkedIn Profile</h3>
               <input className="input-sign-in" type="text" name="linkedin" placeholder="Enter your link here" onChange={this.handleChange}/>
             </div>
-            <div className="input-49 margin-bottom-20">
+            <div className="input-49 margin-bottom-40">
               <h3 className="display-block grey-font">Website</h3>
               <input className="input-sign-in" type="text" name="website" placeholder="Enter your link here" onChange={this.handleChange}/>
             </div>
