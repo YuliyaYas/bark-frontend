@@ -71,7 +71,7 @@ componentDidMount(){
               <p>
                 {this.state.vet.length > 0 ? this.state.vet[0].difference_question : "" }
                </p>
-              : ""}
+              
               <hr />
               <h2 className="bold">Verified Patient Reviews (6)</h2>
               <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
