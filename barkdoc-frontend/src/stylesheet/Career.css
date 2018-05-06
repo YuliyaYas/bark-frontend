@@ -88,12 +88,19 @@
   background-color: #7e7e7e;
   padding: 16px 16px;
   border-style: none;
-
+  cursor: pointer;
 }
+
 .button-apply-now-orange{
   background-color: #f08e30;
   padding: 16px 16px;
   border-style: none;
+  cursor: pointer;
+}
+
+.button-apply-now-grey:hover,
+.button-apply-now-orange:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .column-job-name {

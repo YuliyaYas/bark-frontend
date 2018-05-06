@@ -11,6 +11,11 @@
   background-color: #3399cc;
   padding: 16px 16px;
   border-style: none;
+  cursor: pointer;
+}
+
+.linked-in-button:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .content-width-40{
