@@ -21,8 +21,9 @@ componentDidMount(){
 
   render(){
     const currentVetReviews = (this.props.vets_reviews.length > 0 && this.state.vet.length > 0) ? this.props.vets_reviews.filter(v=> v.vet_name === this.state.vet[0].name) : '';
-    console.log("in vet pr", this.props.vets_reviews, "vet", this.state.vet);
-    console.log("reviews", currentVetReviews);
+    let rating = 0
+    currentVetReviews.length > 0 ? currentVetReviews.forEach( v => rating += v.rating) : 'no'
+
   return(
     <div>
       <div className="background-vet-background container-pattern-zig-zag">
@@ -82,7 +83,7 @@ componentDidMount(){
                </p>
 
               <hr />
-              <h2 className="bold">Verified Patient Reviews (6)</h2>
+              <h2 className="bold">Verified Patient Reviews ({rating/currentVetReviews.length})</h2>
               <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
               <br/>
               <div className="reviews">
