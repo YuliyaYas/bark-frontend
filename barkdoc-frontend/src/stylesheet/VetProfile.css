@@ -35,8 +35,25 @@
 }
 
 .services {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-top: 120px;
+  margin-bottom: 30px;
+}
+
+.education {
+  /* border: 1px solid red; */
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.verified {
+  /* border: 1px solid red; */
+  margin-top: 20px;
+  position: relative;
+
 }
 
 .column-33{
@@ -119,6 +136,10 @@
   height: 60px;
   margin-top: 20px;
   margin-bottom: 100px;
+}
+
+.vet-line {
+  margin: 20px 0;
 }
 
 @media (max-width: 768px) {
