@@ -8,9 +8,6 @@ const Terms = (props) => {
   return(
     <div>
     <Header />
-      <br />
-      <br />
-      <br />
       <div className="center grey-font pt-26 bold padding-top-60">Terms Of Use</div>
       <hr className="grey-font length-11"/>
       <br />

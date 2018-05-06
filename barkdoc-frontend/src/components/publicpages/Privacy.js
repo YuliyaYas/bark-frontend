@@ -8,9 +8,6 @@ const Privacy = (props) => {
   return(
     <div>
     <Header />
-      <br />
-      <br />
-      <br />
       <div className="center grey-font pt-26 bold padding-top-60">Privacy Policy</div>
       <hr className="grey-font length-11"/>
       <br />
