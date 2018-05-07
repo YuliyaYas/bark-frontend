@@ -111,7 +111,7 @@ class App extends Component {
       <div className="primary">
       <Switch>
       <Route path={`/vets/:name`} component={ () => <VetProfile vet={this.state.selectedVet} vets_reviews={this.state.vets_reviews}/>} />
-      <Route path={`/vets`} component={ () => <Vets handleVetClick={this.handleVetClick} vets={this.state.vets} allLocations={this.state.allLocations} selectedLocationId={this.state.selectedLocationId} handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} handleLocationChange={this.handleLocationChange} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId} selectedLocationName={this.state.selectedLocationName}/>} />
+      <Route path={`/vets`} component={ () => <Vets vets_reviews={this.state.vets_reviews} handleVetClick={this.handleVetClick} vets={this.state.vets} allLocations={this.state.allLocations} selectedLocationId={this.state.selectedLocationId} handleContinueLocation={this.handleContinueLocation} handleSelectChange={this.handleSelectChange} handleLocationButton={this.handleLocationButton} handleLocationChange={this.handleLocationChange} selectLocationClick={this.state.selectLocationClick} testimonials={this.state.homepage_reviews} location={this.state.selectedLocationId} selectedLocationName={this.state.selectedLocationName}/>} />
       <Route path={`/testimonials`} component={ () => <Testimonials testimonials={this.state.homepage_reviews}/>} />
       <Route path={`/careers/:name`} component={ () => <Jobs job_posts={this.state.job_posts}/>} />
       <Route path={`/careers`} component={ () => <Careers />} />
