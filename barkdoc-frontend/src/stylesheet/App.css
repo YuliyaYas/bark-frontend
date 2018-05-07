@@ -136,6 +136,11 @@ html {
   width: 70%;
   margin-left: 15%;
   margin-top: 40px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .input-sign-in{

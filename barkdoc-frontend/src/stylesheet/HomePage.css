@@ -46,6 +46,11 @@
   font-size: 12pt;
   font-weight: bold;
   margin-top: 50px;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 /* .styled select {
@@ -283,6 +288,11 @@
   margin: 20px;
   border-style: none;
   width: 25%;
+  cursor: pointer;
+}
+
+.schedule-appt:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .margin-41{
@@ -372,6 +382,11 @@
     display: inline-block;
     margin-top: 40px;
     position: relative;
+    cursor: pointer;
+}
+
+.button-meet-our-vets:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .length-40{
@@ -407,6 +422,11 @@ img.column-review{
   margin-left: 40%;
   margin-top: 40px;
   margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.button-make-at-home:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.1)
 }
 
 .container-review-zig-zag {

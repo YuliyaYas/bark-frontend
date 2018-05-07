@@ -55,36 +55,40 @@ componentDidMount(){
             </div>
             <div className="services">
               {this.state.vet.length > 0 ? <h2 className="bold">Services {this.state.vet[0].name} Offers:</h2> : ""}
-              <div className="column-33">
-                <p>Routine exams</p>
-                <p>Check-ups</p>
-                <p>Vaccinations</p>
-                <p>Ear cleaning</p>
-                <p>Nail clipping</p>
-              </div>
-              <div className="column-33">
-                <p>Upset tummy</p>
-                <p>Cough</p>
-                <p>Minor injuries</p>
-                <p>Allergy testing</p>
-                <p>Heartworm testing</p>
-              </div>
-              <div className="column-34">
-                <p>Parasite testing</p>
-                <p>Tick testing</p>
-                <p>Urine Testing</p>
-                <p>Ultrasounds</p>
-                <p>Cold Laser Therapy</p>
+              <div className="services-container">
+                <div className="column-33">
+                  <p>Routine exams</p>
+                  <p>Check-ups</p>
+                  <p>Vaccinations</p>
+                  <p>Ear cleaning</p>
+                  <p>Nail clipping</p>
+                </div>
+                <div className="column-33">
+                  <p>Upset tummy</p>
+                  <p>Cough</p>
+                  <p>Minor injuries</p>
+                  <p>Allergy testing</p>
+                  <p>Heartworm testing</p>
+                </div>
+                <div className="column-34">
+                  <p>Parasite testing</p>
+                  <p>Tick testing</p>
+                  <p>Urine Testing</p>
+                  <p>Ultrasounds</p>
+                  <p>Cold Laser Therapy</p>
+                </div>
               </div>
             </div>
-              <hr />
-              <h2 className="bold">Education and Service</h2>
-              <p>
-                {this.state.vet.length > 0 ? this.state.vet[0].training_question : "" }
-              </p>
-              <p>
-                {this.state.vet.length > 0 ? this.state.vet[0].difference_question : "" }
-               </p>
+              <hr className="vet-line"/>
+              <div className="education">
+                <h2 className="bold">Education and Service</h2>
+                <p>
+                  {this.state.vet.length > 0 ? this.state.vet[0].training_question : "" }
+                </p>
+                <p>
+                  {this.state.vet.length > 0 ? this.state.vet[0].difference_question : "" }
+                </p>
+              </div>
 
               <hr />
               <h2 className="bold">Verified Patient Reviews ({currentVetReviews.length})</h2>
@@ -93,6 +97,7 @@ componentDidMount(){
               <div className="reviews">
                 {vetReviews}
               </div>
+
               <button className="orange white-font bold book-now-btn">BOOK NOW</button>
           </div>
         </div>

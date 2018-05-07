@@ -82,7 +82,7 @@ class Vets extends Component {
             </div>
             <div className="column-20 testimonial-card">
               <h2 className="grey-font center">Testimonials</h2>
-              <hr className="grey-font length-11"/>
+              <hr className="grey-font length-40"/>
                 {this.props.testimonials.length > 0
               ?
                 testimonials
