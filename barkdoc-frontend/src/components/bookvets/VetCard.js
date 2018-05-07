@@ -22,7 +22,7 @@ const VetCard = (props) => {
 
       </div>
       <div className="column-20"></div>
-        <button className="vet-card-btn grey grey-font bold">BOOK{props.vet.name.toUpperCase()}</button>
+        <button className="vet-card-btn grey grey-font bold">BOOK {props.vet.name.toUpperCase()}</button>
           <button className="vet-card-btn white grey-font bold" id={props.vet.id} onClick={props.handleVetClick}>VIEW FULL PROFILE</button>
     </div>
   );

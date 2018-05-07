@@ -92,7 +92,11 @@ componentDidMount(){
 
               <hr />
               <h2 className="bold">Verified Patient Reviews ({currentVetReviews.length})</h2>
+              {currentVetReviews.length> 0 ?
               <h4><img alt="" className="stars float-left" src={rating ? require(`../../img/${rating/currentVetReviews.length}_stars.png`) : ''}/> {rating/currentVetReviews.length} </h4>
+              :
+              ""
+              }
               <br/>
               <div className="reviews">
                 {vetReviews}
