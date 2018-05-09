@@ -17,8 +17,8 @@ const Testimonials = (props) => {
         <h1 className="white-font content bold padding-career">Testimonials</h1>
       </div>
       <div className="white testimonials-content">
-        <div className="center grey-font pt-26 bold">BOW WOW! Read Our Reviews </div>
-        <hr className="grey-font length-40"/>
+        <div className="center grey-font pt-26 bold">BOW WOW! <br className="mobile"></br>Read Our Reviews </div>
+        <hr className="grey-font length-25"/>
       </div>
           {props.testimonials.length !== 0 ?
           <div>
