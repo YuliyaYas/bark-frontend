@@ -11,6 +11,7 @@ import './../../stylesheet/Vet.css';
 class Vets extends Component {
   constructor(props){
     super(props);
+    console.log("reviews", props.vets_reviews);
   }
 
   render(){
@@ -19,7 +20,7 @@ class Vets extends Component {
        return <TestimonialCard key={i} testimonial = {testimonial} />
     }})
 
-    const vets = this.props.vets.map((vet,i) => <VetCard handleVetClick={this.props.handleVetClick} vet={vet} key={i}/>)
+    const vets = this.props.vets.map((vet,i) => <VetCard vets_reviews={this.props.vets_reviews} handleVetClick={this.props.handleVetClick} vet={vet} key={i}/>)
 
     const locations = this.props.allLocations.filter(loc => loc.id!=this.props.selectedLocationId).map((loc,i) => <option value={loc.id} name={loc.nickname} key={i}>{loc.nickname}</option>)
 

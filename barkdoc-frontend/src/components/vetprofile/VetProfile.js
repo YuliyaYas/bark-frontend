@@ -3,6 +3,7 @@ import Header from './../Header';
 import HaveQuestionsForm from './../HaveQuestionsForm.js';
 import DogBottom from './../DogBottom.js';
 import './../../stylesheet/VetProfile.css';
+import Review from './Review.js'
 
 class VetProfile extends Component {
   constructor(props){
@@ -20,9 +21,12 @@ componentDidMount(){
 }
 
   render(){
+
     const currentVetReviews = (this.props.vets_reviews.length > 0 && this.state.vet.length > 0) ? this.props.vets_reviews.filter(v=> v.vet_name === this.state.vet[0].name) : '';
     let rating = 0
-    currentVetReviews.length > 0 ? currentVetReviews.forEach( v => rating += v.rating) : 'no'
+    currentVetReviews.length > 0 ? currentVetReviews.forEach( v => rating += v.rating) : ''
+
+    const vetReviews = currentVetReviews.length > 0 ? currentVetReviews.map((review,i)=> <Review review={review} key={i}/>) : ''
 
   return(
     <div>
@@ -42,7 +46,7 @@ componentDidMount(){
                 {currentVetReviews.length > 0 ?
                 <div>
                   <h3 className="white-font-profile content">Veterinarian</h3>
-                  <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> Verified Patient Reviews({currentVetReviews.length})</h3>
+                  <h3 className="white-font-profile content"><img alt="" className="stars float-left" src={rating ? require(`../../img/${rating/currentVetReviews.length}_stars.png`) : ''}/> Verified Patient Reviews({currentVetReviews.length})</h3>
                 </div>
                 :
                 ""
@@ -87,26 +91,15 @@ componentDidMount(){
               </div>
 
               <hr />
-              <div className="verified">
-                <h2 className="bold">Verified Patient Reviews ({rating/currentVetReviews.length})</h2>
-                <h4><img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/> 4.5 </h4>
-                <br/>
-                <div className="reviews">
-                  <div className="review">
-                    <div className="col-55">
-                      <div><span className="grey-font pt-12">Trish R. </span><span className="light-grey-font font-9 "> - Soho</span></div>
-                    </div>
-                    <div className="col-45">
-                      <img alt="" className="quotes quote-size" src={require("./../../img/repeated/quotations.png")} alt="" />
-                      <div className="review-text">
-                        <p>Dr. Ryan had a very open schedule which worked perfect for my schedule. So easy of a process!</p>
-                        <img alt="" className="stars float-left" src={require("../../img/5_stars.png")}/>
-                      </div>
-                      <br/>
-                      <br/>
-                    </div>
-                  </div>
-                </div>
+              <h2 className="bold">Verified Patient Reviews ({currentVetReviews.length})</h2>
+              {currentVetReviews.length> 0 ?
+              <h4><img alt="" className="stars float-left" src={rating ? require(`../../img/${rating/currentVetReviews.length}_stars.png`) : ''}/> {rating/currentVetReviews.length} </h4>
+              :
+              ""
+              }
+              <br/>
+              <div className="reviews">
+                {vetReviews}
               </div>
 
               <button className="orange white-font bold book-now-btn">BOOK NOW</button>
@@ -119,7 +112,6 @@ componentDidMount(){
             <button className="orange white-font bold book-now-btn-2">BOOK NOW</button>
         </div>
       </div>
-
       <HaveQuestionsForm />
       <DogBottom />
     </div>
