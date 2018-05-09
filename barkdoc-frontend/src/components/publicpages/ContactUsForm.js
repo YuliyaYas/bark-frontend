@@ -43,7 +43,7 @@ class ContactUsForm extends Component{
           :
           <div>
             <div className="center grey-font pt-26 bold padding-top-60">Contact Us</div>
-            <hr className="grey-font length-11"/>
+            <hr className="grey-font length-35"/>
             <form onSubmit={this.handleSubmit}>
               <h3 className="display-block grey-font" ><span className="orange-font">*</span>Email Address</h3>
               <input className="input-sign-in" name="email" type="text" placeholder="Enter your email address here" required onChange={this.handleChange}/>
