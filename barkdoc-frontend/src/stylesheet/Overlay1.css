@@ -50,6 +50,7 @@
   z-index: 2147483644;
 }
 
+/* min-height specified in Overlay1.js */
 .overlay-popup{
   margin-top: 30px;
   margin-left: auto;
@@ -163,5 +164,36 @@
 
    .form-position {
      padding-top: 140px;
+   }
+ }
+
+ @media (max-width: 325px) {
+   .location-form h1 {
+     font-size: 24px;
+   }
+
+   .continue-button-overlay {
+     margin-top: 10px;
+   }
+
+   .where-spacing {
+     padding: 0;
+   }
+
+   .overlay-popup {
+     margin-top: 5px;
+     width: 95%;
+     height: 400px;
+
+   }
+
+   .location-form{
+     /* margin-left: auto; */
+     /* margin-right: auto; */
+     width: 90%;
+   }
+
+   .form-position {
+     padding-top: 80px;
    }
  }

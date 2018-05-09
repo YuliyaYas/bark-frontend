@@ -12,7 +12,7 @@ const Overlay1 = (props) => {
     <div>
       <form className="location-form form-position" onSubmit={props.handleContinueLocation}>
         <div className="where-spacing white-font">
-          <h1>Where Should We Swing By?</h1>
+          <h1 className="swing">Where Should We Swing By?</h1>
           <p> Let us know your pet's location to continue </p>
         </div>
         <p className="white-font left font-12"><span className="orange-font">* </span>My Pet's Location:</p>

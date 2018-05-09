@@ -56,7 +56,7 @@ class ContactUsForm extends Component{
               <input type='radio' name="user" onChange={this.handleRadioChange} value="patient" checked={this.state.selectedOption === 'patient'}/>Patient</label>
               <h3 className="grey-font"><span className="orange-font">*</span>Message</h3>
               <textarea className="question-textarea input-text-area" rows="4" type="text" name="message" placeholder="Enter your message here(2000 words max)." required onChange={this.handleChange}/>
-              <button type="submit" className="orange white-font display-block sign-in-button bold">SEND NOW</button>
+              <button type="submit" className="orange white-font display-block sign-in-button bold font-12">SEND NOW</button>
             </form>
           </div>
         }
