@@ -31,7 +31,7 @@ class Footer extends Component {
                 <a href="/contact"> Contact </a>
               </li>
               <li className="li-style">
-                <a href="/faqs"> FAQ </a>
+                <a href="/faqs">FAQ</a>
               </li>
               <li className="li-style">
                 <a href="/testimonials"> Testimonials </a>
