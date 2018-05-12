@@ -15,6 +15,8 @@ const Testimonials = (props) => {
       <div className="background-cat container-testimonials-zig-zag">
         <Header />
         <h1 className="white-font content bold padding-career">Testimonials</h1>
+          <div className="zig-zag-white"></div>
+        
       </div>
       <div className="white testimonials-content">
         <div className="center grey-font pt-26 bold">BOW WOW! <br className="mobile"></br>Read Our Reviews </div>

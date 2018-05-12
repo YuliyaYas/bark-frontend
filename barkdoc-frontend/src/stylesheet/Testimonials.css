@@ -3,6 +3,25 @@
   position: absolute;
   float: left;
   width: 100%;
+  height: 305px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent url("../img/cat_background.png") top right no-repeat;
+  background-size: 100% auto;
+}
+
+.testimonials-content {
+  position: relative;
+  margin-top: 335px;
+  padding-top: 50px;
+}
+
+
+/* .background-cat{
+  position: absolute;
+  float: left;
+  width: 100%;
   height: 300px;
   top: 0;
   left: 0;
@@ -14,7 +33,7 @@
   position: relative;
   margin-top: 330px;
   padding-top: 50px;
-}
+} */
 
 .container-testimonials-zig-zag {
     /* position: relative; */
@@ -108,7 +127,9 @@
   }
 
   .background-cat {
-    height: 200px;
+    background: transparent url("../img/cat_background-mobile.jpg") bottom center no-repeat;
+    background-size: auto 100% ;
+    height: 300px;
   }
 
   .column-review {
@@ -116,7 +137,7 @@
   }
 
   .testimonials-content {
-    margin-top: 230px;
+    margin-top: 320px;
   }
 
   .container-brown-zig-zag {

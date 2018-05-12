@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   right: 0;
-  background: transparent url("../img/white-dog.png")no-repeat top left fixed;
+  background: transparent url("../img/white-dog.png")no-repeat top left;
   /* background-size: cover; */
 }
 
@@ -91,7 +91,9 @@ h3 {
   }
 
   .background-white-dog {
+    background: transparent url("../img/white-dog-mobile.jpg")no-repeat top left;
     height: 280px;
+    background-size: 100% 100%;
   }
 
   .main-content {
