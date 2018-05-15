@@ -33,8 +33,7 @@ class App extends Component {
       selectLocationClick: false,
       vets_reviews: [],
       vets: [],
-      selectedVet: [],
-      termsOfUse: ""
+      selectedVet: []
     }
   }
 
@@ -52,12 +51,6 @@ class App extends Component {
 
     butter.content.retrieve(["faqs_headline", "faq_headlines"])
     .then((resp) => { this.setState({faqs: resp.data.data.faq_headlines})});
-
-    butter.content.retrieve(["privacy_headline", "privacy"])
-    .then((resp) => this.setState({privacy: resp.data.data.privacy[0].rules}));
-
-    butter.content.retrieve(["terms_headline", "terms"])
-    .then((resp) => this.setState({termsOfUse: resp.data.data.terms[0].term}));
 
     butter.content.retrieve(["reviews", "vets_reviews"])
     .then((resp) => this.setState({vets_reviews: resp.data.data.vets_reviews}));
@@ -118,7 +111,7 @@ class App extends Component {
       <Route path={`/faqs`} component={ () => <FAQs faqs={this.state.faqs}/>} />
       <Route path={`/contact`} component={ () => <ContactUs />} />
       <Route path={`/privacy`} component={ () => <Privacy/>} />
-      <Route path={`/terms-of-use`} component={ () => <Terms termsOfUse={this.state.termsOfUse}/>} />
+      <Route path={`/terms-of-use`} component={ () => <Terms/>} />
       <Route path={`/`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />
       </Switch>
       <Footer />
