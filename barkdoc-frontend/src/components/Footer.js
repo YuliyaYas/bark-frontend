@@ -15,7 +15,7 @@ class Footer extends Component {
               </li>
 
               <li className="li-style-r">
-                <a href="https://www.facebook.com/BARKDOC/​"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
+                <a href="https://www.facebook.com/barkdoc"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
               </li>
 
             </ul>

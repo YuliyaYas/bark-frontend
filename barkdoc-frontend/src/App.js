@@ -34,7 +34,6 @@ class App extends Component {
       vets_reviews: [],
       vets: [],
       selectedVet: [],
-      privacy: "",
       termsOfUse: ""
     }
   }
@@ -118,7 +117,7 @@ class App extends Component {
       <Route path={`/about`} component={ () => <About />} />
       <Route path={`/faqs`} component={ () => <FAQs faqs={this.state.faqs}/>} />
       <Route path={`/contact`} component={ () => <ContactUs />} />
-      <Route path={`/privacy`} component={ () => <Privacy privacy={this.state.privacy}/>} />
+      <Route path={`/privacy`} component={ () => <Privacy/>} />
       <Route path={`/terms-of-use`} component={ () => <Terms termsOfUse={this.state.termsOfUse}/>} />
       <Route path={`/`} component={ () => <HomePage homepage_reviews={this.state.homepage_reviews}/>} />
       </Switch>
