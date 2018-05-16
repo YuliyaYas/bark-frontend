@@ -78,7 +78,8 @@
   top: 0;
   left: 0;
   right: 0;
-  background: transparent url("../img/booking_dog.png") top left no-repeat;
+  background: transparent url("../img/booking_dog.png") top right no-repeat;
+  background-size: 100% 100%;
 }
 
 .white a {
@@ -130,6 +131,11 @@
     background: transparent url("../img/cat_background-mobile.jpg") bottom center no-repeat;
     background-size: auto 100% ;
     height: 300px;
+  }
+
+  .background-bookings{
+    background: transparent url("../img/booking_dog_mobile.jpg") top left no-repeat;
+    background-size: auto 100%;
   }
 
   .column-review {
