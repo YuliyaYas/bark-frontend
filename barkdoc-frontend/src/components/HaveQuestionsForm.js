@@ -14,7 +14,7 @@ class HaveQuestionsForm extends Component {
     };
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     e.preventDefault();
     const name = e.target.name;
     const value = e.target.value;
@@ -73,6 +73,9 @@ class HaveQuestionsForm extends Component {
             </div>
             </div>
           }
+
+          <iframe src="https://services.cognitoforms.com/f/CiVGoLh9GUSPS-uTI7GMEQ?id=1" frameborder="0" scrolling="yes" seamless="seamless" height="461" width="100%"></iframe>
+          <script src="https://services.cognitoforms.com/scripts/embed.js"></script>
 
         </div>
       </div>
