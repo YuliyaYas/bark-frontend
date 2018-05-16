@@ -11,11 +11,11 @@ class Footer extends Component {
             <ul className="ul-style-r">
 
               <li className="li-style-r">
-              <a href="https://www.instagram.com/barkdoc/"> <img className="icon" src={require("../img/instagram-icon.png")} alt="" /> </a>
+              <a target="_blank" href="https://www.instagram.com/barkdoc/"> <img className="icon" src={require("../img/instagram-icon.png")} alt="" /> </a>
               </li>
 
               <li className="li-style-r">
-                <a href="https://www.facebook.com/barkdoc"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
+                <a target="_blank" href="https://www.facebook.com/barkdoc"> <img className="icon" src={require("../img/facebook-icon.png")} alt="" /> </a>
               </li>
 
             </ul>
